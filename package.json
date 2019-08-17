@@ -4,7 +4,7 @@
   "description": "Responsive LifeCell Screen Protection page",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ -recursive"
+    "scss": "node-sass --watch scss/ -o dist/css/ --recursive"
   },
   "repository": {
     "type": "git",
@@ -15,8 +15,10 @@
   "bugs": {
     "url": "https://github.com/delfin4ik/LifeCell__Screen_Protection/issues"
   },
-  "homepage": "https://github.com/delfin4ik/LifeCell__Screen_Protection#readme",
+  "homepage": "https://github.com/delfin4ik/LifeCell__Screen_Protection/index.html",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.12.0"
-  }
+  },
+  "devDependencies": {}
 }
