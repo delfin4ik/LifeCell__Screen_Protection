@@ -1,0 +1,22 @@
+{
+  "name": "lifecell__screen_protection",
+  "version": "1.0.0",
+  "description": "Responsive LifeCell Screen Protection page",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ -recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delfin4ik/LifeCell__Screen_Protection.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/delfin4ik/LifeCell__Screen_Protection/issues"
+  },
+  "homepage": "https://github.com/delfin4ik/LifeCell__Screen_Protection#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
