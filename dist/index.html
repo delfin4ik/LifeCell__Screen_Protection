@@ -4,10 +4,294 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <title>LifeCell Screen Protection</title>
 </head>
 <body>
-  <h1>Hello!</h1>
+  
+    <header class="header">
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+      <ul class="nav-site">
+        <li><a class="nav-site__item" href="#">Индивидуальный</a></li>
+        <li><a class="nav-site__item" href="#">Бизнес</a></li>
+        <li><a class="nav-site__item" href="#">Про компанию</a></li>
+      </ul>
+      <a class="logo" href="#"></a>
+      <ul class="nav-icons">
+        <li class="nav-icons__item"><a href="#" class="nav-icons__item_profile"></a></li>
+        <li class="nav-icons__item"><a href="#" class="nav-icons__item_wallet"></a></li>
+        <li class="nav-icons__item"><a href="#" class="nav-icons__item_pin"></a></li>
+        <li class="nav-icons__item"><a href="#" class="nav-icons__item_search"></a></li>
+      </ul>
+      <div class="nav-page-bg"></div>
+      <nav class="nav-page menu">
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="#advantages" class="nav-page__item nav-link">Преимущества</a>
+          </li>
+          <li class="nav-item current">
+            <a href="#packages" class="nav-page__item nav-link">Пакеты</a>
+          </li>
+          <li class="nav-item">
+            <a href="#steps" class="nav-page__item nav-link">Что делать при повреждении экрана</a>
+          </li>  
+          <li class="nav-item">
+            <a href="#questions" class="nav-page__item nav-link">Вопросы и ответы</a>
+          </li>  
+          <li class="nav-item">
+            <a href="#picture" class="nav-page__item nav-link">Защита экрана</a>
+          </li>  
+          <li class="nav-item">
+            <a class="language-switch nav-link" href="#">  
+              <div class="language-globe"></div>
+              <p class="language-value">УКР</p>
+              <div class="language-toggle"></div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main-picture" id="picture">
+      <h2 class="main-picture__title">Защита экрана</h2>
+      <p class="main-picture__text">Разбить экран больше не страшно!</p>
+      <div class="main-picture__bg_center"></div>
+      <div class="main-picture__bg_right"></div>
+    </div>
+
+    <section class="main-section-advantages" id="advantages">
+      <h1 class="advantages__title">Преимущества</h1>
+      <div class="advantages__card-wrap">
+        <div class="advantages__card-item">
+          <div class="card-item_circle"></div>
+          <div class="card-item_img img_warranty"></div>
+          <div class="card-item_text advantages_tooltip">Гарантированная замена екрана
+            <span class="red-star">*</span>
+            <span class="advantages_tooltiptext">При выполнении условий договора</span>
+          </div>
+        </div>
+        <div class="advantages__card-item">
+          <div class="card-item_circle"></div>
+          <div class="card-item_img img_checkup"></div>
+          <div class="card-item_text">Простая и удобная онлайн проверка экрана</div>
+        </div>
+        <div class="advantages__card-item">
+          <div class="card-item_circle"></div>
+          <div class="card-item_img img_service"></div>
+          <div class="card-item_text">Ремонт только в сертифицированном сервисном центре</div>
+        </div>
+        <div class="advantages__card-item">
+          <div class="card-item_circle"></div>
+          <div class="card-item_img img_post-warranty"></div>
+          <div class="card-item_text">Полгода гарантии на экран после ремонта</div>
+        </div>
+      </div>
+      <div class="red-star_mob">*</div>
+      <div class="advantages_tooltiptext_mob">При выполнении условий договора</div>
+    </section>
+
+    <section class="main-section-packages">
+      <a name="packages"></a>
+      <h1 class="packages-header">Тарифные планы</h1>
+      <div class="packages-alternative">
+        <a href="#" class="packages-alternative_item">Неделя</a>
+        <a href="#" class="packages-alternative_item">Месяц</a>
+        <a href="#" class="packages-alternative_item">Год</a>
+      </div>
+      <div class="packages__card_wraper">
+        <div class="packages__card_wrap">
+          <div class="packages__card_img1"></div>
+          <div class="packages__card_circle"></div>
+          <p class="packages__card_discount">42%</p>
+          <p class="packages__card_discount-text">экономии</p>
+          <h2 class="packages__card_title">Тарифный план Эконом</h2>
+          <p class="packages__card_explanation">Компенсация 1500 грн</p>
+          <div class="packages__card_price-background"></div>
+          <p class="packages__card_price"><span>25</span> грн/<span>30</span> дней</span></p>
+        </div>
+        <div class="packages__card_wrap">
+          <div class="packages__card_img2"></div>
+          <div class="packages__card_circle"></div>
+          <p class="packages__card_discount">31%</p>
+          <p class="packages__card_discount-text">экономии</p>
+          <h2 class="packages__card_title">Тарифный план Стандарт</h2>
+          <p class="packages__card_explanation">Компенсация 3 000 грн</p>
+          <div class="packages__card_price-background"></div>
+          <p class="packages__card_price"><span>45</span> грн/<span>30</span> дней</span></p>
+        </div>
+        <div class="packages__card_wrap">
+          <div class="packages__card_img3"></div>
+          <div class="packages__card_circle"></div>
+          <p class="packages__card_discount">18%</p>
+          <p class="packages__card_discount-text">экономии</p>
+          <h2 class="packages__card_title">Тарифный план Премиум</h2>
+          <p class="packages__card_explanation">Компенсация 10 000 грн</p>
+          <div class="packages__card_price-background"></div>
+          <p class="packages__card_price"><span>125</span> грн/<span>30</span> дней</span></p>
+        </div>
+      </div>
+    </section>
+
+    <picture class="main-picture-banner">
+      <div class="main-picture-banner_bg"></div>
+      <h class="banner-title">Для активации установите приложение защита экрана</h>
+      <a href="#" class="banner__app-store"></a>
+      <a href="" class="banner__google-play"></a>
+      <div class="banner__background-img"></div>
+    </picture>
+
+    <section id="steps" class="main-section-steps">
+      <div class="steps__title">Что делать при повреждении экрана</div>
+      <div class="steps__card-wrap">
+        <div class="steps__card-item">
+          <div class="steps-card-item_number">1</div>
+          <div class="steps-card-item_circle">
+            <img src="/dist/img/icons/step1-bg-img.svg" class="steps-card-item_img step_1"></img>
+          </div>
+          <div class="steps-card-item_text">Обратиться в круглосуточную службу поддержки</div>
+        </div>
+        <div class="steps__card-item">
+          <div class="steps-card-item_number">2</div>
+          <div class="steps-card-item_circle">
+            <img src="/dist/img/icons/step2-bg-img.svg" class="steps-card-item_img step_2"></img>
+          </div>
+          <div class="steps-card-item_text">Отправить смартфон по адресу, указанному сотрудником сервисного центра</div>
+        </div>
+        <div class="steps__card-item">
+          <div class="steps-card-item_number">3</div>
+          <div class="steps-card-item_circle">
+            <img src="/dist/img/icons/step3-bg-img.svg" class="steps-card-item_img step_3"></img>
+          </div>
+          <div class="steps-card-item_text">Согласовать сроки выполнения ремонта экрана</div>
+        </div>
+        <div class="steps__card-item">
+          <div class="steps-card-item_number">4</div>
+          <div class="steps-card-item_circle">
+            <img src="/dist/img/icons/step4-bg-img.svg" class="steps-card-item_img step_4"></img>
+          </div>
+          <div class="steps-card-item_text">Получить отремонтированное устройство</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main-section-questions">
+      <a name="questions"></a>
+      <div class="questions-circle-btn"></div>
+      <div class="questions-btn-rectangle"></div>
+      <details class="questions-outer"> 
+        <summary class="questions-title-outer questions-title">Вопросы и ответы</summary>
+        <div class="answers-outer">
+          <details class="questions-inner">
+            <summary class="questions-title-inner">Что такое "защита экрана"?</summary>
+            <p class="answers-inner">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odio doloremque dolor eaque modi animi provident tempora, laborum saepe inventore asperiores molestias, minus, dicta culpa officiis cupiditate dolore reprehenderit illum?</p>
+          </details>
+          <details class="questions-inner">
+            <summary class="questions-title-inner">Как активируется услуга?</summary>
+            <p class="answers-inner">Для активации услуги нужно загрузить приложение “Защита экрана” с Google Play или App Store и проверить экран на отсутствие повреждений. Телефоны, поддерживающие приложение “защита Экрана”:
+                - Android версии 4.1 и выше;
+                - IOS версии 9 и выше</p>
+          </details>
+          <details class="questions-inner">
+            <summary class="questions-title-inner">Что делать при повреждении экрана?</summary>
+            <p class="answers-inner">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odio doloremque dolor eaque modi animi provident tempora, laborum saepe inventore asperiores molestias, minus, dicta culpa officiis cupiditate dolore reprehenderit illum?</p>
+          </details>
+          <details class="questions-inner">
+            <summary class="questions-title-inner">Как получить логин и пароль от личного кабинета?</summary>
+            <p class="answers-inner">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odio doloremque dolor eaque modi animi provident tempora, laborum saepe inventore asperiores molestias, minus, dicta culpa officiis cupiditate dolore reprehenderit illum?</p>
+          </details>
+          <details class="questions-inner">
+            <summary class="questions-title-inner">Какой адрес сервисного центра?</summary>
+            <p class="answers-inner">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odio doloremque dolor eaque modi animi provident tempora, laborum saepe inventore asperiores molestias, minus, dicta culpa officiis cupiditate dolore reprehenderit illum?</p>
+          </details>
+          <details class="questions-inner">
+            <summary class="questions-title-inner">Кто оплачивает доставку телефона?</summary>
+            <p class="answers-inner">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odio doloremque dolor eaque modi animi provident tempora, laborum saepe inventore asperiores molestias, minus, dicta culpa officiis cupiditate dolore reprehenderit illum?</p>
+          </details>
+          <details class="questions-inner">
+            <summary class="questions-title-inner">Какие сроки выполнения ремонта?</summary>
+            <p class="answers-inner">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odio doloremque dolor eaque modi animi provident tempora, laborum saepe inventore asperiores molestias, minus, dicta culpa officiis cupiditate dolore reprehenderit illum?</p>
+          </details>
+          <details class="questions-inner">
+            <summary class="questions-title-inner">Что будет, если стоимость ремонта превышает компенсационную сумму?</summary>
+            <p class="answers-inner">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odio doloremque dolor eaque modi animi provident tempora, laborum saepe inventore asperiores molestias, minus, dicta culpa officiis cupiditate dolore reprehenderit illum?</p>
+          </details>
+          <details class="questions-inner">
+            <summary class="questions-title-inner">В каких случаях выплачивается компенсация?</summary>
+            <p class="answers-inner">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odio doloremque dolor eaque modi animi provident tempora, laborum saepe inventore asperiores molestias, minus, dicta culpa officiis cupiditate dolore reprehenderit illum?</p>
+          </details>
+          <details class="questions-inner">
+            <summary class="questions-title-inner">Можно ли использовать услугу на нескольких номерах?</summary>
+            <p class="answers-inner">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odio doloremque dolor eaque modi animi provident tempora, laborum saepe inventore asperiores molestias, minus, dicta culpa officiis cupiditate dolore reprehenderit illum?</p>
+          </details>
+          <details class="questions-inner">
+            <summary class="questions-title-inner">Как отключить услугу?</summary>
+            <p class="answers-inner">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odio doloremque dolor eaque modi animi provident tempora, laborum saepe inventore asperiores molestias, minus, dicta culpa officiis cupiditate dolore reprehenderit illum?</p>
+          </details>
+          <details class="questions-inner">
+            <summary class="questions-title-inner">Какой период действия услуги?</summary>
+            <p class="answers-inner">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odio doloremque dolor eaque modi animi provident tempora, laborum saepe inventore asperiores molestias, minus, dicta culpa officiis cupiditate dolore reprehenderit illum?</p>
+          </details class="questions-inner">
+          <details class="questions-inner">
+            <summary class="questions-title-inner">Для чего необходим личный кабинет?</summary>
+            <p class="answers-inner">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odio doloremque dolor eaque modi animi provident tempora, laborum saepe inventore asperiores molestias, minus, dicta culpa officiis cupiditate dolore reprehenderit illum?</p>
+          </details>
+          <details class="questions-inner">
+            <summary class="questions-title-inner"></summary>
+            <p class="answers-inner"></p>
+          </details>
+        </div>
+        
+      </details>
+    </section>
+
+
+    <footer class="footer">
+     <div class="footer-contacts_wrap">
+       <p class="footer-notification">ООО «лайфселл» оставляет за собой право устанавливать и изменять тарифы (тарифные планы) на свои услуги, согласно Закону «Про телекоммуникации» от 18.11.2003 г. 1280-IV, изменять перечень таких Услуг, а так же изменять условия, сроки проведения Акции, досрочно прекращать, приостанавливать срок ее проведения в одностороннем порядке в соответствии с Условиями и порядком предоставления телекоммуникационных услуг ООО «лайфселл».</p>
+       <div class="footer-contacts_inner contacts_inner-column1">
+         <p class="footer-contacts_tel-1">+38 073 690 6911</p>
+         <p class="footer-contacts_mail">sp_support_ua@radarme.com</p>
+         <p class="footer-contacts_tel-2">5911</p>
+         <p class="footer-contacts_explain">Для активации и получения 
+            информации про услугу</p>
+       </div>
+       <div class="footer-contacts_inner contacts_inner-column2">
+        <p class="footer-contacts_tel-1">0 800 20 5433</p>
+        <p class="footer-contacts_mail">support@pm.lifecell.com.ua</p>
+        <p class="footer-contacts_tel-2">5433</p>
+        <p class="footer-contacts_explain">с мобильного LIFECELL</p>
+      </div>
+     </div>
+     <div class="footer-socials">
+       <p class="socials-text">Присоединись к нам в наших социальных сетях</p>
+       <div class="socials-icons">
+        <a href="#" class="facebook"></a>
+        <a href="#" class="instagram"></a>
+        <a href="#" class="twitter"></a>
+        <a href="#" class="telegram"></a>
+        <a href="#" class="youtube"></a>
+        <a href="#" class="linkedin"></a>
+       </div>
+     </div>
+     <div class="footer-nav">
+       <a href="#" class="footer-nav_item1">Пользовательское соглашение</a>
+       <a href="#" class="footer-nav_item2">Правила предоставления услуги</a>
+       <a href="#" class="footer-nav_item3">Сервисный центр</a>
+       <a href="#" class="footer-nav_item4">Политика конфиденциальности</a>
+       <a href="#" class="footer-nav_item5">О компании</a>
+       <a href="#" class="footer-nav_item6">Абонентам</a>
+     </div>
+     <div class="footer-copyright">
+       <p class="footer-copyright_text">© 2004-2019, ТОВ «лайфселл». Усі права захищено.</p>
+     </div>
+    </footer>
+  
+  <script src="js/main.js"></script>
 </body>
 </html>
