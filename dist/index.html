@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/main.css">
   <title>LifeCell Screen Protection</title>
 </head>
-<body>
+<body class="body-grid-wrap">
   
     <header class="header">
       <div class="menu-btn">
@@ -69,31 +69,46 @@
       <h1 class="advantages__title">Преимущества</h1>
       <div class="advantages__card-wrap">
         <div class="advantages__card-item">
-          <div class="card-item_circle"></div>
-          <div class="card-item_img img_warranty"></div>
-          <div class="card-item_text advantages_tooltip">Гарантированная замена екрана
+          <div class="card-item_circle">
+            <img class="card-item_img img_warranty" src="img/icons/img_warranty.svg" alt="warranty"></img>
+          </div>
+          <div class="card-item_text advantages_tooltip">
+            Гарантированная замена екрана
             <span class="red-star">*</span>
-            <span class="advantages_tooltiptext">При выполнении условий договора</span>
+            <span class="advantages_tooltiptext">
+              При выполнении условий договора
+            </span>
           </div>
         </div>
         <div class="advantages__card-item">
-          <div class="card-item_circle"></div>
-          <div class="card-item_img img_checkup"></div>
-          <div class="card-item_text">Простая и удобная онлайн проверка экрана</div>
+          <div class="card-item_circle">
+            <img class="card-item_img img_checkup" src="img/icons/img_checkup.svg" alt="checkup"></img>
+          </div>
+          <div class="card-item_text">
+            Простая и удобная онлайн проверка экрана
+          </div>
         </div>
         <div class="advantages__card-item">
-          <div class="card-item_circle"></div>
-          <div class="card-item_img img_service"></div>
-          <div class="card-item_text">Ремонт только в сертифицированном сервисном центре</div>
+          <div class="card-item_circle">
+            <img class="card-item_img img_service" src="img/icons/img_service.svg" alt="service"></img>
+          </div>
+          <div class="card-item_text">
+            Ремонт только в сертифицированном сервисном центре
+          </div>
         </div>
         <div class="advantages__card-item">
-          <div class="card-item_circle"></div>
-          <div class="card-item_img img_post-warranty"></div>
-          <div class="card-item_text">Полгода гарантии на экран после ремонта</div>
+          <div class="card-item_circle">
+            <img class="card-item_img img_post-warranty" src="img/icons/img_post-warranty.svg" alt="post-warranty"></img>
+          </div>
+          <div class="card-item_text">
+            Полгода гарантии на экран после ремонта
+          </div>
         </div>
       </div>
-      <div class="red-star_mob">*</div>
-      <div class="advantages_tooltiptext_mob">При выполнении условий договора</div>
+      <div class="advantages_tooltiptext_mob">
+        <span class="red-star_mob">*</span>
+        При выполнении условий договора
+      </div>
     </section>
 
     <section class="main-section-packages">
@@ -138,13 +153,14 @@
       </div>
     </section>
 
-    <picture class="main-picture-banner">
-      <div class="main-picture-banner_bg"></div>
-      <h class="banner-title">Для активации установите приложение защита экрана</h>
-      <a href="#" class="banner__app-store"></a>
-      <a href="" class="banner__google-play"></a>
+    <section class="main-picture-banner">
+      <div class="banner_aktivation_inner">
+        <h class="banner-title">Для активации установите приложение защита экрана</h>
+        <a href="#/" class="banner__app-store"></a>
+        <a href="#/" class="banner__google-play"></a>
+      </div>
       <div class="banner__background-img"></div>
-    </picture>
+    </section>
 
     <section id="steps" class="main-section-steps">
       <div class="steps__title">Что делать при повреждении экрана</div>
@@ -271,12 +287,24 @@
      <div class="footer-socials">
        <p class="socials-text">Присоединись к нам в наших социальных сетях</p>
        <div class="socials-icons">
-        <a href="#" class="facebook"></a>
-        <a href="#" class="instagram"></a>
-        <a href="#" class="twitter"></a>
-        <a href="#" class="telegram"></a>
-        <a href="#" class="youtube"></a>
-        <a href="#" class="linkedin"></a>
+        <a href="#" class="facebook">
+          <img src="../dist/img/icons/icon-facebook.svg" alt="icon facebook">
+        </a>
+        <a href="#" class="instagram">
+          <img src="../dist/img/icons/icon-instagram.svg" alt="icon instagram">
+        </a>
+        <a href="#" class="twitter">
+          <img src="../dist/img/icons/icon-twitter.svg" alt="icon twitter">
+        </a>
+        <a href="#" class="telegram">
+            <img src="../dist/img/icons/icon-telegram.svg" alt="icon telegram">
+        </a>
+        <a href="#" class="youtube">
+            <img src="../dist/img/icons/icon-youtube.svg" alt="icon youtube">
+        </a>
+        <a href="#" class="linkedin">
+            <img src="../dist/img/icons/icon-linkedin.svg" alt="icon linkedin">
+        </a>
        </div>
      </div>
      <div class="footer-nav">

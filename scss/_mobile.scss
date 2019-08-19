@@ -1,10 +1,121 @@
 // Widescreen
 @include mediaXl {
+
+
+// Avantages
+  .advantages__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .card-item_text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .advantages_tooltiptext {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .red-star_mob {
+    display: inline;
+    color: red;
+    margin-right: 14px;
+    font-size: 3.9vw;
+    line-height: 1.5;
+  }
+// end Avantages
+
+// Banner
+.banner-title{
+  font-size: 24px;
+  line-height: 30px;
+}
+// end Banner
+
+  .main-section-steps {
+    min-width: 1350px;
+    min-height: 398px;
+    padding: 72px 209px 58px 210px;
+  }
+
+  .steps__card-wrap {
+    justify-content: space-around;
+    align-self: center;
+  }
   
+  // footer
+  .footer-notification {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .footer-contacts_tel-1 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .footer-contacts_mail {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  
+  .footer-contacts_tel-2 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  
+  .footer-contacts_explain {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .socials-text {
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
 
 // Desktops & Laptops
 @include mediaLg {
+
+// Banner
+.banner-title{
+  font-size: 1.8vw;
+  line-height: 2.2vw;
+}
+// End Banner
+
+/* -------steps Tablet--------- */
+.main-section-steps {
+  max-width: 1350px;
+  min-height: 398px;
+  padding: 5vw 0 4vw 0;
+}
+
+.steps__title {
+  font-size: 1.5vw;
+  line-height: 1.8vw;
+}
+
+.steps__card-wrap {
+  
+  position: relative;
+  min-width: 931px;
+  margin-top: 46px;
+}
+
+.steps-card-item_number {
+  font-size: 1.3vw;
+  line-height: 1.6vw;
+}
+
+.steps-card-item_text {
+  font-size: 1.2vw;
+  line-height: 1.4vw;
+}
+/* -------end steps Tablet--------- */
 
 
   /* -------footer desktop--------- */
@@ -100,61 +211,13 @@
     color: $text-color-main;
   }
 
-  .footer-socials {
-    display: grid;
-    min-height: 70px;
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    grid-template-columns: 26.52%	24.51%	1.56%	20.89%	26.52%;
-    grid-template-rows: 1fr;
-    background: $background-color-socials;
-  }
+  // .footer-socials {
+    
+  // }
 
   .socials-text {
-    grid-column: 2 / 3;
-    align-self: center;
-    font-family: $font-family-main;
-    font-style: normal;
-    font-weight: bold;
     font-size: 1.0vw;
     line-height: 1.3vw;
-    color: $text-color-heading;
-  }
-
-  .socials-icons {
-    grid-column: 4 / 5;
-    align-self: center;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .socials-icons a {
-    min-width: 40px;
-    min-height: 40px;
-  }
-
-  .facebook {
-    background: url(../dist/img/icons/icon-facebook.svg) no-repeat;
-  }
-
-  .instagram {
-    background: url(../dist/img/icons/icon-instagram.svg) no-repeat;
-  }
-
-  .twitter {
-    background: url(../dist/img/icons/icon-twitter.svg) no-repeat;
-  }
-
-  .telegram {
-    background: url(../dist/img/icons/icon-telegram.svg) no-repeat;
-  }
-
-  .youtube {
-    background: url(../dist/img/icons/icon-youtube.svg) no-repeat;
-  }
-
-  .linkedin {
-    background: url(../dist/img/icons/icon-linkedin.svg) no-repeat;
   }
 
   .footer-nav {
@@ -256,96 +319,106 @@ ul.menu-nav {
     font-size: 44px;
   }
 
+  // Advantages
+  .main-section-advantages {
+    padding: 61px 0;
+  }
+
+  .advantages__card-wrap {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding: 0;
+    max-width: unset;
+  }
+  .advantages__card-wrap:before, .advantages__card-wrap:after {
+    content: '';
+    flex: 0 0 30px;
+    height: 100%;
+  }
+  .advantages__card-item {
+    flex: 1 0 243px;
+  }
+
+  .advantages__title {
+    font-size: 2.6vw;
+    line-height: 3.1vw;
+  }
+
+  .card-item_text {
+    font-size: 2.1vw;
+    line-height: 2.9vw;
+  }
+
+  .advantages_tooltiptext_mob {
+    display: flex;
+    flex: 1 1 100%;
+	  align-self: flex-start;
+    padding: 34px 30px 0 30px;
+    font-family: $font-family-main;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8vw;
+    line-height: 2.6vw;
+  }
+
+  .red-star_mob {
+    display: inline;
+    color: red;
+    margin-right: 14px;
+    font-size: 2.8vw;
+    line-height: 1.5;
+  }
+// end Avantages
+
+// Banner
+.main-picture-banner{
+  justify-content: flex-start;
+}
+
+.banner_aktivation_inner {
+  padding-left: 16px;
+  max-width: 360px;
+}
+
+.banner-title{
+  font-size: 3.6vw;
+  line-height: 4.4vw;
+}
+
+.banner__background-img {
+  display: none;
+}
+
+.main-picture-banner {
+  background: url(../img/app-banner-bg.svg) no-repeat right bottom, url(../img/icons/banner_bg.svg) no-repeat center;
+}
+// end Banner
 
 /* -------steps Tablet--------- */
-  
 .main-section-steps {
-  // position: relative;
-  // width: 100%;
   max-width: 768px;
   min-height: 370px;
   padding: 62px 0 58px 30px;
-  // background: $background-color-second;
-  // overflow: hidden;
 }
 
 .steps__title {
-  // display: block;
-  // width: 65%;
-  // min-height: 24px;
-  // margin: 0 auto;
-  // font-family: $font-family-main;
-  // font-style: normal;
-  // font-weight: 900;
   font-size: 2.6vw;
   line-height: 3.1vw;
-  // color: $text-color-heading;
-  // text-align: center;
-  // text-transform: uppercase;
 }
 
 .steps__card-wrap {
-  
-  /* position: relative; */
-  /* min-width: 931px; */
-  // overflow-x: auto;
-  // display: flex;
-  /* align-items: center; */
-  // scroll-snap-type: x mandatory;
-  // -webkit-overflow-scrolling: touch;
   /* margin-left: 30px; */
   margin-top: 46px;
 }
 
-// .steps__card-item {
-//   scroll-snap-align: start;
-//   flex: 0 0 190px;
-//   height: 180px;
-//   vertical-align: top;
-//   margin-left: 30px;
-// }
-
 .steps-card-item_number {
-  // display: inline-block;
-  // width: 11px;
-  // height: 22px;
-  // vertical-align: top;
-  // margin-left: 36px;
-  // font-family: $font-family-main;
-  // font-style: normal;
-  // font-weight: bold;
   font-size: 2.3vw;
   line-height: 2.9vw;
-  // color: $text-color-title;
 }
 
-// .steps-card-item_circle {
-//   display: inline-block;
-//   width: 80px;
-//   height: 80px;
-//   border-radius: 50%;
-//   background: linear-gradient(80.01deg, #65509B 6.19%, #4F90CC 93.82%);
-//   margin: 0 auto;
-//   z-index: 1;
-// }
-
-// .steps-card-item_img {
-//   display: block;
-//   margin: 25% auto;
-//   object-fit: contain;
-//   z-index: 2;
-// }
-
 .steps-card-item_text {
-  // width: 190px;
-  // margin-top: 20px;
-  // font-family: $font-family-main;
-  // font-style: normal;
-  // font-weight: normal;
   font-size: 2.1vw;
   line-height: 2.5vw;
-  // text-align: center;
-  // color: $text-color-main;
 }
 /* -------end steps Tablet--------- */
 
@@ -383,32 +456,8 @@ ul.menu-nav {
 }
 
 .socials-icons a {
-  min-width: 40px;
-  min-height: 40px;
-}
-
-.facebook {
-  background: url(../img/icons/icon-facebook.svg) no-repeat center;
-}
-
-.instagram {
-  background: url(../img/icons/icon-instagram.svg) no-repeat center;
-}
-
-.twitter {
-  background: url(../img/icons/icon-twitter.svg) no-repeat center;
-}
-
-.telegram {
-  background: url(../img/icons/icon-telegram.svg) no-repeat center;
-}
-
-.youtube {
-  background: url(../img/icons/icon-youtube.svg) no-repeat center;
-}
-
-.linkedin {
-  background: url(../img/icons/icon-linkedin.svg) no-repeat center;
+  max-width: 40px;
+  max-height: 40px;
 }
 
 .footer-nav {
@@ -485,92 +534,94 @@ ul.menu-nav {
 // Smartphones
 @include mediaSm {
 
+
+  // Advantages
+  .main-section-advantages {
+    padding: 72px 0 39px 0;
+  }
+
+  .advantages__title {
+    font-size: 5.0vw;
+    line-height: 6.1vw;
+  }
+
+  .card-item_text {
+    font-size: 4.4vw;
+    line-height: 6.1vw;
+  }
+
+  .advantages_tooltiptext_mob {
+    padding: 37px 30px 0 16px;
+    font-size: 3.9vw;
+    line-height: 5.6vw;
+  }
+
+  .red-star_mob {
+    display: inline;
+    color: red;
+    margin-right: 14px;
+    font-size: 3.9vw;
+    line-height: 1.5;
+  }
+// end Avantages
+
+// Banner
+.main-picture-banner {
+  min-height: 384px;
+}
+
+.banner-title{
+  font-size: 5.6vw;
+  line-height: 7.2vw;
+}
+
+.banner__app-store {
+  background-size: 113px 38px;
+  background-position: left;
+  margin-left: 5px;
+}
+
+.banner__google-play {
+  background-position: left;
+  background-size: 113px 33px;
+  margin-left: 5px;
+  margin-top: 15px;
+}
+// end Banner
+
  /* -------steps mob--------- */
  .main-section-steps {
-  // position: relative;
-  max-width: 360px;
-  min-height: 386px;
-  padding: 50px 0 58px 16px;
-  // background: $background-color-second;
-  // overflow: hidden;
+  padding: 50px 0 58px 0;
 }
 
 .steps__title {
-  // display: block;
-  // width: 70%;
-  // min-height: 44px;
-  // margin: 0 auto;
-  // font-family: $font-family-main;
-  // font-style: normal;
-  // font-weight: 900;
   font-size: 5vw;
   line-height: 6.1vw;
-  // color: $text-color-heading;
-  // text-align: center;
-  // text-transform: uppercase;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
-// .steps__card-wrap {
-//   display: flex;
-//   position: relative;
-//   overflow-x: auto;
-//   align-items: center;
-//   scroll-snap-type: x mandatory;
-//   -webkit-overflow-scrolling: touch;
-//   left: 16px;
-//   margin-top: 54px;
-// }
+.steps__card-wrap {
+  margin-top: 54px;
+}
 
-// .steps__card-item {
-//   scroll-snap-align: start;
-//   flex: 0 0 190px;
-//   height: 180px;
-//   vertical-align: top;
-// }
+.steps__card-wrap:before, .steps__card-wrap:after {
+  content: '';
+  flex: 0 0 16px;
+  height: 100%;
+}
 
 .steps-card-item_number {
-  // display: inline-block;
-  // width: 11px;
-  // height: 22px;
-  // vertical-align: top;
-  // margin-left: 36px;
-  // font-family: $font-family-main;
-  // font-style: normal;
-  // font-weight: bold;
   font-size: 5vw;
   line-height: 6.1vw;
-  // color: $text-color-title;
 }
-
-// .steps-card-item_circle {
-//   display: inline-block;
-//   width: 80px;
-//   height: 80px;
-//   border-radius: 50%;
-//   background: linear-gradient(80.01deg, #65509B 6.19%, #4F90CC 93.82%);
-//   margin: 0 auto;
-//   z-index: 1;
-// }
-
-// .steps-card-item_img {
-//   display: block;
-//   margin: 25% auto;
-//   object-fit: contain;
-//   z-index: 2;
-// }
 
 .steps-card-item_text {
-  // width: 190px;
-  // margin-top: 20px;
-  // font-family: $font-family-main;
-  // font-style: normal;
-  // font-weight: normal;
   font-size: 4.4vw;
   line-height: 5.3vw;
-  // text-align: center;
-  // color: $text-color-main;
 }
 /* -------end steps mobile--------- */
+
 
 
 /* -------footer mob--------- */
@@ -597,40 +648,16 @@ ul.menu-nav {
 }
 
 .socials-icons {
-  display: flex;
+  
   min-width: 282px;
-  grid-column: 2 / 3;
+  
   align-self: center;
   justify-content: space-between;
 }
 
 .socials-icons a {
-  min-width: 40px;
-  min-height: 40px;
-}
-
-.facebook {
-  background: url(/dist/img/icons/icon-facebook.svg) no-repeat;
-}
-
-.instagram {
-  background: url(/dist/img/icons/icon-instagram.svg) no-repeat;
-}
-
-.twitter {
-  background: url(/dist/img/icons/icon-twitter.svg) no-repeat;
-}
-
-.telegram {
-  background: url(/dist/img/icons/icon-telegram.svg) no-repeat;
-}
-
-.youtube {
-  background: url(/dist/img/icons/icon-youtube.svg) no-repeat;
-}
-
-.linkedin {
-  background: url(/dist/img/icons/icon-linkedin.svg) no-repeat;
+  max-width: 40px;
+  max-height: 40px;
 }
 
 .footer-nav {
