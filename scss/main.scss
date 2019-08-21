@@ -223,6 +223,7 @@ HTML {
   height: 470px;
   background: url(../img/picture_bg.svg) no-repeat 100% 100%;
   background-size: cover;
+  overflow: hidden;
 }
 
 .main-picture > .container {
@@ -273,6 +274,7 @@ HTML {
 	flex-wrap: wrap;
 	padding: 106px 0 112px 0;
   background-color: $background-color-second;
+  overflow: hidden;
 }
 
 .advantages__title {
