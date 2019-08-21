@@ -254,6 +254,42 @@ HTML {
 .lang-desk-none {
   display: none; }
 
+.main-picture {
+  width: 100%;
+  height: 470px;
+  background: url(../img/picture_bg.svg) no-repeat 100% 100%;
+  background-size: cover; }
+
+.main-picture > .container {
+  height: 470px;
+  background: url(../img/picture_bg_man.svg) no-repeat right bottom;
+  justify-content: flex-start;
+  align-items: center; }
+
+.main-picture__bg_center {
+  margin-left: 7px;
+  margin-top: 109px; }
+
+.picture-text-wrapper {
+  flex-flow: 0 0 364px;
+  flex: row wrap;
+  justify-content: center;
+  margin-left: 160px; }
+
+.main-picture__title {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 60px;
+  color: #FFFFFF;
+  margin-top: 6px; }
+
+.main-picture__text {
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+  margin-top: 12px; }
+
 .main-section-advantages {
   display: flex;
   justify-content: center;
@@ -892,6 +928,7 @@ HTML {
       .menu-btn.close .btn-line:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -6px); }
   .menu {
+    position: absolute;
     top: 58px;
     width: 100%;
     visibility: hidden;
@@ -969,6 +1006,43 @@ HTML {
   .nav-icons__item_search,
   .header-bottom {
     display: none; }
+  .main-picture {
+    width: 100%;
+    height: 967px;
+    background: url(../img/picture_bg_tab.svg) no-repeat 100% 100%;
+    background-size: cover; }
+  .main-picture > .container {
+    width: 768px;
+    height: 967px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: url(../img/picture_bg_man_tab.svg) no-repeat right;
+    background-size: cover; }
+  .main-picture__bg_center {
+    position: relative;
+    left: 200px;
+    top: 50px;
+    margin-left: 7px;
+    margin-top: 109px; }
+  .picture-text-wrapper {
+    width: 564px;
+    flex-flow: 0 0 564px;
+    flex: row wrap;
+    justify-content: flex-start;
+    margin-left: 34px; }
+  .main-picture__title {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 60px;
+    color: #FFFFFF;
+    margin-top: 6px; }
+  .main-picture__text {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-top: 12px; }
   .main-section-advantages {
     padding: 61px 0; }
   .advantages__card-wrap {
