@@ -1,6 +1,9 @@
 // Widescreen
 @include mediaXl {
 
+  .menu-btn {
+    display: none;
+  }
 
 // Avantages
   .advantages__title {
@@ -79,6 +82,10 @@
 
 // Desktops & Laptops
 @include mediaLg {
+
+  .menu-btn {
+    display: none;
+  }
 
 // Banner
 .banner-title{
@@ -301,23 +308,75 @@
 // Tablets & Small Laptops
 @include mediaMd {
   
-
-
-ul.menu-nav {
-  float: none;
-  width: 100%;
-  min-height: 0;
-
-  &.show {
-    transform: translate3d(0, 0, 0);
+  // Menu
+  .menu-btn {
+    display: block;
   }
-}
 
-  .menu-nav {
-    height: 75vh;
-    transform: translate3d(100%, 0, 0);
-    font-size: 44px;
+  .nav-page-desk-none {
+    display: block;
   }
+
+  .lang-desk-none {
+    display: inline-flex;
+  }
+
+  .container {
+    width: $container-width-tab;
+  }
+
+  .header-top_inner {
+    flex: 0 1 768px;
+    // margin-right: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-btn {
+    margin: 20px 0 10px 30px;
+  }
+
+  @import 'menu';
+
+
+
+  .logo {
+    // display: flex;
+    width: 98px;
+    height: 31px;
+    // margin-right: 42px;
+    margin-left: 38px;
+  }
+  
+  .logo > img {
+    width: 98px;
+    height: 31px;
+    object-fit: cover;
+  }
+
+  .nav-icons__item:last-of-type {
+    display: none;
+  }
+
+  .nav-icons {
+    display: flex;
+    flex: 0 0 126px;
+    min-height: 30px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+  }
+  
+  
+
+  .nav-site, 
+  .language-switch_desktop, 
+  .nav-icons__item_search,
+  .header-bottom {
+    display: none;
+  }
+
 
   // Advantages
   .main-section-advantages {
@@ -533,6 +592,93 @@ ul.menu-nav {
  
 // Smartphones
 @include mediaSm {
+ 
+  .container {
+    width: $container-width-mob;
+  }
+
+  .header-top_inner {
+    flex: 0 1 360px;
+    // margin-right: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-btn {
+    margin: 14px 0 14px 21px;
+  }
+
+ul.menu-nav {
+  float: none;
+  width: 322px;
+  min-height: 0;
+
+  &.show {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+  .menu-nav {
+    height: 211px;
+    transform: translate3d(-100%, 0, 0);
+    font-style: normal;
+    font-weight: 900;
+    line-height: 19px;
+    font-size: 16px;
+  }
+
+  .logo {
+    width: 82px;
+    height: 26px;
+    // margin-right: 42px;
+    margin-left: 68px;
+  }
+  
+  .logo > img {
+    width: 82px;
+    height: 26px;
+    object-fit: cover;
+  }
+
+  // .nav-icons__item:last-of-type {
+  //   display: none;
+  // }
+
+  .nav-icons {
+    display: flex;
+    flex: 0 0 80px;
+    min-height: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 16px;
+  }
+
+  .nav-icons__item {
+    display: flex;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .nav-icons__item_profile {
+    width: 20px;
+    height: 20px;
+    background: url(../img/icons/profile_mob.svg) no-repeat;
+  }
+  
+  .nav-icons__item_wallet {
+    width: 20px;
+    height: 20px;
+    background: url(../img/icons/wallet_mob.svg) no-repeat;
+    background-size: contain;
+  }
+  
+  .nav-icons__item_pin {
+    width: 20px;
+    height: 20px;
+    background: url(../img/icons/pin_mob.svg) no-repeat;
+  }
+  
 
 
   // Advantages
