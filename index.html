@@ -5,57 +5,114 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/reset.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> -->
   <link rel="stylesheet" href="css/main.css">
   <title>LifeCell Screen Protection</title>
 </head>
-<body class="body-grid-wrap">
+<body>
   
-    <header class="header">
-      <div class="menu-btn">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-      </div>
-      <ul class="nav-site">
-        <li><a class="nav-site__item" href="#">Индивидуальный</a></li>
-        <li><a class="nav-site__item" href="#">Бизнес</a></li>
-        <li><a class="nav-site__item" href="#">Про компанию</a></li>
-      </ul>
-      <a class="logo" href="#"></a>
-      <ul class="nav-icons">
-        <li class="nav-icons__item"><a href="#" class="nav-icons__item_profile"></a></li>
-        <li class="nav-icons__item"><a href="#" class="nav-icons__item_wallet"></a></li>
-        <li class="nav-icons__item"><a href="#" class="nav-icons__item_pin"></a></li>
-        <li class="nav-icons__item"><a href="#" class="nav-icons__item_search"></a></li>
-      </ul>
-      <div class="nav-page-bg"></div>
-      <nav class="nav-page menu">
-        <ul class="menu-nav">
-          <li class="nav-item">
-            <a href="#advantages" class="nav-page__item nav-link">Преимущества</a>
-          </li>
-          <li class="nav-item current">
-            <a href="#packages" class="nav-page__item nav-link">Пакеты</a>
-          </li>
-          <li class="nav-item">
-            <a href="#steps" class="nav-page__item nav-link">Что делать при повреждении экрана</a>
-          </li>  
-          <li class="nav-item">
-            <a href="#questions" class="nav-page__item nav-link">Вопросы и ответы</a>
-          </li>  
-          <li class="nav-item">
-            <a href="#picture" class="nav-page__item nav-link">Защита экрана</a>
-          </li>  
-          <li class="nav-item">
-            <a class="language-switch nav-link" href="#">  
-              <div class="language-globe"></div>
-              <p class="language-value">УКР</p>
-              <div class="language-toggle"></div>
+    <header class="header"> 
+      <div class="header-top">
+        <div class="container">
+          <div class="header-top_inner">
+            <div class="menu-btn">
+              <div class="btn-line"></div>
+              <div class="btn-line"></div>
+              <div class="btn-line"></div>
+            </div>
+            <ul class="nav-site">
+              <li><a class="nav-site__item" href="#">Индивидуальный</a></li>
+              <li><a class="nav-site__item" href="#">Бізнес</a></li>
+              <li><a class="nav-site__item current-text" href="#">Про компанию</a></li>
+            </ul>
+            <a class="logo" href="#">
+              <img src="img/icons/logo_desktop.svg" alt="Company's logo">
             </a>
-          </li>
-        </ul>
-      </nav>
+            <a class="language-switch_desktop" href="#">  
+                <div class="language-globe"></div>
+                <p class="language-value">УКР</p>
+                <div class="language-toggle-arrow"></div>
+            </a>
+            <ul class="nav-icons">
+              <li class="nav-icons__item"><a href="#" class="nav-icons__item_profile"></a></li>
+              <li class="nav-icons__item"><a href="#" class="nav-icons__item_wallet"></a></li>
+              <li class="nav-icons__item"><a href="#" class="nav-icons__item_pin"></a></li>
+              <li class="nav-icons__item"><a href="#" class="nav-icons__item_search"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <nav class="nav-page-desk-none menu">
+          <ul class="menu-nav">
+            <li class="nav-item">
+              <a href="#advantages" class="nav-page__item nav-link">
+                Преимущества
+              </a>
+            </li>
+            <li class="nav-item current">
+              <a href="#packages" class="nav-page__item nav-link">
+                Пакеты
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#steps" class="nav-page__item nav-link">
+                Что делать при повреждени экрана
+              </a>
+            </li>  
+            <li class="nav-item">
+              <a href="#questions" class="nav-page__item nav-link">
+                Вопросы и ответы
+              </a>
+            </li>  
+            <li class="nav-item lang-desk-none">
+              <a class="language-switch_mob nav-link" href="#">  
+                <div class="language-globe"></div>
+                <p class="language-value">УКР</p>
+                <div class="language-toggle-arrow"></div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      <div class="header-bottom">
+        <div class="container">
+          <nav class="nav-page menu">
+            <ul class="menu-nav">
+              <li class="nav-item">
+                <a href="#advantages" class="nav-page__item nav-link">
+                  Преимущества
+                </a>
+              </li>
+              <li class="nav-item current">
+                <a href="#packages" class="nav-page__item nav-link">
+                  Пакеты
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#steps" class="nav-page__item nav-link">
+                  Что делать при повреждени экрана
+                </a>
+              </li>  
+              <li class="nav-item">
+                <a href="#questions" class="nav-page__item nav-link">
+                  Вопросы и ответы
+                </a>
+              </li>  
+              <li class="nav-item">
+                <a href="#picture" class="nav-page__item nav-link">
+                  Защита экрана
+                </a>
+              </li>  
+              <li class="nav-item lang-desk-none">
+                <a class="language-switch_mob nav-link" href="#">  
+                  <div class="language-globe"></div>
+                  <p class="language-value">УКР</p>
+                  <div class="language-toggle-arrow"></div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
 
     <div class="main-picture" id="picture">
