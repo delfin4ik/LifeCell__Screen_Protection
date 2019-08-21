@@ -30,7 +30,7 @@ HTML {
   flex-flow: row nowrap;
   justify-content: center;
   flex: 0 1 auto;
-  overflow: hidden;
+  // overflow-x: hidden;
 }
 
 .clearfix::after {
@@ -223,13 +223,14 @@ HTML {
   height: 470px;
   background: url(../img/picture_bg.svg) no-repeat 100% 100%;
   background-size: cover;
-  overflow: hidden;
+  // overflow-x: hidden;
 }
 
 .main-picture > .container {
   // width: $container-width-desktop;
   height: 470px;
   background: url(../img/picture_bg_man.svg) no-repeat right bottom;
+  background-size: contain;
   justify-content: flex-start;
   align-items: center;
 
@@ -308,7 +309,20 @@ HTML {
 }
 
 .advantages__card-wrap .advantages__card-item:nth-child(1) {
-  margin-left: 0;
+  margin-left: 0px;
+}
+
+.advantages__card-item:nth-child(1) {
+  margin-right: -35px;
+}
+
+.advantages__card-item:nth-child(2) {
+  margin-right: -35px;
+ 
+}
+
+.advantages__card-item:nth-child(2) {
+  margin-right: -7px;
 }
 
 .card-item_circle {
