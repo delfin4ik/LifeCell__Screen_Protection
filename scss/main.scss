@@ -212,6 +212,55 @@ HTML {
   display: none;
 }
 
+
+// Picture
+.main-picture {
+  width: 100%;
+  height: 470px;
+  background: url(../img/picture_bg.svg) no-repeat 100% 100%;
+  background-size: cover;
+}
+
+.main-picture > .container {
+  // width: $container-width-desktop;
+  height: 470px;
+  background: url(../img/picture_bg_man.svg) no-repeat right bottom;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.main-picture__bg_center {
+  // position: relative;
+  // left: 200px;
+  // top: 50px;
+  margin-left: 7px;
+  margin-top: 109px;
+}
+
+.picture-text-wrapper {
+  flex-flow: 0 0 364px;
+  flex: row wrap;
+  justify-content: center;
+  margin-left: 160px;
+}
+
+.main-picture__title {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 60px;
+  color: $background-color-main;
+  margin-top: 6px;
+}
+
+.main-picture__text {
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 26px;
+  color: $background-color-main;
+  margin-top: 12px;
+}
+
 // Advantages
 .main-section-advantages {
   display: flex;
