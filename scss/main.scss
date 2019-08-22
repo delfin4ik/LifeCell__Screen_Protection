@@ -820,6 +820,63 @@ HTML {
 }
 /* -------end steps--------- */
 
+// Questions
+.main-section-questions {
+  width: 100%;
+  min-height: 280px;
+  background-color: $background-color-main;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.questions-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.questions-btn-rectangle {
+  flex: 0 0 409.57px;
+  height: 41px;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #143354;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 16px #E5E5E5;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+  z-index: 1;
+}
+
+.questions-circle-btn {
+  flex: 0 0 45px;
+  height: 45px;
+  background: url(../img/icons/questions-arrow.svg) no-repeat center;
+  box-shadow: 0px 4px 16px #E5E5E5;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  margin-left: -20px;
+  z-index: 3;
+
+
+}
+
+.answer-wrap {
+  display: none;
+}
+
+
+
 /* -------footer desktop--------- */
 .footer {
   display: grid;
