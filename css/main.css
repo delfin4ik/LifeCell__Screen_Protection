@@ -808,7 +808,7 @@ HTML {
 .questions-circle-btn {
   flex: 0 0 45px;
   height: 45px;
-  background: url(/dist/img/icons/questions-arrow.svg) no-repeat center;
+  background: url(../img/icons/questions-arrow.svg) no-repeat center;
   box-shadow: 0px 4px 16px #E5E5E5;
   background-color: #FFFFFF;
   border-radius: 50%;
@@ -1313,36 +1313,37 @@ HTML {
     background: url(../img/picture_bg_tab.svg) no-repeat 100% 100%;
     background-size: cover;
     overflow: hidden; }
-  .main-picture > .container {
+  .picture-container {
     width: 768px;
     height: 967px;
     display: flex;
+    flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
     background: url(../img/picture_bg_man_tab.svg) no-repeat center;
     background-size: cover;
     overflow-x: hidden; }
-  .main-picture__bg_center {
-    margin-right: 207px;
-    margin-top: 209px; }
   .picture-text-wrapper {
-    width: 564px;
-    flex-flow: 0 0 564px;
-    flex: row wrap;
+    display: flex;
+    flex-flow: column nowrap;
     justify-content: flex-start;
-    margin-left: 34px; }
+    margin-left: 0px;
+    margin-top: 88px; }
   .main-picture__title {
-    font-weight: 800;
-    font-size: 50px;
-    line-height: 60px;
+    flex: 0 1 auto;
+    font-size: 80px;
+    line-height: 96px;
     color: #FFFFFF;
-    margin-top: 6px; }
+    margin: 7px 0 0 36px; }
   .main-picture__text {
-    font-weight: 800;
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 46px;
+    line-height: 55px;
     color: #FFFFFF;
-    margin-top: 12px; }
+    margin: 12px 0 0 45px; }
+  .main-picture__bg_center {
+    background-size: 448px 589px;
+    margin-left: 20px;
+    margin-top: 76px; }
   .main-section-advantages {
     padding: 61px 0; }
   .advantages__card-wrap {
@@ -1411,7 +1412,7 @@ HTML {
     flex: 0 0 288px;
     height: 220.46px;
     background: url(../img/packages__card_img1.jpg) no-repeat center;
-    background-size: contain;
+    background-size: cover;
     display: flex; }
   .packages__card_circle {
     flex: 0 0 65px;
@@ -1429,13 +1430,13 @@ HTML {
     flex: 0 0 288px;
     height: 220.46px;
     background: url(../img/packages__card_img2.svg) no-repeat center;
-    background-size: contain;
+    background-size: cover;
     display: flex; }
   .packages__card_img3 {
     flex: 0 0 288px;
     height: 220.46px;
     background: url(../img/packages__card_img3_bg.svg) no-repeat center, url(../img/packages__card_img3.svg) no-repeat center;
-    background-size: contain;
+    background-size: cover;
     display: flex; }
   .wrap-packages__card_title {
     flex: 0 0 288px;
@@ -1636,6 +1637,43 @@ HTML {
     width: 20px;
     height: 20px;
     background: url(../img/icons/pin_mob.svg) no-repeat; }
+  /*  Picture */
+  .main-picture {
+    width: 100%;
+    height: 580px;
+    background: url(../img/picture_bg_tab.svg) no-repeat 100% 100%;
+    background-size: cover;
+    overflow: hidden; }
+  .picture-container {
+    width: 360px;
+    height: 580px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: url(../img/picture_bg_man_tab.svg) no-repeat 100% 100%;
+    background-size: cover;
+    overflow-x: hidden; }
+  .picture-text-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    margin: 0px 13px 0 0px; }
+  .main-picture__title {
+    flex: 0 1 auto;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FFFFFF;
+    margin: 90px 0 0 15px; }
+  .main-picture__text {
+    font-size: 23px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin: 6px 0px 0 16px; }
+  .main-picture__bg_center {
+    background-size: 228px 298px;
+    margin-left: 0px;
+    margin-top: 6px; }
   .main-section-advantages {
     padding: 72px 0 39px 0; }
   .advantages__title {
