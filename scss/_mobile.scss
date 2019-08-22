@@ -382,53 +382,60 @@
   background: url(../img/picture_bg_tab.svg) no-repeat 100% 100%;
   background-size: cover;
   overflow: hidden;
+  // display: flex;
 }
 
-.main-picture > .container {
+.picture-container {
   width: $container-width-tab;
   height: 967px;
   display: flex;
+  flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: flex-start;
   background: url(../img/picture_bg_man_tab.svg) no-repeat center;
   background-size: cover;
   overflow-x: hidden;
+}
 
+.picture-text-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  // width: 100%;
+  
+  // flex-flow: 0 0 564px;
+  // flex-flow: row wrap;
+  justify-content: flex-start;
+  margin-left: 0px;
+  margin-top: 88px;
+  
+}
+
+.main-picture__title {
+  // font-weight: 800;
+  flex: 0 1 auto;
+  font-size: 80px;
+  line-height: 96px;
+  color: $background-color-main;
+  margin: 7px 0 0 36px;
+}
+
+
+.main-picture__text {
+  // font-weight: 800;
+  font-size: 46px;
+  line-height: 55px;
+  color: $background-color-main;
+  margin: 12px 0 0 45px;
 }
 
 .main-picture__bg_center {
   // position: relative;
   // left: 200px;
   // top: 50px;
-  margin-right: 207px;
-  margin-top: 209px;
+  background-size: 448px 589px;
+  margin-left: 20px;
+  margin-top: 76px;
 }
-
-.picture-text-wrapper {
-  // display: flex;
-  width: 564px;
-  flex-flow: 0 0 564px;
-  flex: row wrap;
-  justify-content: flex-start;
-  margin-left: 34px;
-}
-
-.main-picture__title {
-  font-weight: 800;
-  font-size: 50px;
-  line-height: 60px;
-  color: $background-color-main;
-  margin-top: 6px;
-}
-
-.main-picture__text {
-  font-weight: 800;
-  font-size: 22px;
-  line-height: 26px;
-  color: $background-color-main;
-  margin-top: 12px;
-}
-
 
   // Advantages
   .main-section-advantages {
@@ -581,7 +588,7 @@
   flex: 0 0 288px;
   height: 220.46px;
   background: url(../img/packages__card_img1.jpg) no-repeat center;
-  background-size: contain;
+  background-size: cover;
   display: flex;
 }
 
@@ -615,7 +622,7 @@
   flex: 0 0 288px;
   height: 220.46px;
   background: url(../img/packages__card_img2.svg) no-repeat center;
-  background-size: contain;
+  background-size: cover;
   display: flex;
 }
 
@@ -623,7 +630,7 @@
   flex: 0 0 288px;
   height: 220.46px;
   background: url(../img/packages__card_img3_bg.svg) no-repeat center, url(../img/packages__card_img3.svg) no-repeat center;
-  background-size: contain;
+  background-size: cover;
   display: flex;
 }
 
@@ -693,8 +700,6 @@
 .packages__circle_tooltiptext2 .packages-tooltiptext2 {
   display: none;
 }
-
-
 
 
 
@@ -1000,6 +1005,67 @@ ul.menu-nav {
     background: url(../img/icons/pin_mob.svg) no-repeat;
   }
   
+  /*  Picture */
+.main-picture {
+  width: 100%;
+  height: 580px;
+  background: url(../img/picture_bg_tab.svg) no-repeat 100% 100%;
+  background-size: cover;
+  overflow: hidden;
+  // display: flex;
+}
+
+.picture-container {
+  width: $container-width-mob;
+  height: 580px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: url(../img/picture_bg_man_tab.svg) no-repeat 100% 100%;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.picture-text-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  // width: 100%;
+  
+  // flex-flow: 0 0 564px;
+  // flex-flow: row wrap;
+  justify-content: flex-start;
+  margin: 0px 13px 0 0px;
+}
+
+.main-picture__title {
+  // font-weight: 800;
+  flex: 0 1 auto;
+  font-size: 40px;
+  line-height: 48px;
+  color: $background-color-main;
+  margin: 90px 0 0 15px;
+}
+
+
+.main-picture__text {
+  // font-weight: 800;
+ 
+  font-size: 23px;
+  line-height: 28px;
+  color: $background-color-main;
+  margin: 6px 0px 0 16px;
+}
+
+.main-picture__bg_center {
+  // position: relative;
+  // left: 200px;
+  // top: 50px;
+  background-size: 228px 298px;
+  margin-left: 0px;
+  margin-top: 6px;
+}
+
 
 
   // Advantages
@@ -1089,10 +1155,6 @@ ul.menu-nav {
 }
 
 .packages__card_wrap {
-  // display: flex;
-  // justify-content: center;
-  // align-content: flex-start;
-  // flex-wrap: wrap;
   flex: 0 0 288px;
   height: 355px;
   box-shadow: 0px 4px 30px rgba(196, 196, 196, 0.4);
@@ -1124,24 +1186,16 @@ ul.menu-nav {
   background-color: $background-color-icons;
   border-radius: 50%;
   margin: 6px 0 0 6px;
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: center;
-  // align-content: center;
 }
 
 .packages__card_discount {
   font-size: 18px;
   line-height: 22px;
-  // color: $background-color-header-top;
 }
 
 .packages__card_discount-text {
-  // font-style: normal;
-  // font-weight: bold;
   font-size: 12px;
   line-height: 14px;
-  // color: $background-color-header-top;
 }
 
 .packages__card_img2 {
@@ -1163,45 +1217,22 @@ ul.menu-nav {
 .wrap-packages__card_title {
   flex: 0 0 288px;
   height: 81.26px;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
 }
 
 .packages__card_title {
-  // display: flex;
-  // font-style: normal;
-  // font-weight: bold;
-  // font-size: 18px;
-  // line-height: 22px;
-  // color: $text-color-title;
   margin-top: 5px;
 }
 
 .packages__card_explanation {
-  // font-style: normal;
-  // font-size: 16px;
-  // line-height: 19px;
-  // font-weight: normal;
-  // color: $text-color-explain;
   margin-top: 7px;
 }
 
 .packages__card_price-wrap {
   flex: 0 0 288px;
   height: 53.28px;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // background-color: $background-color-second;
 }
 
 .packages__card_price {
-  // font-style: normal;
-  // font-size: 18px;
-  // line-height: 22px;
-  // color: $text-color-title;
   margin-bottom: 18px;
 }
 
@@ -1267,54 +1298,18 @@ ul.menu-nav {
 .main-section-questions {
   // width: 100%;
   min-height: 211px;
-  // background-color: $background-color-main;
-  // display: flex;
-  // flex-flow: row wrap;
-  // justify-content: center;
-  // align-content: center;
 }
 
 .questions-container {
   min-width: $container-width-mob;
-  // display: flex;
-  // flex-flow: row wrap;
-  // justify-content: center;
-  // text-align: center;
 }
 
 .questions-btn-rectangle {
   flex: 0 0 320px;
   height: 41px;
-  // font-style: normal;
-  // font-size: 20px;
-  // line-height: 24px;
-  // text-transform: uppercase;
-  // font-weight: 900;
-  // color: #143354;
-  // background: #FFFFFF;
-  // box-shadow: 0px 4px 16px #E5E5E5;
-  // border-radius: 5px;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // text-align: center;
-  // align-self: center;
-  // z-index: 1;
   margin-bottom: 50px;
 }
 
-// .questions-circle-btn {
-//   flex: 0 0 45px;
-//   height: 45px;
-//   background: url(/dist/img/icons/questions-arrow.svg) no-repeat center;
-//   box-shadow: 0px 4px 16px #E5E5E5;
-//   background-color: #FFFFFF;
-//   border-radius: 50%;
-//   margin-left: -20px;
-//   z-index: 3;
-
-
-// }
 
 /* -------footer mob--------- */
 .footer {
