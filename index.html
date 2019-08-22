@@ -13,7 +13,7 @@
   
     <header class="header"> 
       <div class="header-top">
-        <div class="container">
+        <div class="container header-container">
           <div class="header-top_inner">
             <div class="menu-btn">
               <div class="btn-line"></div>
@@ -74,7 +74,7 @@
           </ul>
         </nav>
       <div class="header-bottom">
-        <div class="container">
+        <div class="container header-container">
           <nav class="nav-page menu">
             <ul class="menu-nav">
               <li class="nav-item">
@@ -116,7 +116,7 @@
     </header>
 
     <div class="main-picture" id="picture">
-      <div class="container">
+      <div class="container picture-container">
         <div class="picture-text-wrapper">
           <h2 class="main-picture__title">Защита экрана</h2>
           <p class="main-picture__text">Разбить экран больше не страшно!</p>
@@ -171,44 +171,63 @@
       </div>
     </section>
 
-    <section class="main-section-packages">
-      <a name="packages"></a>
-      <h1 class="packages-header">Тарифные планы</h1>
-      <div class="packages-alternative">
-        <a href="#" class="packages-alternative_item">Неделя</a>
-        <a href="#" class="packages-alternative_item">Месяц</a>
-        <a href="#" class="packages-alternative_item">Год</a>
-      </div>
-      <div class="packages__card_wraper">
-        <div class="packages__card_wrap">
-          <div class="packages__card_img1"></div>
-          <div class="packages__card_circle"></div>
-          <p class="packages__card_discount">42%</p>
-          <p class="packages__card_discount-text">экономии</p>
-          <h2 class="packages__card_title">Тарифный план Эконом</h2>
-          <p class="packages__card_explanation">Компенсация 1500 грн</p>
-          <div class="packages__card_price-background"></div>
-          <p class="packages__card_price"><span>25</span> грн/<span>30</span> дней</span></p>
+    <section class="main-section-packages" id="packages">
+      <div class="container packages-container">
+        <h1 class="packages-header">Тарифные планы</h1>
+        <div class="packages-alternative">
+          <a href="#" class="packages-alternative_item">Неделя</a>
+          <a href="#" class="packages-alternative_item current-bg">Месяц</a>
+          <a href="#" class="packages-alternative_item">Год</a>
         </div>
-        <div class="packages__card_wrap">
-          <div class="packages__card_img2"></div>
-          <div class="packages__card_circle"></div>
-          <p class="packages__card_discount">31%</p>
-          <p class="packages__card_discount-text">экономии</p>
-          <h2 class="packages__card_title">Тарифный план Стандарт</h2>
-          <p class="packages__card_explanation">Компенсация 3 000 грн</p>
-          <div class="packages__card_price-background"></div>
-          <p class="packages__card_price"><span>45</span> грн/<span>30</span> дней</span></p>
-        </div>
-        <div class="packages__card_wrap">
-          <div class="packages__card_img3"></div>
-          <div class="packages__card_circle"></div>
-          <p class="packages__card_discount">18%</p>
-          <p class="packages__card_discount-text">экономии</p>
-          <h2 class="packages__card_title">Тарифный план Премиум</h2>
-          <p class="packages__card_explanation">Компенсация 10 000 грн</p>
-          <div class="packages__card_price-background"></div>
-          <p class="packages__card_price"><span>125</span> грн/<span>30</span> дней</span></p>
+        <div class="packages__card_wraper">
+          <div class="packages__card_wrap">
+            <div class="packages__card_img1">
+              <div class="packages__card_circle packages__circle_tooltiptext1">
+                <span class="packages-tooltiptext1">Экономия по отношению к месячной подписке</span>
+                <p class="packages__card_discount">42%</p>
+                <p class="packages__card_discount-text">экономии</p>
+              </div>
+            </div>
+            <div class="wrap-packages__card_title">
+              <h2 class="packages__card_title">Тарифный план Эконом</h2>
+              <p class="packages__card_explanation">Компенсация 1500 грн</p>
+            </div>
+            <div class="packages__card_price-wrap">
+              <p class="packages__card_price"><span>25</span> грн/<span>30</span> дней</span></p>
+            </div>
+          </div>
+          <div class="packages__card_wrap">
+            <div class="packages__card_img2">
+              <div class="packages__card_circle packages__circle_tooltiptext2">
+                  <span class="packages-tooltiptext2">Экономия по отношению к месячной подписке</span>
+                <p class="packages__card_discount">31%</p>
+                <p class="packages__card_discount-text">экономии</p>
+              </div>
+            </div>
+            <div class="wrap-packages__card_title">
+              <h2 class="packages__card_title">Тарифный план Стандарт</h2>
+              <p class="packages__card_explanation">Компенсация 3 000 грн</p>
+            </div>
+            <div class="packages__card_price-wrap">
+              <p class="packages__card_price"><span>45</span> грн/<span>30</span> дней</span></p>
+            </div>
+          </div>
+          <div class="packages__card_wrap">
+            <div class="packages__card_img3">
+              <div class="packages__card_circle packages__circle_tooltiptext2">
+                <span class="packages-tooltiptext2">Экономия по отношению к месячной подписке</span>
+                <p class="packages__card_discount">18%</p>
+                <p class="packages__card_discount-text">экономии</p>
+              </div>
+            </div>
+            <div class="wrap-packages__card_title">
+              <h2 class="packages__card_title">Тарифный план Премиум</h2>
+              <p class="packages__card_explanation">Компенсация 10 000 грн</p>
+            </div>
+            <div class="packages__card_price-wrap">
+              <p class="packages__card_price"><span>125</span> грн/<span>30</span> дней</span></p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
