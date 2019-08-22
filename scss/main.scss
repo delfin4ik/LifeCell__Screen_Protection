@@ -27,9 +27,9 @@ HTML {
   height: 100%;
   margin: 0 auto;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  flex: 0 1 auto;
+  // flex-flow: row nowrap;
+  // justify-content: center;
+  // flex: 0 1 auto;
   // overflow-x: hidden;
 }
 
@@ -49,6 +49,13 @@ HTML {
   height: 58px;
   background-color: $background-color-header-top;
   overflow: hidden;
+}
+
+.header-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  flex: 0 1 auto;
 }
 
 .header-top_inner {
@@ -226,10 +233,12 @@ HTML {
   // overflow-x: hidden;
 }
 
-.main-picture > .container {
+.picture-container {
   // width: $container-width-desktop;
+  flex-flow: row nowrap;
+  flex: 0 1 auto;
   height: 470px;
-  background: url(../img/picture_bg_man.svg) no-repeat right bottom;
+  background:  url(../img/picture_bg_man.svg) no-repeat right bottom;
   background-size: contain;
   justify-content: flex-start;
   align-items: center;
@@ -403,7 +412,274 @@ HTML {
   visibility: visible;
   @include easeOut();
 }
-// end Advantages
+/* end Advantages */
+
+/*  Packages */
+.main-section-packages {
+  width: 100%;
+  height: 827px;
+  background-color: $background-color-main;
+}
+
+.packages-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+	flex-wrap: wrap;
+}
+
+.packages-header {
+  flex: 1 1 100%;
+  text-align: center;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.packages-alternative {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	flex: 1 1 100%;
+}
+
+.packages-alternative_item {
+  flex: 0 0 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  background: $background-color-main;
+  border: 1px solid #AEAEAE;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: $text-color-heading;
+  margin: 46px 0 36px 0;
+}
+
+.packages-alternative_item:hover {
+  background: $background-color-icons;
+}
+
+.current-bg {
+  background: $background-color-icons;
+  border-left: 2px solid #AEAEAE;
+  border-right: 2px solid #AEAEAE;
+}
+
+.packages__card_wraper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 100%;
+  min-width: 1036px;
+}
+
+.packages__card_wrap {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  flex: 0 0 325px;
+  height: 533px;
+  box-shadow: 0px 4px 30px rgba(196, 196, 196, 0.4);
+}
+
+.packages__card_wrap:not(:last-of-type) {
+  margin-right: 27px;
+}
+
+.packages__card_wrap:nth-of-type(2) {
+  margin-left: 5px;
+}
+
+.packages__card_wrap:nth-of-type(3) {
+  margin-left: 5px;
+}
+
+.packages__card_img1 {
+  flex: 0 0 325px;
+  height: 331px;
+  background: url(../img/packages__card_img1.jpg) no-repeat bottom;
+  background-size: cover;
+  display: flex;
+}
+
+.packages__card_circle {
+  flex: 0 0 98px;
+  height: 98px;
+  background-color: $background-color-icons;
+  border-radius: 50%;
+  margin: 12px 0 0 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.packages__card_discount {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+  color: $background-color-header-top;
+}
+
+.packages__card_discount-text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: $background-color-header-top;
+}
+
+.packages__card_img2 {
+  flex: 0 0 325px;
+  height: 331px;
+  background: url(../img/packages__card_img2.svg) no-repeat center;
+  background-size: contain;
+  display: flex;
+}
+
+.packages__card_img3 {
+  flex: 0 0 325px;
+  height: 331px;
+  background: url(../img/packages__card_img3_bg.svg) no-repeat center, url(../img/packages__card_img3.svg) no-repeat center;
+  background-size: contain;
+  display: flex;
+}
+
+.wrap-packages__card_title {
+  flex: 0 0 325px;
+  height: 122px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.packages__card_title {
+  display: flex;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: $text-color-title;
+  margin-top: 5px;
+}
+
+.packages__card_explanation {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: normal;
+  color: $text-color-explain;
+  margin-top: 7px;
+}
+
+.packages__card_price-wrap {
+  flex: 0 0 325px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $background-color-second;
+}
+
+.packages__card_price {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: $text-color-title;
+  margin-bottom: 18px;
+}
+
+.packages__card_price > span {
+  font-weight: bold;
+}
+
+.packages__circle_tooltiptext1 {
+  cursor: pointer;
+  position: relative;
+}
+
+.packages__circle_tooltiptext1 .packages-tooltiptext1 {
+  visibility: hidden;
+  width: 136px;
+  background-color: $background-color-main;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+  color: $text-color-main;
+  border-radius: 1px;
+  box-shadow: 0px 4px 16px #E5E5E5;
+  text-align: start;
+  padding: 15px 21px;
+  position: absolute;
+  z-index: 1;
+  top: 37px;
+  right: 114px;
+}
+
+.packages__circle_tooltiptext1 .packages-tooltiptext1::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 13px;
+  border-style: solid;
+  border-color: transparent transparent transparent $background-color-main;
+}
+
+.packages__circle_tooltiptext1:hover .packages-tooltiptext1 {
+  visibility: visible;
+}
+
+.packages__circle_tooltiptext2 {
+  cursor: pointer;
+  position: relative;
+}
+
+.packages__circle_tooltiptext2 .packages-tooltiptext2 {
+  visibility: hidden;
+  width: 143px;
+  background-color: $background-color-main;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+  color: $text-color-main;
+  border-radius: 1px;
+  box-shadow: 0px 4px 16px #E5E5E5;
+  text-align: start;
+  padding: 15px 22px;
+  position: absolute;
+  z-index: 1;
+  top: 120px;
+  left: 60px;
+  margin-left: -60px;
+}
+
+.packages__circle_tooltiptext2 .packages-tooltiptext2::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 15%;
+  margin-left: -5px;
+  border-width: 13px;
+  border-style: solid;
+  border-color: transparent transparent $background-color-main transparent;
+}
+
+.packages__circle_tooltiptext2:hover .packages-tooltiptext2 {
+  visibility: visible;
+}
+
 
 // Banner
 .main-picture-banner {
