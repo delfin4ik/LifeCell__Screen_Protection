@@ -31,9 +31,9 @@ function toggleMenu () {
 };
 
 // Select DOM Items
-const questionsBtnRectangle = document.querySelectorAll('.questions-btn-rectangle');
-const answersWrap = document.querySelectorAll('.answers-wrap');
-const questionsCircleBtn = document.querySelectorAll('.questions-circle-btn');
+const questionsBtnRectangle = document.querySelector('.questions-btn-rectangle');
+const answersWrap = document.querySelector('.answers-wrap');
+const questionsCircleBtn = document.querySelector('.questions-circle-btn');
 
 // Set Initial State Of Menu
 let showQuestions = false;
@@ -42,16 +42,16 @@ questionsCircleBtn.addEventListener('click', toggleQuestions);
 
 function toggleQuestions () {
   if(!showQuestions) {
-    answersWrap.classList.add('close-answers');
-    questionsBtnRectangle.classList.remove('show-answers');
-    questionsCircleBtn.classList.remove('show-answers');
-
+    answersWrap.classList.remove('close-answers');
+    questionsBtnRectangle.classList.add('show-answers');
+    questionsCircleBtn.classList.add('show-answers');
+    
     // Set Menu State
     showQuestions = true;
   } else {
-    answersWrap.classList.remove('close-answers');
-    menu.classList.add('show-answers');
-    menuNav.classList.add('show-answers');
+    answersWrap.classList.add('close-answers');
+    questionsBtnRectangle.classList.remove('show-answers');
+    questionsCircleBtn.classList.remove('show-answers');
 
     // Set Menu State
     showQuestions = false;
