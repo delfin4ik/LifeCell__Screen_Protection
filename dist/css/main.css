@@ -803,7 +803,8 @@ HTML {
   justify-content: center;
   text-align: center;
   align-self: center;
-  z-index: 1; }
+  z-index: 1;
+  cursor: pointer; }
 
 .questions-circle-btn {
   flex: 0 0 45px;
@@ -813,10 +814,57 @@ HTML {
   background-color: #FFFFFF;
   border-radius: 50%;
   margin-left: -20px;
-  z-index: 3; }
+  z-index: 3;
+  cursor: pointer; }
 
-.answer-wrap {
+.answers-wrap.close-answers {
   display: none; }
+
+.close-answers {
+  display: none; }
+
+.show-answers {
+  margin-top: 72px;
+  margin-bottom: 64px; }
+
+.answers-wrap {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 0 0 943px;
+  align-items: flex-start; }
+
+.questions-title-inner {
+  min-width: 943px;
+  min-height: 72px;
+  border-top: 1px solid rgba(196, 196, 196, 0.72);
+  border-bottom: 1px solid rgba(196, 196, 196, 0.72);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start; }
+
+.questions-title-inner:nth-last-of-type(1) {
+  margin-bottom: 87px; }
+
+.question {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #001728;
+  margin: 26px 0; }
+
+.answers {
+  text-align: left;
+  min-height: 132px;
+  max-width: 798px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #001728;
+  margin: 6px 130px 26px 0; }
 
 /* -------footer desktop--------- */
 .footer {
@@ -1490,7 +1538,7 @@ HTML {
     font-size: 2.1vw;
     line-height: 2.5vw; }
   /* -------end steps Tablet--------- */
-  /* questions */
+  /* Questions Tab */
   .main-section-questions {
     width: 100%;
     min-height: 157px;
@@ -1507,6 +1555,17 @@ HTML {
   .questions-btn-rectangle {
     flex: 0 0 320px;
     height: 41px; }
+  .answers-wrap {
+    flex: 0 0 704px; }
+  .questions-title-inner {
+    min-width: 704px; }
+  .questions-title-inner:nth-last-of-type(1) {
+    margin-bottom: 104px; }
+  .answers {
+    min-height: 132px;
+    max-width: 608px;
+    margin: 6px 130px 25px 0; }
+  /* end Question Tab */
   /* -------footer Tablet--------- */
   .footer {
     display: grid;
@@ -1784,6 +1843,11 @@ HTML {
     background-size: 113px 33px;
     margin-left: 5px;
     margin-top: 15px; }
+  .banner__background-img {
+    flex: 0 1 246px;
+    max-height: 251px;
+    background: url(../img/app-banner-bg_mob.jpg) no-repeat center;
+    background-size: 246px 251px; }
   /* -------steps mob--------- */
   .main-section-steps {
     padding: 50px 0 58px 0; }
@@ -1814,6 +1878,18 @@ HTML {
     flex: 0 0 320px;
     height: 41px;
     margin-bottom: 50px; }
+  .answers-wrap {
+    flex: 0 0 328px; }
+  .questions-title-inner {
+    min-width: 328px; }
+  .questions-title-inner:nth-last-of-type(1) {
+    margin-bottom: 94px; }
+  .answers {
+    text-align: left;
+    min-height: 200px;
+    max-width: 316px;
+    margin: 6px 28px 12px 0; }
+  /* end Question Tab */
   /* -------footer mob--------- */
   .footer {
     display: grid;
