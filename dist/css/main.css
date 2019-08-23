@@ -824,7 +824,7 @@ HTML {
   display: none; }
 
 .show-answers {
-  margin-top: 72px;
+  margin-top: 119px;
   margin-bottom: 64px; }
 
 .answers-wrap {
@@ -1520,7 +1520,8 @@ HTML {
     display: none; }
   .main-picture-banner {
     background: url(../img/app-banner-bg.svg) no-repeat right bottom, url(../img/icons/banner_bg.svg) no-repeat center; }
-  /* -------steps Tablet--------- */
+  /*  end Banner Tab */
+  /* -------Steps Tablet--------- */
   .main-section-steps {
     max-width: 768px;
     min-height: 370px;
@@ -1546,15 +1547,19 @@ HTML {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-content: center; }
+    align-content: flex-start; }
   .questions-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    text-align: center; }
+    text-align: center;
+    margin-top: 48px; }
   .questions-btn-rectangle {
     flex: 0 0 320px;
     height: 41px; }
+  .show-answers {
+    margin-top: 0px;
+    margin-bottom: 48px; }
   .answers-wrap {
     flex: 0 0 704px; }
   .questions-title-inner {
@@ -1869,15 +1874,19 @@ HTML {
     font-size: 4.4vw;
     line-height: 5.3vw; }
   /* -------end steps mobile--------- */
-  /* questions */
+  /* Questions mob*/
   .main-section-questions {
     min-height: 211px; }
   .questions-container {
     min-width: 360px; }
+  .questions-container {
+    margin-top: 56px; }
   .questions-btn-rectangle {
     flex: 0 0 320px;
-    height: 41px;
-    margin-bottom: 50px; }
+    height: 41px; }
+  .show-answers {
+    margin-top: 0px;
+    margin-bottom: 56px; }
   .answers-wrap {
     flex: 0 0 328px; }
   .questions-title-inner {
