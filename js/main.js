@@ -28,4 +28,33 @@ function toggleMenu () {
     // Set Menu State
     showMenu = false;
   }
-}
+};
+
+// Select DOM Items
+const questionsBtnRectangle = document.querySelectorAll('.questions-btn-rectangle');
+const answersWrap = document.querySelectorAll('.answers-wrap');
+const questionsCircleBtn = document.querySelectorAll('.questions-circle-btn');
+
+// Set Initial State Of Menu
+let showQuestions = false;
+
+questionsCircleBtn.addEventListener('click', toggleQuestions);
+
+function toggleQuestions () {
+  if(!showQuestions) {
+    answersWrap.classList.add('close-answers');
+    questionsBtnRectangle.classList.remove('show-answers');
+    questionsCircleBtn.classList.remove('show-answers');
+
+    // Set Menu State
+    showQuestions = true;
+  } else {
+    answersWrap.classList.remove('close-answers');
+    menu.classList.add('show-answers');
+    menuNav.classList.add('show-answers');
+
+    // Set Menu State
+    showQuestions = false;
+  }
+};
+
