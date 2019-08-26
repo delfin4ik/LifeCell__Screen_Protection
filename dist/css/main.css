@@ -878,6 +878,7 @@ HTML {
   background: url(../img/icons/questions-arrow-up.svg) no-repeat right center; }
 
 .answers {
+  display: none;
   text-align: left;
   min-height: 132px;
   max-width: 798px;
