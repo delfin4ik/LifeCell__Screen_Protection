@@ -8,6 +8,40 @@
   <!-- <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> -->
   <link rel="stylesheet" href="css/main.css">
   <title>LifeCell Screen Protection</title>
+  <script>
+        var mobdevwith = 640;
+        var descdevwith = 1024;
+        var windowOrientation = getOrientation();
+        var viewport = document.getElementById('viewport');
+        setViewport();
+        window.addEventListener('resize', function () {
+            if (!window.screen || window.screen.width < 768) {
+                var a = getOrientation();
+                if (a !== windowOrientation) {
+                    windowOrientation = a;
+                    setViewport()
+                }
+            }
+        });
+
+        function getOrientation() {
+            var a = window.innerWidth / window.innerHeight;
+            return a > 1 ? 'landscape' : 'portrait'
+        }
+
+        function setViewport() {
+            setTimeout(function () {
+                viewport.setAttribute('content', 'width=device-width ,initial-scale=1.0, user-scalable=0');
+                if (window.innerWidth <= mobdevwith) {
+                    var a = window.innerWidth / mobdevwith;
+                    viewport.setAttribute('content', 'width=' + mobdevwith + ', initial-scale=' + a + ', user-scalable=0')
+                }
+                if (-1 < navigator.userAgent.indexOf('Macintosh')) {
+                    viewport.setAttribute('content', 'width=' + descdevwith)
+                }
+            }, 0);
+        }
+    </script>
 </head>
 <body>
   
@@ -171,7 +205,7 @@
       </div>
     </section>
 
-    <section class="main-section-packages" id="packages">
+    <main class="main-section-packages" id="packages">
       <div class="container packages-container">
         <h1 class="packages-header">Тарифные планы</h1>
         <div class="packages-alternative">
@@ -230,7 +264,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </main>
 
     <section class="main-picture-banner">
       <div class="banner_aktivation_inner">
@@ -281,58 +315,58 @@
         <div class="questions-circle-btn"></div>
           <div class="answers-wrap close-answers">
             <div class="questions-title-inner">
-              <p class="question">Что такое "защита экрана"?</p>
+              <p class="question question-arrow-close">Что такое "защита экрана"?</p>
               <p class="answers close-answers">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odio doloremque dolor eaque modi animi provident tempora, laborum saepe inventore asperiores molestias, minus, dicta culpa officiis cupiditate dolore reprehenderit illum?</p>
             </div>
             <div class="questions-title-inner">
-              <p class="question">Как активируется услуга?</p>
+              <p class="question question-arrow-open">Как активируется услуга?</p>
               <p class="answers">Для активации услуги нужно загрузить приложение “Защита экрана” с Google Play или App Store и проверить экран на отсутствие повреждений. Телефоны, поддерживающие приложение “защита Экрана”:
                 <br>- Android версии 4.1 и выше;
                 <br>- IOS версии 9 и выше
               </p>
             </div>
             <div class="questions-title-inner">
-              <p class="question">Что делать при повреждении экрана?</p>
+              <p class="question question-arrow-close">Что делать при повреждении экрана?</p>
               <p class="answers close-answers">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odio doloremque dolor eaque modi animi provident tempora, laborum saepe inventore asperiores molestias, minus, dicta culpa officiis cupiditate dolore reprehenderit illum?</p>
             </div>
             <div class="questions-title-inner">
-              <p class="question">Как получить логин и пароль от личного кабинета?</p>
+              <p class="question question-arrow-close">Как получить логин и пароль от личного кабинета?</p>
               <p class="answers close-answers">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odio doloremque dolor eaque modi animi provident tempora, laborum saepe inventore asperiores molestias, minus, dicta culpa officiis cupiditate dolore reprehenderit illum?</p>
             </div>
             <div class="questions-title-inner">
-              <p class="question">Какой адрес сервисного центра?</p>
+              <p class="question question-arrow-close">Какой адрес сервисного центра?</p>
               <p class="answers close-answers">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odio doloremque dolor eaque modi animi provident tempora, laborum saepe inventore asperiores molestias, minus, dicta culpa officiis cupiditate dolore reprehenderit illum?</p>
             </div>
             <div class="questions-title-inner">
-              <p class="question">Кто оплачивает доставку телефона?</p>
+              <p class="question question-arrow-close">Кто оплачивает доставку телефона?</p>
               <p class="answers close-answers">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odio doloremque dolor eaque modi animi provident tempora, laborum saepe inventore asperiores molestias, minus, dicta culpa officiis cupiditate dolore reprehenderit illum?</p>
             </div>
             <div class="questions-title-inner">
-              <p class="question">Какие сроки выполнения ремонта?</p>
+              <p class="question question-arrow-close">Какие сроки выполнения ремонта?</p>
               <p class="answers close-answers">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odio doloremque dolor eaque modi animi provident tempora, laborum saepe inventore asperiores molestias, minus, dicta culpa officiis cupiditate dolore reprehenderit illum?</p>
             </div>
             <div class="questions-title-inner">
-              <p class="question">Что будет, если стоимость ремонта превышает компенсационную сумму?</p>
+              <p class="question question-arrow-close">Что будет, если стоимость ремонта превышает компенсационную сумму?</p>
               <p class="answers close-answers">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odio doloremque dolor eaque modi animi provident tempora, laborum saepe inventore asperiores molestias, minus, dicta culpa officiis cupiditate dolore reprehenderit illum?</p>
             </div>
             <div class="questions-title-inner">
-              <p class="question">В каких случаях выплачивается компенсация?</p>
+              <p class="question question-arrow-close">В каких случаях выплачивается компенсация?</p>
               <p class="answers close-answers">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odio doloremque dolor eaque modi animi provident tempora, laborum saepe inventore asperiores molestias, minus, dicta culpa officiis cupiditate dolore reprehenderit illum?</p>
             </div>
             <div class="questions-title-inner">
-              <p class="question">Можно ли использовать услугу на нескольких номерах?</p>
+              <p class="question question-arrow-close">Можно ли использовать услугу на нескольких номерах?</p>
               <p class="answers close-answers">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odio doloremque dolor eaque modi animi provident tempora, laborum saepe inventore asperiores molestias, minus, dicta culpa officiis cupiditate dolore reprehenderit illum?</p>
             </div>
             <div class="questions-title-inner">
-              <p class="question">Как отключить услугу?</p>
+              <p class="question question-arrow-close">Как отключить услугу?</p>
               <p class="answers close-answers">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odio doloremque dolor eaque modi animi provident tempora, laborum saepe inventore asperiores molestias, minus, dicta culpa officiis cupiditate dolore reprehenderit illum?</p>
             </div>
             <div class="questions-title-inner">
-              <p class="question">Какой период действия услуги?</p>
+              <p class="question question-arrow-close">Какой период действия услуги?</p>
               <p class="answers close-answers">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odio doloremque dolor eaque modi animi provident tempora, laborum saepe inventore asperiores molestias, minus, dicta culpa officiis cupiditate dolore reprehenderit illum?</p>
             </div>
             <div class="questions-title-inner">
-              <p class="question">Для чего необходим личный кабинет?</p>
+              <p class="question question-arrow-close">Для чего необходим личный кабинет?</p>
               <p class="answers close-answers">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odio doloremque dolor eaque modi animi provident tempora, laborum saepe inventore asperiores molestias, minus, dicta culpa officiis cupiditate dolore reprehenderit illum?</p>
             </div>
           </div>
@@ -340,7 +374,7 @@
     </section>
 
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
      <div class="footer-contacts_wrap">
        <p class="footer-notification">ООО «лайфселл» оставляет за собой право устанавливать и изменять тарифы (тарифные планы) на свои услуги, согласно Закону «Про телекоммуникации» от 18.11.2003 г. 1280-IV, изменять перечень таких Услуг, а так же изменять условия, сроки проведения Акции, досрочно прекращать, приостанавливать срок ее проведения в одностороннем порядке в соответствии с Условиями и порядком предоставления телекоммуникационных услуг ООО «лайфселл».</p>
        <div class="footer-contacts_inner contacts_inner-column1">

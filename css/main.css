@@ -399,7 +399,9 @@ HTML {
   z-index: 1;
   top: 78px;
   left: 40px;
-  margin-left: -100px; }
+  margin-left: -100px;
+  opacity: 0;
+  transition: opacity 1s; }
 
 .advantages_tooltiptext::after {
   content: "";
@@ -413,7 +415,7 @@ HTML {
 
 .advantages_tooltip:hover .advantages_tooltiptext {
   visibility: visible;
-  transition: all 0.5s ease-out; }
+  opacity: 1; }
 
 /* end Advantages */
 /*  Packages */
@@ -459,7 +461,8 @@ HTML {
   margin: 46px 0 36px 0; }
 
 .packages-alternative_item:hover {
-  background: #F5D300; }
+  background: #F5D300;
+  transition: all 0.5s ease-out; }
 
 .current-bg {
   background: #F5D300;
@@ -470,8 +473,7 @@ HTML {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1 1 100%;
-  min-width: 1036px; }
+  flex: 1 1 100%; }
 
 .packages__card_wrap {
   display: flex;
@@ -599,7 +601,9 @@ HTML {
   position: absolute;
   z-index: 1;
   top: 37px;
-  right: 114px; }
+  right: 114px;
+  opacity: 0;
+  transition: opacity 1s; }
 
 .packages__circle_tooltiptext1 .packages-tooltiptext1::after {
   content: "";
@@ -612,7 +616,8 @@ HTML {
   border-color: transparent transparent transparent #FFFFFF; }
 
 .packages__circle_tooltiptext1:hover .packages-tooltiptext1 {
-  visibility: visible; }
+  visibility: visible;
+  opacity: 1; }
 
 .packages__circle_tooltiptext2 {
   cursor: pointer;
@@ -635,7 +640,9 @@ HTML {
   z-index: 1;
   top: 120px;
   left: 60px;
-  margin-left: -60px; }
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 1s; }
 
 .packages__circle_tooltiptext2 .packages-tooltiptext2::after {
   content: "";
@@ -648,7 +655,8 @@ HTML {
   border-color: transparent transparent #FFFFFF transparent; }
 
 .packages__circle_tooltiptext2:hover .packages-tooltiptext2 {
-  visibility: visible; }
+  visibility: visible;
+  opacity: 1; }
 
 .main-picture-banner {
   display: flex;
@@ -810,12 +818,16 @@ HTML {
   flex: 0 0 45px;
   height: 45px;
   background: url(../img/icons/questions-arrow.svg) no-repeat center;
-  box-shadow: 0px 4px 16px #E5E5E5;
+  box-shadow: 0px 4px 16px #C4C4C4;
   background-color: #FFFFFF;
   border-radius: 50%;
   margin-left: -20px;
   z-index: 3;
   cursor: pointer; }
+
+.rotate {
+  transform: rotate(180deg);
+  box-shadow: 0px -4px 16px #C4C4C4; }
 
 .answers-wrap.close-answers {
   display: none; }
@@ -837,23 +849,33 @@ HTML {
   min-width: 943px;
   min-height: 72px;
   border-top: 1px solid rgba(196, 196, 196, 0.72);
-  border-bottom: 1px solid rgba(196, 196, 196, 0.72);
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  align-items: flex-start; }
+  align-items: flex-start;
+  padding-top: 26px; }
 
 .questions-title-inner:nth-last-of-type(1) {
-  margin-bottom: 87px; }
+  margin-bottom: 87px;
+  border-bottom: 1px solid rgba(196, 196, 196, 0.72); }
 
 .question {
+  width: 100%;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
   color: #001728;
-  margin: 26px 0; }
+  margin-bottom: 26px;
+  padding-right: 20px;
+  text-align: left; }
+
+.question-arrow-close {
+  background: url(../img/icons/questions-arrow.svg) no-repeat right center; }
+
+.question-arrow-open {
+  background: url(../img/icons/questions-arrow-up.svg) no-repeat right center; }
 
 .answers {
   text-align: left;

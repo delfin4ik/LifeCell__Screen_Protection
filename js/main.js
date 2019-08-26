@@ -35,7 +35,7 @@ const questionsBtnRectangle = document.querySelector('.questions-btn-rectangle')
 const answersWrap = document.querySelector('.answers-wrap');
 const questionsCircleBtn = document.querySelector('.questions-circle-btn');
 
-// Set Initial State Of Menu
+// Set Initial State Of Questions
 let showQuestions = false;
 
 questionsCircleBtn.addEventListener('click', toggleQuestions);
@@ -45,15 +45,17 @@ function toggleQuestions () {
     answersWrap.classList.remove('close-answers');
     questionsBtnRectangle.classList.add('show-answers');
     questionsCircleBtn.classList.add('show-answers');
+    questionsCircleBtn.classList.add('rotate');
     
-    // Set Menu State
+    // Set Questions State
     showQuestions = true;
   } else {
     answersWrap.classList.add('close-answers');
     questionsBtnRectangle.classList.remove('show-answers');
     questionsCircleBtn.classList.remove('show-answers');
+    questionsCircleBtn.classList.remove('rotate');
 
-    // Set Menu State
+    // Set Questions State
     showQuestions = false;
   }
 };
