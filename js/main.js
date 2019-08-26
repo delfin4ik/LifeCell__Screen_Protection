@@ -60,3 +60,18 @@ function toggleQuestions () {
   }
 };
 
+var acc = document.getElementsByClassName("question");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("question-arrow-close");
+    this.classList.toggle("question-arrow-open");
+    var answers = this.nextElementSibling;
+    if (answers.style.display === "block") {
+      answers.style.display = "none";
+    } else {
+      answers.style.display = "block";
+    }
+  });
+}
