@@ -395,6 +395,8 @@ HTML {
   top: 78px;
   left: 40px;
   margin-left: -100px;
+  opacity: 0;
+  transition: opacity 1s;
 }
 
 .advantages_tooltiptext::after {
@@ -410,7 +412,7 @@ HTML {
 
 .advantages_tooltip:hover .advantages_tooltiptext {
   visibility: visible;
-  @include easeOut();
+  opacity: 1;
 }
 /* end Advantages */
 
@@ -463,6 +465,7 @@ HTML {
 
 .packages-alternative_item:hover {
   background: $background-color-icons;
+  @include easeOut();
 }
 
 .current-bg {
@@ -476,7 +479,7 @@ HTML {
   justify-content: center;
   align-items: center;
   flex: 1 1 100%;
-  min-width: 1036px;
+  // min-width: 1036px;
 }
 
 .packages__card_wrap {
@@ -623,6 +626,8 @@ HTML {
   z-index: 1;
   top: 37px;
   right: 114px;
+  opacity: 0;
+  transition: opacity 1s;
 }
 
 .packages__circle_tooltiptext1 .packages-tooltiptext1::after {
@@ -638,6 +643,7 @@ HTML {
 
 .packages__circle_tooltiptext1:hover .packages-tooltiptext1 {
   visibility: visible;
+  opacity: 1;
 }
 
 .packages__circle_tooltiptext2 {
@@ -663,6 +669,8 @@ HTML {
   top: 120px;
   left: 60px;
   margin-left: -60px;
+  opacity: 0;
+  transition: opacity 1s;
 }
 
 .packages__circle_tooltiptext2 .packages-tooltiptext2::after {
@@ -678,6 +686,7 @@ HTML {
 
 .packages__circle_tooltiptext2:hover .packages-tooltiptext2 {
   visibility: visible;
+  opacity: 1;
 }
 
 
@@ -863,12 +872,17 @@ HTML {
   flex: 0 0 45px;
   height: 45px;
   background: url(../img/icons/questions-arrow.svg) no-repeat center;
-  box-shadow: 0px 4px 16px #E5E5E5;
+  box-shadow: 0px 4px 16px #C4C4C4;
   background-color: #FFFFFF;
   border-radius: 50%;
   margin-left: -20px;
   z-index: 3;
   cursor: pointer;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  box-shadow: 0px -4px 16px #C4C4C4;
 }
 
 .answers-wrap.close-answers {
@@ -889,37 +903,50 @@ HTML {
   flex-flow: column wrap;
   flex: 0 0 943px;
   align-items: flex-start;
-  // border-bottom: 1px solid rgba(196, 196, 196, 0.72);
 }
 
 .questions-title-inner {
   min-width: 943px;
   min-height: 72px;
   border-top: 1px solid rgba(196, 196, 196, 0.72);
-  border-bottom: 1px solid rgba(196, 196, 196, 0.72);
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: flex-start;
+  padding-top: 26px;
 }
 
 .questions-title-inner:nth-last-of-type(1) {
   margin-bottom: 87px;
+  border-bottom: 1px solid rgba(196, 196, 196, 0.72);
 }
 
+// .question::after {
+//   content: 
+//   align-self: flex-end;
+// }
+
 .question {
+  width: 100%;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
   color: $text-color-main;
-  margin: 26px 0;
+  margin-bottom: 26px;
+  padding-right: 20px;
+  text-align: left;
+  // background: url(../img/icons/questions-arrow.svg) no-repeat right center;
 }
 
-// .question::after {
-//   content: url(../img/icons/questions-arrow.svg);
-// }
+.question-arrow-close{
+  background: url(../img/icons/questions-arrow.svg) no-repeat right center;
+}
+
+.question-arrow-open{
+  background: url(../img/icons/questions-arrow-up.svg) no-repeat right center;
+}
 
 .answers {
   text-align: left;
