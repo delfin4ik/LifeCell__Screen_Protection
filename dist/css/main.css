@@ -99,8 +99,7 @@ HTML {
 .container {
   max-width: 1350px;
   height: 100%;
-  margin: 0 auto;
-  display: flex; }
+  margin: 0 auto; }
 
 .clearfix::after {
   content: "";
@@ -146,6 +145,9 @@ HTML {
   line-height: 17px;
   color: #FFFFFF;
   text-transform: uppercase; }
+
+.nav-site__item:hover {
+  color: #FAAF10; }
 
 .current-text {
   color: #FAAF10; }
@@ -272,6 +274,7 @@ HTML {
   background-size: cover; }
 
 .picture-container {
+  display: flex;
   flex-flow: row nowrap;
   flex: 0 1 auto;
   height: 470px;
@@ -664,57 +667,66 @@ HTML {
   opacity: 1; }
 
 .main-picture-banner {
+  background: url(../img/icons/banner_bg.svg) no-repeat center fixed;
+  background-size: cover; }
+
+.container-banner {
   display: flex;
   flex-wrap: wrap;
   min-height: 384px;
   justify-content: space-around;
-  align-items: stretch;
-  background: url(../img/icons/banner_bg.svg) no-repeat center fixed;
-  background-size: cover; }
+  align-items: stretch; }
 
 .banner_aktivation_inner {
-  flex: 0 1 352px;
+  flex: 0 1 370px;
   flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
-  align-content: center; }
+  align-content: flex-start; }
 
 .banner__background-img {
   flex: 0 1 406px;
   max-height: 384px;
-  background: url(../img/app-banner-bg.svg) no-repeat center; }
+  background: url(../img/app-banner-bg.svg) no-repeat center;
+  margin-left: -70px; }
 
 .banner-title {
-  flex: 1 1 352px;
+  flex: 1 1 360px;
   min-height: 90px;
   font-family: Lato, Arial, sans-serif;
+  font-weight: 800;
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
   color: #143354;
-  padding-bottom: 44px; }
+  padding-bottom: 44px;
+  margin-top: 82px; }
 
 .banner__app-store {
   flex: 1 1 156px;
   height: 53px;
-  background: url(../img/icons/app-store.svg) no-repeat center; }
+  background: url(../img/icons/app-store.svg) no-repeat center;
+  margin-left: -18px; }
 
 .banner__google-play {
   flex: 1 1 179px;
   height: 53px;
-  background: url(../img/icons/google-play.svg) no-repeat center; }
+  background: url(../img/icons/google-play.svg) no-repeat center;
+  margin-left: -15px; }
 
 /* -------steps--------- */
 .main-section-steps {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
   min-height: 398px;
   padding: 72px 5% 58px 5%;
   background: #F6F6F6;
   overflow: hidden; }
+
+.container-steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
 
 .steps__title {
   flex: 1 1 440px;
@@ -730,13 +742,14 @@ HTML {
 
 .steps__card-wrap {
   flex: 0 0 185px;
-  align-self: flex-start;
+  max-width: 931px;
+  align-self: center;
   overflow-x: auto;
   display: flex;
   justify-content: space-between;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  margin-top: 64px; }
+  margin-top: 45px; }
 
 .steps__card-item {
   scroll-snap-align: start;
@@ -904,13 +917,16 @@ HTML {
   grid-template-rows: 40.46%	10.69%	35.72%	13.13%; }
 
 .footer-contacts_wrap {
+  background: #F6F6F6; }
+
+.container-footer-contacts {
+  max-width: 1350px;
   display: grid;
   min-height: 265px;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   grid-template-columns: 12.15%	38%	4%	14.74%	3.04%	14.74%	13.33%;
-  grid-template-rows: 26.79%	47.55%	25.66%;
-  background: #F6F6F6; }
+  grid-template-rows: 26.79%	47.55%	25.66%; }
 
 .footer-notification {
   font-family: Lato, Arial, sans-serif;
@@ -1010,13 +1026,15 @@ HTML {
   max-height: 40px; }
 
 .footer-nav {
+  background: #143354; }
+
+.container-footer-nav {
   display: grid;
   min-height: 234px;
   grid-column: 1 / 2;
   grid-row: 3 / 4;
   grid-template-columns: 12.15%	20.52%	12.67%	20.52%	12.66%	9.33%	12.15%;
-  grid-template-rows: 34.19%	9.4%	12.82%	9.4%	34.19%;
-  background: #143354; }
+  grid-template-rows: 34.19%	9.4%	12.82%	9.4%	34.19%; }
 
 .footer-nav a {
   font-family: Lato, Arial, sans-serif;
@@ -1050,13 +1068,15 @@ HTML {
   grid-row: 4 / 5; }
 
 .footer-copyright {
+  background: #143354;
+  border-top: 2px solid #FFFFFF; }
+
+.container-footer-copyright {
   display: grid;
   min-height: 86px;
   grid-column: 1 / 2;
   grid-row: 4 / 5;
-  grid-template-columns: 12.15%	75.7%	12.15%;
-  background: #143354;
-  border-top: 2px solid #FFFFFF; }
+  grid-template-columns: 12.15%	75.7%	12.15%; }
 
 .footer-border {
   border: 2px solid #FFFFFF; }
@@ -1117,7 +1137,13 @@ HTML {
     line-height: 20px; }
   .socials-text {
     font-size: 14px;
-    line-height: 17px; } }
+    line-height: 17px; }
+  .footer-nav a {
+    font-size: 18px;
+    line-height: 22px; }
+  .footer-copyright_text {
+    font-size: 16px;
+    line-height: 19px; } }
 
 @media screen and (min-width: 769) and (max-width: 1350px) {
   .menu-btn {
@@ -1420,7 +1446,8 @@ HTML {
     color: #FFFFFF;
     margin: 12px 0 0 45px; }
   .main-picture__bg_center {
-    background-size: 448px 589px;
+    max-width: 448px;
+    max-height: 589px;
     margin-left: 20px;
     margin-top: 76px; }
   .main-section-advantages {
@@ -1572,18 +1599,9 @@ HTML {
   /* -------end steps Tablet--------- */
   /* Questions Tab */
   .main-section-questions {
-    width: 100%;
     min-height: 157px;
-    background-color: #FFFFFF;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: flex-start; }
+    flex-flow: row nowrap; }
   .questions-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    text-align: center;
     margin-top: 48px; }
   .questions-btn-rectangle {
     flex: 0 0 320px;
@@ -1609,6 +1627,8 @@ HTML {
     max-width: 768px;
     grid-template-columns: 1fr;
     grid-template-rows: 30.16%	47.09%	22.75%; }
+  .container {
+    max-width: 768px; }
   .footer-contacts_wrap {
     display: none; }
   .footer-socials {
@@ -1628,12 +1648,13 @@ HTML {
     max-width: 40px;
     max-height: 40px; }
   .footer-nav {
+    background: #143354; }
+  .container-footer-nav {
     grid-row: 2 / 3;
     display: grid;
     min-height: 178px;
     grid-template-columns: 3.91%	52.21%	3.91%	36.06%	3.91%;
-    grid-template-rows: 22.47%	12.36%	8.99%	12.36%	8.99%	12.36%	22.47%;
-    background: #143354; }
+    grid-template-rows: 22.47%	12.36%	8.99%	12.36%	8.99%	12.36%	22.47%; }
   .footer-nav a {
     font-family: Lato, Arial, sans-serif;
     font-style: normal;
@@ -1660,12 +1681,13 @@ HTML {
     grid-column: 4 / 5;
     grid-row: 6 / 7; }
   .footer-copyright {
+    border-top: 1px solid #FFFFFF; }
+  .container-footer-copyright {
     grid-row: 3 / 4;
     display: flex;
     height: 86px;
     padding-left: 30px;
-    background: #143354;
-    border-top: 1px solid #FFFFFF; }
+    background: #143354; }
   .footer-copyright_text {
     display: flex;
     align-self: center;
@@ -1746,7 +1768,7 @@ HTML {
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    background: url(../img/picture_bg_man_tab.svg) no-repeat 100% 100%;
+    background: url(../img/picture_bg_man_tab.svg) no-repeat center;
     background-size: cover;
     overflow-x: hidden; }
   .picture-text-wrapper {
@@ -1766,9 +1788,10 @@ HTML {
     color: #FFFFFF;
     margin: 6px 0px 0 16px; }
   .main-picture__bg_center {
-    background-size: 228px 298px;
+    width: 227px;
+    height: 298px;
     margin-left: 0px;
-    margin-top: 6px; }
+    margin-top: 35px; }
   .main-section-advantages {
     padding: 72px 0 39px 0; }
   .advantages__title {
@@ -1893,7 +1916,8 @@ HTML {
     margin-left: 16px;
     margin-right: 16px; }
   .steps__card-wrap {
-    margin-top: 54px; }
+    margin-top: 54px;
+    width: 360px; }
   .steps__card-wrap:before, .steps__card-wrap:after {
     content: '';
     flex: 0 0 16px;
@@ -1953,13 +1977,15 @@ HTML {
     max-width: 40px;
     max-height: 40px; }
   .footer-nav {
+    background: #143354; }
+  .container-footer-nav {
+    max-width: 360px;
     grid-row: 2 / 3;
     display: flex;
     height: 270px;
     flex-direction: column;
     padding-left: 41px;
-    justify-content: space-around;
-    background: #143354; }
+    justify-content: space-around; }
   .footer-nav a {
     font-family: Lato, Arial, sans-serif;
     font-style: normal;
@@ -1969,12 +1995,14 @@ HTML {
     text-decoration: none;
     color: #FFFFFF; }
   .footer-copyright {
+    background: #143354;
+    border-top: 1px solid #FFFFFF; }
+  .container-footer-copyright {
+    max-width: 360px;
     grid-row: 3 / 4;
     display: flex;
     height: 86px;
-    padding-left: 33px;
-    background: #143354;
-    border-top: 1px solid #FFFFFF; }
+    padding-left: 33px; }
   .footer-copyright_text {
     display: flex;
     align-self: center;
