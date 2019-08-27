@@ -4,44 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/reset.css">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> -->
   <link rel="stylesheet" href="css/main.css">
   <title>LifeCell Screen Protection</title>
-  <script>
-        var mobdevwith = 360;
-        var descdevwith = 1350;
-        var windowOrientation = getOrientation();
-        var viewport = document.getElementById('viewport');
-        setViewport();
-        window.addEventListener('resize', function () {
-            if (!window.screen || window.screen.width < 768) {
-                var a = getOrientation();
-                if (a !== windowOrientation) {
-                    windowOrientation = a;
-                    setViewport()
-                }
-            }
-        });
-
-        function getOrientation() {
-            var a = window.innerWidth / window.innerHeight;
-            return a > 1 ? 'landscape' : 'portrait'
-        }
-
-        function setViewport() {
-            setTimeout(function () {
-                viewport.setAttribute('content', 'width=device-width ,initial-scale=1.0, user-scalable=0');
-                if (window.innerWidth <= mobdevwith) {
-                    var a = window.innerWidth / mobdevwith;
-                    viewport.setAttribute('content', 'width=' + mobdevwith + ', initial-scale=' + a + ', user-scalable=0')
-                }
-                if (-1 < navigator.userAgent.indexOf('Macintosh')) {
-                    viewport.setAttribute('content', 'width=' + descdevwith)
-                }
-            }, 0);
-        }
-    </script>
 </head>
 <body>
   
@@ -62,11 +28,11 @@
             <a class="logo" href="#">
               <img src="img/icons/logo_desktop.svg" alt="Company's logo">
             </a>
-            <a class="language-switch_desktop" href="#">  
+            <div class="language-switch_desktop">  
                 <div class="language-globe"></div>
                 <p class="language-value">УКР</p>
                 <div class="language-toggle-arrow"></div>
-            </a>
+            </div>
             <ul class="nav-icons">
               <li class="nav-icons__item"><a href="#" class="nav-icons__item_profile"></a></li>
               <li class="nav-icons__item"><a href="#" class="nav-icons__item_wallet"></a></li>
@@ -310,7 +276,7 @@
     </section>
 
     <section class="main-section-questions" id="questions">
-      <div class="container questions-container">
+      <div class="container questions-container questions-flex-flow">
         <div class="questions-btn-rectangle">Вопросы и ответы</div>
         <div class="questions-circle-btn"></div>
           <div class="answers-wrap close-answers">

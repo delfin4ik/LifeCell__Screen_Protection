@@ -97,7 +97,7 @@ HTML {
   /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */ }
 
 .container {
-  width: 1350px;
+  max-width: 1350px;
   height: 100%;
   margin: 0 auto;
   display: flex; }
@@ -109,6 +109,10 @@ HTML {
 
 .menu-btn {
   display: none; }
+
+.header {
+  display: flex;
+  flex-flow: row wrap; }
 
 .header-top {
   width: 100%;
@@ -163,7 +167,8 @@ HTML {
   min-height: 20px;
   justify-content: space-between;
   align-items: center;
-  margin-right: 10px; }
+  margin-right: 10px;
+  cursor: pointer; }
 
 .language-globe {
   width: 20px;
@@ -220,9 +225,9 @@ HTML {
   display: none; }
 
 .header-bottom {
+  width: 100%;
   height: 50px;
-  background-color: #FAAF10;
-  overflow: hidden; }
+  background-color: #FAAF10; }
 
 .nav-page {
   flex: 0 1 1040px;
@@ -790,9 +795,14 @@ HTML {
 
 .questions-container {
   display: flex;
-  flex-flow: row wrap;
   justify-content: center;
   text-align: center; }
+
+.questions-flex-flow-nowrap {
+  flex-flow: row nowrap; }
+
+.questions-flex-flow-wrap {
+  flex-flow: row wrap; }
 
 .questions-btn-rectangle {
   flex: 0 0 409.57px;
@@ -830,9 +840,6 @@ HTML {
   box-shadow: 0px -4px 16px #C4C4C4; }
 
 .answers-wrap.close-answers {
-  display: none; }
-
-.close-answers {
   display: none; }
 
 .show-answers {
@@ -988,7 +995,8 @@ HTML {
   font-size: 1.0vw;
   line-height: 1.3vw;
   color: #143354;
-  padding-right: 21px; }
+  padding-right: 21px;
+  text-align: right; }
 
 .socials-icons {
   flex: 0 1 285px;

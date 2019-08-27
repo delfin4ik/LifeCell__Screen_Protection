@@ -34,6 +34,7 @@ function toggleMenu () {
 const questionsBtnRectangle = document.querySelector('.questions-btn-rectangle');
 const answersWrap = document.querySelector('.answers-wrap');
 const questionsCircleBtn = document.querySelector('.questions-circle-btn');
+const questionsContainer = document.querySelector('.questions-container');
 
 // Set Initial State Of Questions
 let showQuestions = false;
@@ -46,6 +47,8 @@ function toggleQuestions () {
     questionsBtnRectangle.classList.add('show-answers');
     questionsCircleBtn.classList.add('show-answers');
     questionsCircleBtn.classList.add('rotate');
+    questionsContainer.classList.remove('questions-flex-flow-nowrap');
+    questionsContainer.classList.add('questions-flex-flow-wrap');
     
     // Set Questions State
     showQuestions = true;
@@ -54,6 +57,8 @@ function toggleQuestions () {
     questionsBtnRectangle.classList.remove('show-answers');
     questionsCircleBtn.classList.remove('show-answers');
     questionsCircleBtn.classList.remove('rotate');
+    questionsContainer.classList.add('questions-flex-flow-nowrap');
+    questionsContainer.classList.remove('questions-flex-flow-wrap');
 
     // Set Questions State
     showQuestions = false;
