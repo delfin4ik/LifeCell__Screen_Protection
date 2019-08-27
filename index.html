@@ -34,10 +34,10 @@
                 <div class="language-toggle-arrow"></div>
             </div>
             <ul class="nav-icons">
-              <li class="nav-icons__item"><a href="#" class="nav-icons__item_profile"></a></li>
-              <li class="nav-icons__item"><a href="#" class="nav-icons__item_wallet"></a></li>
-              <li class="nav-icons__item"><a href="#" class="nav-icons__item_pin"></a></li>
-              <li class="nav-icons__item"><a href="#" class="nav-icons__item_search"></a></li>
+              <li title="Мой lifecell" class="nav-icons__item"><a href="#" class="nav-icons__item_profile"></a></li>
+              <li title="Пополнение счета" class="nav-icons__item"><a href="#" class="nav-icons__item_wallet"></a></li>
+              <li title="Магазины lifecell" class="nav-icons__item"><a href="#" class="nav-icons__item_pin"></a></li>
+              <li title="Поиск" class="nav-icons__item"><a href="#" class="nav-icons__item_search"></a></li>
             </ul>
           </div>
         </div>
@@ -121,7 +121,7 @@
           <h2 class="main-picture__title">Защита экрана</h2>
           <p class="main-picture__text">Разбить экран больше не страшно!</p>
         </div>
-        <img class="main-picture__bg_center" src="img/picture-phone.svg" alt="Phone">
+        <object class="main-picture__bg_center" type="image/svg+xml" data="img/picture-phone.svg" alt="Phone"></object>
       </div>
     </div>
 
@@ -233,50 +233,54 @@
     </main>
 
     <section class="main-picture-banner">
-      <div class="banner_aktivation_inner">
-        <h class="banner-title">Для активации установите приложение защита экрана</h>
-        <a href="#/" class="banner__app-store"></a>
-        <a href="#/" class="banner__google-play"></a>
+      <div class="container container-banner">
+        <div class="banner_aktivation_inner">
+          <h class="banner-title">Для активации установите приложение защита экрана</h>
+          <a href="#/" class="banner__app-store"></a>
+          <a href="#/" class="banner__google-play"></a>
+        </div>
+        <div class="banner__background-img"></div>
       </div>
-      <div class="banner__background-img"></div>
     </section>
 
     <section id="steps" class="main-section-steps">
-      <div class="steps__title">Что делать при повреждении экрана</div>
-      <div class="steps__card-wrap">
-        <div class="steps__card-item">
-          <div class="steps-card-item_number">1</div>
-          <div class="steps-card-item_circle">
-            <img src="img/icons/step1-bg-img.svg" class="steps-card-item_img step_1"></img>
+      <div class="container container-steps">
+        <div class="steps__title">Что делать при повреждении экрана</div>
+        <div class="steps__card-wrap">
+          <div class="steps__card-item">
+            <div class="steps-card-item_number">1</div>
+            <div class="steps-card-item_circle">
+              <img src="img/icons/step1-bg-img.svg" class="steps-card-item_img step_1"></img>
+            </div>
+            <div class="steps-card-item_text">Обратиться в круглосуточную службу поддержки</div>
           </div>
-          <div class="steps-card-item_text">Обратиться в круглосуточную службу поддержки</div>
-        </div>
-        <div class="steps__card-item">
-          <div class="steps-card-item_number">2</div>
-          <div class="steps-card-item_circle">
-            <img src="img/icons/step2-bg-img.svg" class="steps-card-item_img step_2"></img>
+          <div class="steps__card-item">
+            <div class="steps-card-item_number">2</div>
+            <div class="steps-card-item_circle">
+              <img src="img/icons/step2-bg-img.svg" class="steps-card-item_img step_2"></img>
+            </div>
+            <div class="steps-card-item_text">Отправить смартфон по адресу, указанному сотрудником сервисного центра</div>
           </div>
-          <div class="steps-card-item_text">Отправить смартфон по адресу, указанному сотрудником сервисного центра</div>
-        </div>
-        <div class="steps__card-item">
-          <div class="steps-card-item_number">3</div>
-          <div class="steps-card-item_circle">
-            <img src="img/icons/step3-bg-img.svg" class="steps-card-item_img step_3"></img>
+          <div class="steps__card-item">
+            <div class="steps-card-item_number">3</div>
+            <div class="steps-card-item_circle">
+              <img src="img/icons/step3-bg-img.svg" class="steps-card-item_img step_3"></img>
+            </div>
+            <div class="steps-card-item_text">Согласовать сроки выполнения ремонта экрана</div>
           </div>
-          <div class="steps-card-item_text">Согласовать сроки выполнения ремонта экрана</div>
-        </div>
-        <div class="steps__card-item">
-          <div class="steps-card-item_number">4</div>
-          <div class="steps-card-item_circle">
-            <img src="img/icons/step4-bg-img.svg" class="steps-card-item_img step_4"></img>
+          <div class="steps__card-item">
+            <div class="steps-card-item_number">4</div>
+            <div class="steps-card-item_circle">
+              <img src="img/icons/step4-bg-img.svg" class="steps-card-item_img step_4"></img>
+            </div>
+            <div class="steps-card-item_text">Получить отремонтированное устройство</div>
           </div>
-          <div class="steps-card-item_text">Получить отремонтированное устройство</div>
         </div>
       </div>
     </section>
 
     <section class="main-section-questions" id="questions">
-      <div class="container questions-container questions-flex-flow">
+      <div class="container questions-container questions-flex-flow-nowrap">
         <div class="questions-btn-rectangle">Вопросы и ответы</div>
         <div class="questions-circle-btn"></div>
           <div class="answers-wrap close-answers">
@@ -341,56 +345,63 @@
 
 
     <footer class="footer" role="contentinfo">
-     <div class="footer-contacts_wrap">
-       <p class="footer-notification">ООО «лайфселл» оставляет за собой право устанавливать и изменять тарифы (тарифные планы) на свои услуги, согласно Закону «Про телекоммуникации» от 18.11.2003 г. 1280-IV, изменять перечень таких Услуг, а так же изменять условия, сроки проведения Акции, досрочно прекращать, приостанавливать срок ее проведения в одностороннем порядке в соответствии с Условиями и порядком предоставления телекоммуникационных услуг ООО «лайфселл».</p>
-       <div class="footer-contacts_inner contacts_inner-column1">
-         <p class="footer-contacts_tel-1">+38 073 690 6911</p>
-         <p class="footer-contacts_mail">sp_support_ua@radarme.com</p>
-         <p class="footer-contacts_tel-2">5911</p>
-         <p class="footer-contacts_explain">Для активации и получения 
-            информации про услугу</p>
-       </div>
-       <div class="footer-contacts_inner contacts_inner-column2">
-        <p class="footer-contacts_tel-1">0 800 20 5433</p>
-        <p class="footer-contacts_mail">support@pm.lifecell.com.ua</p>
-        <p class="footer-contacts_tel-2">5433</p>
-        <p class="footer-contacts_explain">с мобильного LIFECELL</p>
+      <div class="footer-contacts_wrap">
+        <div class="container container-footer-contacts">
+          <p class="footer-notification">ООО «лайфселл» оставляет за собой право устанавливать и изменять тарифы (тарифные планы) на свои услуги, согласно Закону «Про телекоммуникации» от 18.11.2003 г. 1280-IV, изменять перечень таких Услуг, а так же изменять условия, сроки проведения Акции, досрочно прекращать, приостанавливать срок ее проведения в одностороннем порядке в соответствии с Условиями и порядком предоставления телекоммуникационных услуг ООО «лайфселл».</p>
+          <div class="footer-contacts_inner contacts_inner-column1">
+            <p class="footer-contacts_tel-1">+38 073 690 6911</p>
+            <p class="footer-contacts_mail">sp_support_ua@radarme.com</p>
+            <p class="footer-contacts_tel-2">5911</p>
+            <p class="footer-contacts_explain">Для активации и получения 
+              информации про услугу</p>
+          </div>
+          <div class="footer-contacts_inner contacts_inner-column2">
+            <p class="footer-contacts_tel-1">0 800 20 5433</p>
+            <p class="footer-contacts_mail">support@pm.lifecell.com.ua</p>
+            <p class="footer-contacts_tel-2">5433</p>
+            <p class="footer-contacts_explain">с мобильного LIFECELL</p>
+          </div>
+        </div>
       </div>
-     </div>
-     <div class="footer-socials">
-       <p class="socials-text">Присоединись к нам в наших социальных сетях</p>
-       <div class="socials-icons">
-        <a href="#" class="facebook">
-          <img src="img/icons/icon-facebook.svg" alt="icon facebook">
-        </a>
-        <a href="#" class="instagram">
-          <img src="img/icons/icon-instagram.svg" alt="icon instagram">
-        </a>
-        <a href="#" class="twitter">
-          <img src="img/icons/icon-twitter.svg" alt="icon twitter">
-        </a>
-        <a href="#" class="telegram">
-            <img src="img/icons/icon-telegram.svg" alt="icon telegram">
-        </a>
-        <a href="#" class="youtube">
-            <img src="img/icons/icon-youtube.svg" alt="icon youtube">
-        </a>
-        <a href="#" class="linkedin">
-            <img src="img/icons/icon-linkedin.svg" alt="icon linkedin">
-        </a>
-       </div>
-     </div>
-     <div class="footer-nav">
-       <a href="#" class="footer-nav_item1">Пользовательское соглашение</a>
-       <a href="#" class="footer-nav_item2">Правила предоставления услуги</a>
-       <a href="#" class="footer-nav_item3">Сервисный центр</a>
-       <a href="#" class="footer-nav_item4">Политика конфиденциальности</a>
-       <a href="#" class="footer-nav_item5">О компании</a>
-       <a href="#" class="footer-nav_item6">Абонентам</a>
-     </div>
-     <div class="footer-copyright">
-       <p class="footer-copyright_text">© 2004-2019, ТОВ «лайфселл». Усі права захищено.</p>
-     </div>
+        <div class="footer-socials">
+          <p class="socials-text">Присоединись к нам в наших социальных сетях</p>
+          <div class="socials-icons">
+            <a href="#" class="facebook">
+              <img src="img/icons/icon-facebook.svg" alt="icon facebook">
+            </a>
+            <a href="#" class="instagram">
+              <img src="img/icons/icon-instagram.svg" alt="icon instagram">
+            </a>
+            <a href="#" class="twitter">
+              <img src="img/icons/icon-twitter.svg" alt="icon twitter">
+            </a>
+            <a href="#" class="telegram">
+              <img src="img/icons/icon-telegram.svg" alt="icon telegram">
+            </a>
+            <a href="#" class="youtube">
+              <img src="img/icons/icon-youtube.svg" alt="icon youtube">
+            </a>
+            <a href="#" class="linkedin">
+              <img src="img/icons/icon-linkedin.svg" alt="icon linkedin">
+            </a>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <div class="container container-footer-nav">
+            <a href="#" class="footer-nav_item1">Пользовательское соглашение</a>
+            <a href="#" class="footer-nav_item2">Правила предоставления услуги</a>
+            <a href="#" class="footer-nav_item3">Сервисный центр</a>
+            <a href="#" class="footer-nav_item4">Политика конфиденциальности</a>
+            <a href="#" class="footer-nav_item5">О компании</a>
+            <a href="#" class="footer-nav_item6">Абонентам</a>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container container-footer-copyright">
+            <p class="footer-copyright_text">© 2004-2019, ТОВ «лайфселл». Усі права захищено.</p>
+          </div>
+        </div>
+      
     </footer>
   
   <script src="js/main.js"></script>
