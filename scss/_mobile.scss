@@ -448,6 +448,7 @@
   // Advantages
   .main-section-advantages {
     padding: 61px 0;
+    max-height: 329px;
   }
 
   .advantages__card-wrap {
@@ -716,22 +717,35 @@
   justify-content: flex-start;
 }
 
+.container-banner {
+  max-width: $container-width-tab;
+  justify-content: flex-start;
+}
+
 .banner_aktivation_inner {
+  flex: 0 1 420px;
   padding-left: 16px;
-  max-width: 360px;
+  max-width: 420px;
 }
 
 .banner-title{
+  flex: 1 1 410px;
+  min-height: 102px;
   font-size: 3.6vw;
   line-height: 4.4vw;
+  margin-top: 70px;
+  padding-bottom: 50px;
 }
 
 .banner__background-img {
-  display: none;
+  flex: 0 1 345px;
+  max-height: 352px;
+  margin-left: -25px;
+  margin-top: 31px;
 }
 
 .main-picture-banner {
-  background: url(../img/app-banner-bg.svg) no-repeat right bottom, url(../img/icons/banner_bg.svg) no-repeat center;
+  background: url(../img/icons/banner_bg.svg) no-repeat center;
 }
 /*  end Banner Tab */
 
@@ -1287,12 +1301,19 @@ ul.menu-nav {
 .banner-title{
   font-size: 5.6vw;
   line-height: 7.2vw;
+  flex: 1 1 293px;
+  min-height: 78px;
+  margin-top: 56px;
+  padding-bottom: 0;
+  padding-right: 25px;
 }
 
 .banner__app-store {
   background-size: 113px 38px;
   background-position: left;
-  margin-left: 5px;
+  margin-right: 39px;
+  margin-left: 0px;
+  margin-top: 14px;
 }
 
 .banner__google-play {
@@ -1305,8 +1326,9 @@ ul.menu-nav {
 .banner__background-img {
   flex: 0 1 246px;
   max-height: 251px;
-  background: url(../img/app-banner-bg_mob.jpg) no-repeat center;
-  background-size: 246px 251px;
+  margin-left: 110px;
+  margin-top: -126px;
+ 
 }
 // end Banner
 
