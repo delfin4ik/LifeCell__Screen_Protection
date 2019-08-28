@@ -269,7 +269,7 @@ HTML {
 
 .main-picture {
   width: 100%;
-  height: 470px;
+  max-height: 470px;
   background: url(../img/picture_bg.svg) no-repeat 100% 100%;
   background-size: cover; }
 
@@ -280,33 +280,32 @@ HTML {
   height: 470px;
   background: url(../img/picture_bg_man.svg) no-repeat right bottom;
   background-size: contain;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center; }
 
 .main-picture__bg_center {
-  margin-left: 7px;
-  margin-top: 109px; }
+  margin: 109px 31.18vw 0 7px; }
 
 .picture-text-wrapper {
-  flex-flow: 0 0 364px;
-  flex: row wrap;
-  justify-content: center;
-  margin-left: 160px; }
+  flex-flow: 0 0 27vw;
+  flex: row nowrap;
+  justify-content: center; }
 
 .main-picture__title {
   font-weight: 800;
-  font-size: 50px;
-  line-height: 60px;
+  font-size: 3.7vw;
+  line-height: 4.4vw;
   color: #FFFFFF;
   margin-top: 6px; }
 
 .main-picture__text {
   font-weight: 800;
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 1.6vw;
+  line-height: 1.9vw;
   color: #FFFFFF;
   margin-top: 12px; }
 
+/* end Picture Desktop */
 .main-section-advantages {
   display: flex;
   justify-content: center;
@@ -1094,6 +1093,19 @@ HTML {
 @media screen and (min-width: 1351px) {
   .menu-btn {
     display: none; }
+  /* Picture Desktop */
+  .main-picture__bg_center {
+    margin: 109px 420px 0 7px; }
+  .picture-text-wrapper {
+    flex-flow: 0 0 370px; }
+  .main-picture__title {
+    font-size: 50px;
+    line-height: 60px; }
+  .main-picture__text {
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 12px; }
+  /* end Picture Desktop */
   .advantages__title {
     font-size: 20px;
     line-height: 24px; }
@@ -1411,12 +1423,14 @@ HTML {
   .nav-icons__item_search,
   .header-bottom {
     display: none; }
+  /*   Picture Tab  */
   .main-picture {
     width: 100%;
-    height: 967px;
+    max-height: 967px;
     background: url(../img/picture_bg_tab.svg) no-repeat 100% 100%;
     background-size: cover;
-    overflow: hidden; }
+    overflow-x: hidden;
+    display: flex; }
   .picture-container {
     width: 768px;
     height: 967px;
@@ -1425,8 +1439,7 @@ HTML {
     justify-content: flex-start;
     align-items: flex-start;
     background: url(../img/picture_bg_man_tab.svg) no-repeat center;
-    background-size: cover;
-    overflow-x: hidden; }
+    background-size: cover; }
   .picture-text-wrapper {
     display: flex;
     flex-flow: column nowrap;
@@ -1487,7 +1500,8 @@ HTML {
     line-height: 1.5; }
   /*  Packages */
   .main-section-packages {
-    height: 641px; }
+    max-height: 641px;
+    overflow: hidden; }
   .packages-container {
     width: 768px;
     overflow: hidden; }
@@ -1498,8 +1512,8 @@ HTML {
     overflow-x: auto;
     padding: 0;
     max-width: unset;
-    min-width: 964px;
-    min-height: 380px; }
+    min-height: 380px;
+    margin-left: 16px; }
   .packages__card_wraper::before .packages__card_wraper::after {
     content: '';
     flex: 0 0 30px;
@@ -1765,7 +1779,7 @@ HTML {
     width: 20px;
     height: 20px;
     background: url(../img/icons/pin_mob.svg) no-repeat; }
-  /*  Picture */
+  /*  Picture mob */
   .main-picture {
     width: 100%;
     height: 580px;
@@ -1779,7 +1793,7 @@ HTML {
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    background: url(../img/picture_bg_man_tab.svg) no-repeat center;
+    background: url(../img/picture_bg_man_mob.svg) no-repeat center;
     background-size: cover;
     overflow-x: hidden; }
   .picture-text-wrapper {
@@ -1792,17 +1806,17 @@ HTML {
     font-size: 40px;
     line-height: 48px;
     color: #FFFFFF;
-    margin: 90px 0 0 15px; }
+    margin: 80px 0 0 15px; }
   .main-picture__text {
     font-size: 23px;
     line-height: 28px;
     color: #FFFFFF;
     margin: 6px 0px 0 16px; }
   .main-picture__bg_center {
-    width: 227px;
-    height: 298px;
-    margin-left: 0px;
-    margin-top: 35px; }
+    max-width: 227px;
+    max-height: 298px;
+    margin: 0 0 0 0; }
+  /*  Advantages mob */
   .main-section-advantages {
     padding: 72px 0 39px 0; }
   .advantages__title {
@@ -1821,12 +1835,15 @@ HTML {
     margin-right: 14px;
     font-size: 3.9vw;
     line-height: 1.5; }
-  /*  Packages */
+  /*  end Avantages mob */
+  /*  Packages mob */
   .main-section-packages {
-    height: 605px; }
+    height: 605px;
+    overflow: hidden; }
   .packages-container {
     width: 360px;
-    overflow: hidden; }
+    overflow: hidden;
+    justify-content: flex-start; }
   .packages-header {
     font-size: 18px;
     line-height: 22px; }
@@ -1841,7 +1858,7 @@ HTML {
     overflow-x: auto;
     padding: 0;
     max-width: unset;
-    min-width: 964px;
+    display: flex;
     min-height: 380px; }
   .packages__card_wraper::before .packages__card_wraper::after {
     content: '';
