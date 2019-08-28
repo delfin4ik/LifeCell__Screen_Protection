@@ -1,8 +1,19 @@
 // Widescreen
 @include mediaXl {
 
+  /* Mtnu DeskXl */
   .menu-btn {
     display: none;
+  }
+
+  .nav-site__item {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .nav-page__item {
+    font-size: 18px;
+    line-height: 22px;
   }
 
   /* Picture Desktop */
@@ -339,7 +350,7 @@
 // Tablets & Small Laptops
 @include mediaMd {
   
-  // Menu
+  /*  Menu Tab */
   .menu-btn {
     display: block;
   }
@@ -444,12 +455,11 @@
 .main-picture__title {
   // font-weight: 800;
   flex: 0 1 auto;
-  font-size: 80px;
-  line-height: 96px;
+  font-size: 10.4vw;
+  line-height: 12.5vw;
   color: $background-color-main;
   margin: 7px 0 0 36px;
 }
-
 
 .main-picture__text {
   // font-weight: 800;
@@ -466,7 +476,7 @@
   margin-top: 76px;
 }
 
-  // Advantages
+  /*  Advantages Tab */
   .main-section-advantages {
     padding: 61px 0;
     max-height: 329px;
@@ -516,9 +526,9 @@
     font-size: 2.8vw;
     line-height: 1.5;
   }
-// end Avantages
+/*  end Advantages Tab */
 
-/*  Packages */
+/*  Packages Tab */
 .main-section-packages {
   // width: 100%;
   max-height: 641px;
@@ -732,17 +742,23 @@
 .packages__circle_tooltiptext2 .packages-tooltiptext2 {
   display: none;
 }
+/*  end Packages Tab */
 
 
-
-// Banner
-.main-picture-banner{
+/*  Banner Tab */
+.main-picture-banner {
+  background: url(../img/icons/banner_bg.svg) no-repeat center;
   justify-content: flex-start;
+}
+
+.banner__background-img{
+  display: none;
 }
 
 .container-banner {
   max-width: $container-width-tab;
   justify-content: flex-start;
+  background: url(../img/app-banner-bg_tab.svg) no-repeat right bottom;
 }
 
 .banner_aktivation_inner {
@@ -760,16 +776,12 @@
   padding-bottom: 50px;
 }
 
-.banner__background-img {
-  flex: 0 1 345px;
-  max-height: 352px;
-  margin-left: -25px;
-  margin-top: 31px;
-}
-
-.main-picture-banner {
-  background: url(../img/icons/banner_bg.svg) no-repeat center;
-}
+// .banner__background-img {
+//   // flex: 0 1 345px;
+//   // max-height: 352px;
+//   // margin-left: -25px;
+//   // margin-top: 31px;
+// }
 /*  end Banner Tab */
 
 /* -------Steps Tablet--------- */
@@ -1320,6 +1332,15 @@ ul.menu-nav {
 // Banner
 .main-picture-banner {
   min-height: 384px;
+  overflow: hidden;
+}
+
+.container-banner {
+  max-width: $container-width-mob;
+  // justify-content: flex-start;
+  background: url(../img/app-banner-bg_mob.svg) no-repeat right bottom;
+  // background-size: 246px 251px;
+  overflow: hidden;
 }
 
 .banner-title{
@@ -1329,13 +1350,13 @@ ul.menu-nav {
   min-height: 78px;
   margin-top: 56px;
   padding-bottom: 0;
-  padding-right: 25px;
+  padding-right: 6.9vw;
 }
 
 .banner__app-store {
   background-size: 113px 38px;
   background-position: left;
-  margin-right: 39px;
+  margin-right: 10.8vw;
   margin-left: 0px;
   margin-top: 14px;
 }
@@ -1345,14 +1366,15 @@ ul.menu-nav {
   background-size: 113px 33px;
   margin-left: 5px;
   margin-top: 15px;
+  margin-right: 10.8vw;
 }
 
 .banner__background-img {
-  flex: 0 1 246px;
-  max-height: 251px;
-  margin-left: 110px;
-  margin-top: -137px;
- 
+  // flex: 0 1 246px;
+  // max-height: 251px;
+  // margin-left: 110px;
+  // margin-top: -137px;
+  display: none;
 }
 // end Banner
 

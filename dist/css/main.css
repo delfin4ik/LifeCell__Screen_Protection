@@ -101,11 +101,6 @@ HTML {
   height: 100%;
   margin: 0 auto; }
 
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both; }
-
 .menu-btn {
   display: none; }
 
@@ -141,8 +136,8 @@ HTML {
   font-family: Lato, Arial, sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 1vw;
+  line-height: 1.3vw;
   color: #FFFFFF;
   text-transform: uppercase; }
 
@@ -260,8 +255,8 @@ HTML {
   font-family: Lato, Arial, sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1.3vw;
+  line-height: 1.6vw;
   color: #0A59A9; }
 
 .lang-desk-none {
@@ -1091,8 +1086,15 @@ HTML {
 
 /* -------end footer desktop--------- */
 @media screen and (min-width: 1351px) {
+  /* Mtnu DeskXl */
   .menu-btn {
     display: none; }
+  .nav-site__item {
+    font-size: 14px;
+    line-height: 17px; }
+  .nav-page__item {
+    font-size: 18px;
+    line-height: 22px; }
   /* Picture Desktop */
   .main-picture__bg_center {
     margin: 109px 420px 0 7px; }
@@ -1311,6 +1313,7 @@ HTML {
   /* -------end footer desktop--------- */ }
 
 @media screen and (max-width: 768px) {
+  /*  Menu Tab */
   .menu-btn {
     display: block; }
   .nav-page-desk-none {
@@ -1448,8 +1451,8 @@ HTML {
     margin-top: 88px; }
   .main-picture__title {
     flex: 0 1 auto;
-    font-size: 80px;
-    line-height: 96px;
+    font-size: 10.4vw;
+    line-height: 12.5vw;
     color: #FFFFFF;
     margin: 7px 0 0 36px; }
   .main-picture__text {
@@ -1462,6 +1465,7 @@ HTML {
     max-height: 589px;
     margin-left: 20px;
     margin-top: 76px; }
+  /*  Advantages Tab */
   .main-section-advantages {
     padding: 61px 0;
     max-height: 329px; }
@@ -1498,7 +1502,8 @@ HTML {
     margin-right: 14px;
     font-size: 2.8vw;
     line-height: 1.5; }
-  /*  Packages */
+  /*  end Advantages Tab */
+  /*  Packages Tab */
   .main-section-packages {
     max-height: 641px;
     overflow: hidden; }
@@ -1580,11 +1585,17 @@ HTML {
     cursor: default; }
   .packages__circle_tooltiptext2 .packages-tooltiptext2 {
     display: none; }
+  /*  end Packages Tab */
+  /*  Banner Tab */
   .main-picture-banner {
+    background: url(../img/icons/banner_bg.svg) no-repeat center;
     justify-content: flex-start; }
+  .banner__background-img {
+    display: none; }
   .container-banner {
     max-width: 768px;
-    justify-content: flex-start; }
+    justify-content: flex-start;
+    background: url(../img/app-banner-bg_tab.svg) no-repeat right bottom; }
   .banner_aktivation_inner {
     flex: 0 1 420px;
     padding-left: 16px;
@@ -1596,13 +1607,6 @@ HTML {
     line-height: 4.4vw;
     margin-top: 70px;
     padding-bottom: 50px; }
-  .banner__background-img {
-    flex: 0 1 345px;
-    max-height: 352px;
-    margin-left: -25px;
-    margin-top: 31px; }
-  .main-picture-banner {
-    background: url(../img/icons/banner_bg.svg) no-repeat center; }
   /*  end Banner Tab */
   /* -------Steps Tablet--------- */
   .main-section-steps {
@@ -1917,7 +1921,12 @@ HTML {
   .packages__card_price {
     margin-bottom: 18px; }
   .main-picture-banner {
-    min-height: 384px; }
+    min-height: 384px;
+    overflow: hidden; }
+  .container-banner {
+    max-width: 360px;
+    background: url(../img/app-banner-bg_mob.svg) no-repeat right bottom;
+    overflow: hidden; }
   .banner-title {
     font-size: 5.6vw;
     line-height: 7.2vw;
@@ -1925,23 +1934,21 @@ HTML {
     min-height: 78px;
     margin-top: 56px;
     padding-bottom: 0;
-    padding-right: 25px; }
+    padding-right: 6.9vw; }
   .banner__app-store {
     background-size: 113px 38px;
     background-position: left;
-    margin-right: 39px;
+    margin-right: 10.8vw;
     margin-left: 0px;
     margin-top: 14px; }
   .banner__google-play {
     background-position: left;
     background-size: 113px 33px;
     margin-left: 5px;
-    margin-top: 15px; }
+    margin-top: 15px;
+    margin-right: 10.8vw; }
   .banner__background-img {
-    flex: 0 1 246px;
-    max-height: 251px;
-    margin-left: 110px;
-    margin-top: -137px; }
+    display: none; }
   /* -------steps mob--------- */
   .main-section-steps {
     padding: 50px 0 58px 0; }

@@ -31,12 +31,6 @@ HTML {
   // overflow-x: hidden;
 }
 
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 // Menu
 .menu-btn {
   display: none;
@@ -79,8 +73,8 @@ HTML {
   font-family: $font-family-main;
   font-style: normal;
   font-weight: 900;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 1vw;
+  line-height: 1.3vw;
   color: $text-color-white;
   text-transform: uppercase;
 }
@@ -221,8 +215,8 @@ HTML {
   font-family: $font-family-main;
   font-style: normal;
   font-weight: 900;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1.3vw;
+  line-height: 1.6vw;
   color: $text-color-header;
 }
 
