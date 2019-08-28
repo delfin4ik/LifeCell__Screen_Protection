@@ -326,9 +326,11 @@ HTML {
   display: flex;
   justify-content: center;
   flex: 1 1 100%;
-  max-width: 1031px;
   padding: 0 30px;
-  margin-top: 58px; }
+  margin-top: 58px;
+  overflow-x: auto;
+  padding: 0;
+  max-width: unset; }
 
 .advantages__card-item {
   flex: 1 0 244px;
