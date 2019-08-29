@@ -1719,17 +1719,11 @@ HTML {
     max-width: 768px; }
   .footer-contacts_wrap {
     display: none; }
-  .footer-socials {
-    display: grid;
-    grid-row: 1 / 2;
-    grid-template-columns: 29.17%	41.66%	29.17%;
-    background: #F8AD1E; }
   .socials-text {
     display: none; }
   .socials-icons {
     display: flex;
     min-width: 282px;
-    grid-column: 2 / 3;
     align-self: center;
     justify-content: space-between; }
   .socials-icons a {
@@ -1979,6 +1973,10 @@ HTML {
     height: 53.28px; }
   .packages__card_price {
     margin-bottom: 18px; }
+  .packages_none {
+    display: none; }
+  /* end Packadge mob */
+  /*  Banner mob */
   .main-picture-banner {
     min-height: 384px;
     overflow: hidden; }
@@ -2064,11 +2062,6 @@ HTML {
     grid-template-rows: 24.26%	57.45%	18.12%; }
   .footer-contacts_wrap {
     display: none; }
-  .footer-socials {
-    display: grid;
-    grid-row: 1 / 2;
-    grid-template-columns: 10.83%	78.34% 10.83%;
-    background: #F8AD1E; }
   .socials-text {
     display: none; }
   .socials-icons {
