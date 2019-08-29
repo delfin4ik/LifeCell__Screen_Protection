@@ -84,9 +84,9 @@ for (i = 0; i < acc.length; i++) {
 
 
 // Select DOM Items for Packages
-const packagesContainerWeek = document.querySelector('.packages-container_week');
-const packagesContainerMonth = document.querySelector('.packages-container_month');
-const packagesContainerYear = document.querySelector('.packages-container_year');
+const packagesCardWraperWeek = document.querySelector('.packages__card_wraper-week');
+const packagesCardWraperMonth = document.querySelector('.packages__card_wraper-month');
+const packagesCardWraperYear = document.querySelector('.packages__card_wraper-year');
 
 const btnWeek = document.querySelector('.btn-week');
 const btnMonth = document.querySelector('.btn-month');
@@ -95,59 +95,56 @@ const btnYear = document.querySelector('.btn-year');
 btnWeek.addEventListener('click', togglePackagesWeek);
 
 function togglePackagesWeek () {
-  if(packagesContainerWeek.classList.contains('packages_none')) {
-    packagesContainerWeek.classList.remove('packages_none');
-    if(!packagesContainerMonth.classList.contains('packages_none')) {
-      packagesContainerMonth.classList.add('packages_none');
-      if(!packagesContainerYear.classList.contains('packages_none')) {
-        packagesContainerYear.classList.add('packages_none');
-      }
-    }
-  }
+  if(packagesCardWraperWeek.classList.contains('packages_none')) {
+    packagesCardWraperWeek.classList.toggle('packages_none');
+    btnWeek.classList.toggle('current-bg');
+  };
+      if(!packagesCardWraperMonth.classList.contains('packages_none')) {
+        packagesCardWraperMonth.classList.add('packages_none');
+        btnMonth.classList.toggle('current-bg');
+      };
+          if(!packagesCardWraperYear.classList.contains('packages_none')) {
+            packagesCardWraperYear.classList.add('packages_none');
+            btnYear.classList.toggle('current-bg');
+          };
 
-
-  
-  return(btnYear.addEventListener('click', togglePackagesYear),
-  btnMonth.addEventListener('click', togglePackagesMonth),
-  btnWeek.addEventListener('click', togglePackagesWeek));
+  return;
 }
 
 btnMonth.addEventListener('click', togglePackagesMonth);
 
 function togglePackagesMonth () {
-  if(packagesContainerMonth.classList.contains('packages_none')) {
-    packagesContainerMonth.classList.remove('packages_none');
-      if(!packagesContainerWeek.classList.contains('packages_none')) {
-        packagesContainerWeek.classList.add('packages_none');
-        if(!packagesContainerYear.classList.contains('packages_none')) {
-          packagesContainerYear.classList.add('packages_none');
-        }
-      }
+  if(packagesCardWraperMonth.classList.contains('packages_none')) {
+    packagesCardWraperMonth.classList.toggle('packages_none');
+    btnMonth.classList.toggle('current-bg');
   }
-
-
+        if(!packagesCardWraperWeek.classList.contains('packages_none')) {
+          packagesCardWraperWeek.classList.add('packages_none');
+          btnWeek.classList.toggle('current-bg');
+        }
+            if(!packagesCardWraperYear.classList.contains('packages_none')) {
+              packagesCardWraperYear.classList.add('packages_none');
+              btnYear.classList.toggle('current-bg');
+            }
   
-  return(btnYear.addEventListener('click', togglePackagesYear),
-  btnMonth.addEventListener('click', togglePackagesMonth),
-  btnWeek.addEventListener('click', togglePackagesWeek));
+  return;
 }
 
 btnYear.addEventListener('click', togglePackagesYear);
 
 function togglePackagesYear () {
-  if(packagesContainerYear.classList.contains('packages_none')) {
-    packagesContainerYear.classList.remove('packages_none');
-    if(!packagesContainerWeek.classList.contains('packages_none')) {
-      packagesContainerWeek.classList.add('packages_none');
-      if(!packagesContainerMonth.classList.contains('packages_none')) {
-        packagesContainerMonth.classList.add('packages_none');
-      }
-    }
+  if(packagesCardWraperYear.classList.contains('packages_none')) {
+    packagesCardWraperYear.classList.toggle('packages_none');
+    btnYear.classList.toggle('current-bg');
   }
-
-
+      if(!packagesCardWraperWeek.classList.contains('packages_none')) {
+        packagesCardWraperWeek.classList.add('packages_none');
+        btnWeek.classList.toggle('current-bg');
+      }
+          if(!packagesCardWraperMonth.classList.contains('packages_none')) {
+            packagesCardWraperMonth.classList.add('packages_none');
+            btnMonth.classList.toggle('current-bg');
+          }
   
-  return(btnYear.addEventListener('click', togglePackagesYear),
-  btnMonth.addEventListener('click', togglePackagesMonth),
-  btnWeek.addEventListener('click', togglePackagesWeek));
+  return;
 }
