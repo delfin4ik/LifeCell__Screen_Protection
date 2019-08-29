@@ -463,17 +463,21 @@
 
 .main-picture__text {
   // font-weight: 800;
-  font-size: 46px;
-  line-height: 55px;
+  font-size: 6vw;
+  line-height: 7.2vw;
   color: $background-color-main;
   margin: 12px 0 0 45px;
 }
 
 .main-picture__bg_center {
-  max-width: 448px;
-  max-height: 589px;
-  margin-left: 20px;
-  margin-top: 76px;
+  max-width: 58.3vw;
+  max-height: 76.7vw;
+  margin-left: 2.6vw;
+  margin-top: 9.9vw;
+  // max-width: 448px;
+  // max-height: 589px;
+  // margin-left: 20px;
+  // margin-top: 76px;
 }
 
   /*  Advantages Tab */
@@ -594,7 +598,7 @@
   // align-items: center;
   // flex: 1 1 100%;
   // max-width: 964px;
-  min-height: 380px;
+  min-height: 400px;
   margin-left: 16px;
 }
 
@@ -1021,7 +1025,7 @@
 @include mediaSm {
  
   .container {
-    width: $container-width-mob;
+    max-width: $container-width-mob;
   }
 
   .header-top_inner {
@@ -1032,13 +1036,17 @@
     align-items: center;
   }
 
+  .menu {
+    max-width: 90%;
+  }
+
   .menu-btn {
-    margin: 14px 0 14px 21px;
+    margin: 14px 21px;
   }
 
 ul.menu-nav {
   float: none;
-  width: 322px;
+  max-width: 322px;
   min-height: 0;
 
   &.show {
@@ -1051,15 +1059,15 @@ ul.menu-nav {
     transform: translate3d(-100%, 0, 0);
     font-style: normal;
     font-weight: 900;
-    line-height: 19px;
-    font-size: 16px;
+    font-size: 4.4vw;
+    line-height: 5.3vw;
   }
 
   .logo {
     width: 82px;
     height: 26px;
     // margin-right: 42px;
-    margin-left: 68px;
+    margin: 0px;
   }
   
   .logo > img {
@@ -1074,7 +1082,7 @@ ul.menu-nav {
     min-height: 20px;
     justify-content: space-between;
     align-items: center;
-    margin-right: 16px;
+    margin: 0 16px;
   }
 
   .nav-icons__item {
@@ -1137,25 +1145,30 @@ ul.menu-nav {
 
 .main-picture__title {
   // font-weight: 800;
-  flex: 0 1 auto;
-  font-size: 40px;
-  line-height: 48px;
-  color: $background-color-main;
-  margin: 80px 0 0 15px;
+  // flex: 0 1 auto;
+  font-size: 11.1vw;
+  line-height: 13.3vw;
+  margin: 22.2vw 0 0 15px;
+  // font-size: 40px;
+  // line-height: 48px;
+  // margin: 80px 0 0 15px;
 }
 
 
 .main-picture__text {
-  font-size: 23px;
-  line-height: 28px;
+  font-size: 6.4vw;
+  line-height: 7.8vw;
   color: $background-color-main;
   margin: 6px 0px 0 16px;
 }
 
 .main-picture__bg_center {
-  max-width: 227px;
-  max-height: 298px;
-  margin: 0 0 0 0;
+  max-width: 63.1vw;
+  max-height: 82.8vw;
+  margin: 0;
+  // max-width: 227px;
+  // max-height: 298px;
+  // margin: 0;
 }
 
 
@@ -1198,7 +1211,7 @@ ul.menu-nav {
 }
 
 .packages-container {
-  width: $container-width-mob;
+  max-width: $container-width-mob;
   overflow: hidden;
   justify-content: flex-start;
 }

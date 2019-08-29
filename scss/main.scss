@@ -297,7 +297,12 @@ HTML {
 }
 
 .main-picture__bg_center {
-  margin: 109px 31.18vw 0 7px;
+  max-width: 29.6vw;
+  max-height: 38.7vw;
+  margin: 8.1vw 31.18vw 0 7px;
+  // max-width: 399px;
+  // max-height: 523px;
+  // margin: 109px 421px 0 7px;
 }
 
 // .main-picture__bg_man {
@@ -542,7 +547,11 @@ HTML {
   justify-content: center;
   align-items: center;
   flex: 1 1 100%;
-  // min-width: 1036px;
+  overflow-x: auto;
+  padding: 0;
+  max-width: unset;
+  min-height: 590px;
+  margin-left: 16px;
 }
 
 .packages__card_wrap {

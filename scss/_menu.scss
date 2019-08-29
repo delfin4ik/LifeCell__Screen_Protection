@@ -42,11 +42,11 @@
 .menu {
   position: absolute;
   top: 58px;
-  width: 100%;
+  max-width: 100%;
   // opacity: 0.9;
   visibility: hidden;
   // display: flex;
-  flex: 0 0 211px;
+  flex: 0 1 444px;
   flex-flow: column wrap;
 
   &.show {
@@ -59,7 +59,7 @@
     align-items: flex-start;
     justify-content: space-evenly;
     // float: left;
-    width: 444px;
+    max-width: 444px;
     height: 211px;
     overflow: hidden;
   }
