@@ -347,12 +347,17 @@ HTML {
 /* end Picture Desktop */
 .main-section-advantages {
   display: flex;
+  min-height: 350px;
+  background-color: #F6F6F6;
+  overflow: hidden; }
+
+.container-advantages {
+  width: 1350px;
+  display: flex;
   justify-content: center;
   align-content: space-between;
   flex-wrap: wrap;
-  padding: 106px 0 112px 0;
-  background-color: #F6F6F6;
-  overflow: hidden; }
+  padding: 106px 0 112px 0; }
 
 .advantages__title {
   flex: 1 1 100%;
@@ -369,12 +374,13 @@ HTML {
 .advantages__card-wrap {
   display: flex;
   justify-content: center;
-  flex: 1 1 100%;
+  flex: 0 1 1038px;
   padding: 0 30px;
   margin-top: 58px;
   overflow-x: auto;
   padding: 0;
-  max-width: unset; }
+  max-width: unset;
+  overflow-y: hidden; }
 
 .advantages__card-item {
   flex: 1 0 244px;
@@ -705,6 +711,9 @@ HTML {
 .packages__circle_tooltiptext2:hover .packages-tooltiptext2 {
   visibility: visible;
   opacity: 1; }
+
+.packages_none {
+  display: none; }
 
 .main-picture-banner {
   background: url(../img/icons/banner_bg.svg) no-repeat center fixed;
@@ -1512,7 +1521,7 @@ HTML {
     margin-left: 20px;
     margin-top: 76px; }
   /*  Advantages Tab */
-  .main-section-advantages {
+  .container-advantages {
     padding: 61px 0;
     max-height: 329px; }
   .advantages__card-wrap {
@@ -1675,8 +1684,10 @@ HTML {
   /* Questions Tab */
   .main-section-questions {
     min-height: 157px;
-    flex-flow: row nowrap; }
+    flex-flow: row nowrap;
+    overflow: hidden; }
   .questions-container {
+    max-width: 768px;
     margin-top: 48px; }
   .questions-btn-rectangle {
     flex: 0 0 320px;
@@ -1685,7 +1696,9 @@ HTML {
     margin-top: 0px;
     margin-bottom: 48px; }
   .answers-wrap {
-    flex: 0 0 704px; }
+    display: flex;
+    flex-flow: column wrap;
+    flex: 0 1 704px; }
   .questions-title-inner {
     min-width: 704px; }
   .questions-title-inner:nth-last-of-type(1) {
@@ -1867,7 +1880,7 @@ HTML {
     max-height: 298px;
     margin: 0 0 0 0; }
   /*  Advantages mob */
-  .main-section-advantages {
+  .container-advantages {
     padding: 72px 0 39px 0; }
   .advantages__title {
     font-size: 5.0vw;
@@ -2019,7 +2032,8 @@ HTML {
   /* -------end steps mobile--------- */
   /* Questions mob*/
   .main-section-questions {
-    min-height: 211px; }
+    min-height: 211px;
+    overflow: hidden; }
   .questions-container {
     min-width: 360px; }
   .questions-container {

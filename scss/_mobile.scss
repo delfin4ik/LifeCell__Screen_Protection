@@ -477,7 +477,7 @@
 }
 
   /*  Advantages Tab */
-  .main-section-advantages {
+  .container-advantages {
     padding: 61px 0;
     max-height: 329px;
   }
@@ -820,11 +820,13 @@
   // background-color: $background-color-main;
   // display: flex;
   flex-flow: row nowrap;
+  overflow: hidden;
   // justify-content: center;
   // align-content: flex-start;
 }
 
 .questions-container {
+  max-width: $container-width-tab;
   // display: flex;
   // flex-flow: row wrap;
   // justify-content: center;
@@ -843,9 +845,9 @@
 }
 
 .answers-wrap {
-  // display: flex;
-  // flex-flow: column wrap;
-  flex: 0 0 704px;
+  display: flex;
+  flex-flow: column wrap;
+  flex: 0 1 704px;
   // align-items: flex-start;
   // border-bottom: 1px solid rgba(196, 196, 196, 0.72);
 }
@@ -1159,7 +1161,7 @@ ul.menu-nav {
 
 
   /*  Advantages mob */
-  .main-section-advantages {
+  .container-advantages {
     padding: 72px 0 39px 0;
   }
 
@@ -1417,6 +1419,7 @@ ul.menu-nav {
 .main-section-questions {
   // width: 100%;
   min-height: 211px;
+  overflow: hidden;
 }
 
 .questions-container {

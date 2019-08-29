@@ -333,12 +333,18 @@ HTML {
 // Advantages
 .main-section-advantages {
   display: flex;
+  min-height: 350px;
+  background-color: $background-color-second;
+  overflow: hidden;
+}
+
+.container-advantages {
+  width: $container-width-desktop;
+  display: flex;
   justify-content: center;
   align-content: space-between;
 	flex-wrap: wrap;
 	padding: 106px 0 112px 0;
-  background-color: $background-color-second;
-  overflow: hidden;
 }
 
 .advantages__title {
@@ -358,13 +364,14 @@ HTML {
 .advantages__card-wrap {
   display: flex;
   justify-content: center;
-	flex: 1 1 100%;
+	flex: 0 1 1038px;
   // max-width: 1031px;
   padding: 0 30px;
   margin-top: 58px;
   overflow-x: auto;
   padding: 0;
   max-width: unset;
+  overflow-y: hidden;
 }
 
 .advantages__card-item {
@@ -743,6 +750,10 @@ HTML {
 .packages__circle_tooltiptext2:hover .packages-tooltiptext2 {
   visibility: visible;
   opacity: 1;
+}
+
+.packages_none {
+  display: none;
 }
 
 
