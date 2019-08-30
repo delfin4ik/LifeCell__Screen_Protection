@@ -338,13 +338,13 @@ HTML {
 // Advantages
 .main-section-advantages {
   display: flex;
-  min-height: 350px;
+  max-height: 380px;
   background-color: $background-color-second;
   overflow: hidden;
 }
 
 .container-advantages {
-  width: $container-width-desktop;
+  max-width: $container-width-desktop;
   display: flex;
   justify-content: center;
   align-content: space-between;
@@ -812,7 +812,7 @@ HTML {
 
 .banner__app-store {
   flex: 1 1 156px;
-  height: 53px;
+  max-height: 53px;
   background: url(../img/icons/app-store.svg) no-repeat center;
   margin-left: -18px;
 }
