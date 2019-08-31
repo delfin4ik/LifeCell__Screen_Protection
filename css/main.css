@@ -105,6 +105,7 @@ HTML {
   display: none; }
 
 .header {
+  position: relative;
   display: flex;
   flex-flow: row wrap; }
 
@@ -225,7 +226,7 @@ HTML {
   background-color: rgba(0, 17, 28, 0.2); }
 
 .dropdown:hover .dropdown-content {
-  display: block; }
+  display: flex; }
 
 .dropdown:hover .dropbtn {
   background-color: rgba(0, 17, 28, 0.2); }
