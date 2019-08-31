@@ -37,7 +37,6 @@ HTML {
 }
 
 .header {
-  position: relative;
   display: flex;
   flex-flow: row wrap;
 }
@@ -243,7 +242,7 @@ HTML {
   align-items: center;
 }
 
-.menu-nav {
+.menu-nav-desktop {
   flex: 0 1 1035px;
   height: 100%;
   display: flex;

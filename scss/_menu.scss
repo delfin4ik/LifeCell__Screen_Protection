@@ -42,12 +42,12 @@
 .menu {
   position: absolute;
   top: 58px;
-  max-width: 100%;
+  width: 57.8vw;
   // opacity: 0.9;
   visibility: hidden;
   // display: flex;
-  flex: 0 1 444px;
-  flex-flow: column wrap;
+  // flex: 0 1 444px;
+  // flex-flow: column wrap;
 
   &.show {
     visibility: visible;
@@ -56,10 +56,11 @@
   &-nav {
     display: flex;
     flex-flow: column nowrap;
+    flex: 0 1 444px;
     align-items: flex-start;
     justify-content: space-evenly;
     // float: left;
-    max-width: 444px;
+    // width: 444px;
     height: 211px;
     overflow: hidden;
   }
@@ -92,10 +93,6 @@
     }
   }
 
-  // .nav-item:nth-of-type(5) {
-  //   display: none;
-  // }
-
   .language-switch_mob {
     display: flex;
     flex: 0 0 71px;
@@ -107,8 +104,8 @@
   .nav-link {
     display: flex;
     // position: relative;
-    font-size: 16px;
-    line-height: 19px;
+    // font-size: 16px;
+    // line-height: 19px;
     font-weight: 900;
     color: $text-color-white;
     text-decoration: none;
