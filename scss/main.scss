@@ -37,6 +37,7 @@ HTML {
 }
 
 .header {
+  position: relative;
   display: flex;
   flex-flow: row wrap;
 }
@@ -178,7 +179,7 @@ HTML {
 .dropdown-content a:hover {background-color: rgba(00,17,28,0.2)}
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: flex;
 }
 
 .dropdown:hover .dropbtn {

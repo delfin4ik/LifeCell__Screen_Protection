@@ -3,12 +3,19 @@ const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
 const menuNav = document.querySelector('.menu-nav');
 const navItems = document.querySelectorAll('.nav-item');
+const navItem1Advantages = document.querySelector('.nav-page-desk-none .menu-nav .nav-link:nth-of-type(1)');
+const navItem2Packages = document.querySelector('.nav-page-desk-none .menu-nav .nav-item:nth-of-type(2) > .nav-link');
+const navItem3Steps = document.querySelector('.nav-page-desk-none .menu-nav .nav-item:nth-of-type(3) > .nav-link');
+const navItem4Steps = document.querySelector('.nav-page-desk-none .menu-nav .nav-item:nth-of-type(4) > .nav-link');
 
 // Set Initial State Of Menu
 let showMenu = false;
 
 menuBtn.addEventListener('click', toggleMenu);
-menuNav.addEventListener('click', toggleMenu);
+navItem1Advantages.addEventListener('click', toggleMenu);
+navItem2Packages.addEventListener('click', toggleMenu);
+navItem3Steps.addEventListener('click', toggleMenu);
+navItem4Steps.addEventListener('click', toggleMenu);
 
 function toggleMenu () {
   if(!showMenu) {
