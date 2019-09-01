@@ -124,15 +124,15 @@ function togglePackagesMonth () {
   if(packagesCardWraperMonth.classList.contains('packages_none')) {
     packagesCardWraperMonth.classList.toggle('packages_none');
     btnMonth.classList.toggle('current-bg');
-  }
+  };
         if(!packagesCardWraperWeek.classList.contains('packages_none')) {
           packagesCardWraperWeek.classList.add('packages_none');
           btnWeek.classList.toggle('current-bg');
-        }
+        };
             if(!packagesCardWraperYear.classList.contains('packages_none')) {
               packagesCardWraperYear.classList.add('packages_none');
               btnYear.classList.toggle('current-bg');
-            }
+            };
   
   return;
 }
@@ -143,15 +143,15 @@ function togglePackagesYear () {
   if(packagesCardWraperYear.classList.contains('packages_none')) {
     packagesCardWraperYear.classList.toggle('packages_none');
     btnYear.classList.toggle('current-bg');
-  }
+  };
       if(!packagesCardWraperWeek.classList.contains('packages_none')) {
         packagesCardWraperWeek.classList.add('packages_none');
         btnWeek.classList.toggle('current-bg');
-      }
+      };
           if(!packagesCardWraperMonth.classList.contains('packages_none')) {
             packagesCardWraperMonth.classList.add('packages_none');
             btnMonth.classList.toggle('current-bg');
-          }
+          };
   
   return;
 }
