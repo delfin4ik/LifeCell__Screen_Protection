@@ -227,6 +227,9 @@ HTML {
 .dropdown:hover .dropdown-content {
   display: flex; }
 
+.language-choice_visible {
+  display: flex; }
+
 .dropdown:hover .dropbtn {
   background-color: rgba(0, 17, 28, 0.2); }
 
