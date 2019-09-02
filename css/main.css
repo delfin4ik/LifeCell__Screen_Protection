@@ -297,6 +297,9 @@ HTML {
   justify-content: space-between;
   align-items: center; }
 
+.menu-nav-desktop .nav-item:hover .nav-page__item {
+  color: #FFFFFF; }
+
 .nav-page__item {
   flex: 0 0 auto;
   font-family: Lato, Arial, sans-serif;
@@ -393,17 +396,19 @@ HTML {
   align-items: flex-start;
   margin-left: 34px; }
 
-.advantages__card-wrap .advantages__card-item:nth-child(1) {
+.advantages__card-item:nth-child(1) {
   margin-left: 0px; }
 
-.advantages__card-item:nth-child(1) {
-  margin-right: -35px; }
-
 .advantages__card-item:nth-child(2) {
-  margin-right: -35px; }
+  margin-right: 0px;
+  margin-left: 8px; }
 
-.advantages__card-item:nth-child(2) {
-  margin-right: -7px; }
+.advantages__card-item:nth-child(3) {
+  margin-right: 0px;
+  margin-left: 19px; }
+
+.advantages__card-item:nth-child(4) {
+  margin-right: 0px; }
 
 .card-item_circle {
   display: flex;
@@ -426,7 +431,7 @@ HTML {
   font-style: normal;
   font-weight: normal;
   font-size: 1.2vw;
-  line-height: 1.6vw;
+  line-height: 1.7vw;
   color: #001728; }
 
 .red-star_mob {
@@ -486,8 +491,9 @@ HTML {
 .packages-container {
   display: flex;
   justify-content: center;
-  align-content: center;
-  flex-wrap: wrap; }
+  align-content: space-between;
+  flex-wrap: wrap;
+  padding: 72px 0 72px 0; }
 
 .packages-header {
   flex: 1 1 100%;
@@ -537,7 +543,8 @@ HTML {
   padding: 0;
   max-width: unset;
   min-height: 590px;
-  margin-left: 16px; }
+  margin-left: 16px;
+  margin-top: -30px; }
 
 .packages__card_wrap {
   display: flex;
@@ -843,6 +850,9 @@ HTML {
   object-fit: contain;
   z-index: 2; }
 
+.steps__card-wrap .step_3 {
+  margin: 30% auto; }
+
 .steps-card-item_text {
   width: 100%;
   margin-top: 20px;
@@ -953,7 +963,8 @@ HTML {
   background: url(../img/icons/questions-arrow.svg) no-repeat right center; }
 
 .question-arrow-open {
-  background: url(../img/icons/questions-arrow-up.svg) no-repeat right center; }
+  background: url(../img/icons/questions-arrow-up.svg) no-repeat right center;
+  font-weight: 900; }
 
 .answers {
   display: none;
@@ -1577,7 +1588,8 @@ HTML {
     overflow: hidden; }
   .packages-container {
     max-width: 768px;
-    overflow: hidden; }
+    overflow: hidden;
+    padding: 62px 0 86px 0; }
   .packages-alternative_item {
     margin: 46px 0 24px 0; }
   .packages__card_wraper {
@@ -1693,7 +1705,7 @@ HTML {
     line-height: 3.1vw; }
   .steps__card-wrap {
     /* margin-left: 30px; */
-    margin-top: 46px; }
+    margin-top: 24px; }
   .steps-card-item_number {
     font-size: 2.3vw;
     line-height: 2.9vw; }
@@ -1931,7 +1943,7 @@ HTML {
     max-width: 360px;
     overflow: hidden;
     justify-content: flex-start;
-    padding-top: 30px; }
+    padding: 54px 0; }
   .packages-header {
     font-size: 5vw;
     line-height: 6.1vw;
