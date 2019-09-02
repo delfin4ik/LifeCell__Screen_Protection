@@ -552,6 +552,7 @@
 .packages-container {
   max-width: $container-width-tab;
   overflow: hidden;
+  padding: 62px 0 86px 0;
 }
 
 // .packages-header {
@@ -831,7 +832,7 @@
 
 .steps__card-wrap {
   /* margin-left: 30px; */
-  margin-top: 46px;
+  margin-top: 24px;
 }
 
 .steps-card-item_number {
@@ -1252,7 +1253,7 @@ ul.menu-nav {
   max-width: $container-width-mob;
   overflow: hidden;
   justify-content: flex-start;
-  padding-top: 30px;
+  padding: 54px 0;
 }
 
 .packages-header {

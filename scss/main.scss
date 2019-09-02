@@ -265,6 +265,10 @@ HTML {
   align-items: center;
 }
 
+.menu-nav-desktop .nav-item:hover .nav-page__item {
+  color: $text-color-white;
+}
+
 .nav-page__item {
   flex: 0 0 auto;
   font-family: $font-family-main;
@@ -390,20 +394,22 @@ HTML {
   margin-left: 34px;
 }
 
-.advantages__card-wrap .advantages__card-item:nth-child(1) {
+.advantages__card-item:nth-child(1) {
   margin-left: 0px;
 }
 
-.advantages__card-item:nth-child(1) {
-  margin-right: -35px;
+.advantages__card-item:nth-child(2) {
+  margin-right: 0px;
+  margin-left: 8px;
 }
 
-.advantages__card-item:nth-child(2) {
-  margin-right: -35px;
+.advantages__card-item:nth-child(3) {
+  margin-right: 0px;
+  margin-left: 19px;
 }
 
-.advantages__card-item:nth-child(2) {
-  margin-right: -7px;
+.advantages__card-item:nth-child(4) {
+  margin-right: 0px;
 }
 
 .card-item_circle {
@@ -429,7 +435,7 @@ HTML {
   font-style: normal;
   font-weight: normal;
   font-size: 1.2vw;
-  line-height: 1.6vw;
+  line-height: 1.7vw;
   color: $text-color-main;
 }
 
@@ -498,8 +504,9 @@ HTML {
 .packages-container {
   display: flex;
   justify-content: center;
-  align-content: center;
-	flex-wrap: wrap;
+  align-content: space-between;
+  flex-wrap: wrap;
+  padding: 72px 0 72px 0;
 }
 
 .packages-header {
@@ -556,6 +563,7 @@ HTML {
   max-width: unset;
   min-height: 590px;
   margin-left: 16px;
+  margin-top: -30px;
 }
 
 .packages__card_wrap {
@@ -910,6 +918,10 @@ HTML {
   z-index: 2;
 }
 
+.steps__card-wrap .step_3 {
+  margin: 30% auto;
+}
+
 .steps-card-item_text {
   width: 100%;
   margin-top: 20px;
@@ -1038,6 +1050,7 @@ HTML {
 
 .question-arrow-open{
   background: url(../img/icons/questions-arrow-up.svg) no-repeat right center;
+  font-weight: 900;
 }
 
 .answers {
