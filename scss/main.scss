@@ -549,8 +549,13 @@ HTML {
 
 .current-bg {
   background: $background-color-icons;
-  border-left: 2px solid #AEAEAE;
-  border-right: 2px solid #AEAEAE;
+}
+
+.btn-month {
+  border-left: 1px solid #AEAEAE;
+  border-left-style: ridge;
+  border-right: 1px solid #AEAEAE;
+  border-right-style: ridge;
 }
 
 .packages__card_wraper {

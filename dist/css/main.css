@@ -530,9 +530,13 @@ HTML {
   transition: all 0.5s ease-out; }
 
 .current-bg {
-  background: #F5D300;
-  border-left: 2px solid #AEAEAE;
-  border-right: 2px solid #AEAEAE; }
+  background: #F5D300; }
+
+.btn-month {
+  border-left: 1px solid #AEAEAE;
+  border-left-style: ridge;
+  border-right: 1px solid #AEAEAE;
+  border-right-style: ridge; }
 
 .packages__card_wraper {
   display: flex;
