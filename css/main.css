@@ -144,9 +144,6 @@ HTML {
 .nav-site__item:hover {
   color: #FAAF10; }
 
-.current-text {
-  color: #FAAF10; }
-
 .logo {
   display: flex;
   width: 140px;
@@ -355,7 +352,7 @@ HTML {
 /* end Picture Desktop */
 .main-section-advantages {
   display: flex;
-  max-height: 380px;
+  height: 380px;
   background-color: #F6F6F6;
   overflow: hidden; }
 
@@ -363,9 +360,9 @@ HTML {
   max-width: 1350px;
   display: flex;
   justify-content: center;
-  align-content: space-between;
+  align-content: flex-start;
   flex-wrap: wrap;
-  padding: 106px 0 112px 0; }
+  padding: 106px 0 0 0; }
 
 .advantages__title {
   flex: 1 1 100%;
@@ -383,7 +380,7 @@ HTML {
   display: flex;
   justify-content: center;
   flex: 0 1 1038px;
-  padding: 0 30px;
+  min-height: 155px;
   margin-top: 58px;
   overflow-x: auto;
   padding: 0;
@@ -445,9 +442,10 @@ HTML {
 
 .advantages_tooltip {
   position: relative;
-  display: inline-block; }
+  display: inline-block;
+  cursor: pointer; }
 
-.advantages_tooltiptext {
+.advantages_tooltip .advantages_tooltiptext {
   visibility: hidden;
   width: 210px;
   background-color: #FFFFFF;
@@ -460,7 +458,7 @@ HTML {
   border-radius: 1px;
   padding: 12px 18px;
   position: absolute;
-  z-index: 1;
+  z-index: 5;
   top: 78px;
   left: 40px;
   margin-left: -100px;
@@ -1188,6 +1186,7 @@ HTML {
     line-height: 26px;
     margin-top: 12px; }
   /* end Picture Desktop */
+  /*  Avantages Desktop */
   .advantages__title {
     font-size: 20px;
     line-height: 24px; }
@@ -1548,15 +1547,16 @@ HTML {
     margin-top: 9.9vw; }
   /*  Advantages Tab */
   .main-section-advantages {
-    max-height: 329px; }
+    height: 329px; }
   .container-advantages {
-    padding: 61px 0;
+    padding: 61px 0 0 0;
     max-height: 329px; }
   .advantages__card-wrap {
     justify-content: flex-start;
     overflow-x: auto;
     padding: 0;
-    max-width: unset; }
+    max-width: unset;
+    min-height: unset; }
   .advantages__card-wrap:before, .advantages__card-wrap:after {
     content: '';
     flex: 0 0 30px;
@@ -1601,7 +1601,7 @@ HTML {
     overflow-x: auto;
     padding: 0;
     max-width: unset;
-    min-height: 400px;
+    min-height: 415px;
     margin-left: 16px; }
   .packages__card_wraper::before .packages__card_wraper::after {
     content: '';
@@ -1658,7 +1658,7 @@ HTML {
     flex: 0 0 288px;
     height: 53.28px; }
   .packages__card_price {
-    margin-bottom: 18px; }
+    margin-top: 19px; }
   .packages__card_price > span {
     font-weight: bold; }
   .packages__circle_tooltiptext1 {
@@ -1687,16 +1687,20 @@ HTML {
     max-width: 420px; }
   .banner-title {
     flex: 1 1 410px;
-    min-height: 102px;
+    min-height: 13.3vw;
     font-size: 3.6vw;
     line-height: 4.4vw;
     margin-top: 70px;
     padding-bottom: 50px; }
   .banner__app-store {
+    max-height: 7.7vw;
     background-size: 22.9vw 7.7vw;
-    /* background-size: 176px 59px; */ }
+    /* background-size: 176px 59px; */
+    background-position: center; }
   .banner__google-play {
+    background-position: center left;
     background-size: 26.6vw 7.7vw;
+    height: 7.7vw;
     /* background-size: 204px 59px; */ }
   /*  end Banner Tab */
   /* -------Steps Tablet--------- */
@@ -1967,7 +1971,7 @@ HTML {
     padding: 0;
     max-width: unset;
     display: flex;
-    min-height: 380px; }
+    min-height: 415px; }
   .packages__card_wraper::before .packages__card_wraper::after {
     content: '';
     flex: 0 0 30px;
@@ -2023,7 +2027,7 @@ HTML {
     flex: 0 0 288px;
     height: 53.28px; }
   .packages__card_price {
-    margin-bottom: 18px; }
+    margin-top: 18px; }
   .packages_none {
     display: none; }
   /* end Packadge mob */
