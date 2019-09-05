@@ -83,9 +83,9 @@ HTML {
   color: $text-color-hover;
 }
 
-.current-text {
-  color: $text-color-hover;
-}
+// .current-text {
+//   color: $text-color-hover;
+// }
 
 .logo {
   display: flex;
@@ -346,7 +346,7 @@ HTML {
 // Advantages
 .main-section-advantages {
   display: flex;
-  max-height: 380px;
+  height: 380px;
   background-color: $background-color-second;
   overflow: hidden;
 }
@@ -355,9 +355,9 @@ HTML {
   max-width: $container-width-desktop;
   display: flex;
   justify-content: center;
-  align-content: space-between;
+  align-content: flex-start;
 	flex-wrap: wrap;
-	padding: 106px 0 112px 0;
+	padding: 106px 0 0 0;
 }
 
 .advantages__title {
@@ -378,8 +378,8 @@ HTML {
   display: flex;
   justify-content: center;
 	flex: 0 1 1038px;
-  // max-width: 1031px;
-  padding: 0 30px;
+  min-height: 155px;
+  // padding: 0 30px;
   margin-top: 58px;
   overflow-x: auto;
   padding: 0;
@@ -454,9 +454,10 @@ HTML {
 .advantages_tooltip {
   position: relative;
   display: inline-block;
+  cursor: pointer;
 }
 
-.advantages_tooltiptext {
+.advantages_tooltip .advantages_tooltiptext {
   visibility: hidden;
   width: 210px;
   background-color: $background-color-main;
@@ -469,7 +470,7 @@ HTML {
   border-radius: 1px;
   padding: 12px 18px;
   position: absolute;
-  z-index: 1;
+  z-index: 5;
   top: 78px;
   left: 40px;
   margin-left: -100px;
