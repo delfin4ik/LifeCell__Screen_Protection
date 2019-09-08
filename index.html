@@ -8,40 +8,6 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
   <title>LifeCell Screen Protection</title>
-  <script>
-      var mobdevwith = 768;
-      var descdevwith = 1350;
-      var windowOrientation = getOrientation();
-      var viewport = document.getElementById('viewport');
-      setViewport();
-      window.addEventListener('resize', function () {
-          if (!window.screen || window.screen.width < 768) {
-              var a = getOrientation();
-              if (a !== windowOrientation) {
-                  windowOrientation = a;
-                  setViewport()
-              }
-          }
-      });
-
-      function getOrientation() {
-          var a = window.innerWidth / window.innerHeight;
-          return a > 1 ? 'landscape' : 'portrait'
-      }
-
-      function setViewport() {
-          setTimeout(function () {
-              viewport.setAttribute('content', 'width=device-width ,initial-scale=1.0, user-scalable=0');
-              if (window.innerWidth <= mobdevwith) {
-                  var a = window.innerWidth / mobdevwith;
-                  viewport.setAttribute('content', 'width=' + mobdevwith + ', initial-scale=' + a + ', user-scalable=0')
-              }
-              if (-1 < navigator.userAgent.indexOf('Macintosh')) {
-                  viewport.setAttribute('content', 'width=' + descdevwith)
-              }
-          }, 0);
-      }
-  </script>
 </head>
 <body>
   
@@ -157,6 +123,10 @@
     <div class="main-picture" id="picture">
       <div class="container picture-container">
         <div class="picture-text-wrapper">
+          <h2 class="main-picture__title_desktop">Подключайте услугу 
+              <br>“Защита экрана” 
+              <br>через приложение 
+              <br>SCREENZZY</h2>
           <h2 class="main-picture__title">Защита экрана</h2>
           <p class="main-picture__text">Разбить экран больше не страшно!</p>
         </div>
@@ -364,7 +334,9 @@
     <section class="main-picture-banner">
       <div class="container container-banner">
         <div class="banner_aktivation_inner">
-          <h2 class="banner-title">Для активации установите приложение защита экрана</h2>
+          <h2 class="banner-title">ДЛЯ Активации 
+              <br>установите приложение 
+              <br>SCreenzzy</h2>
           <a href="#/" class="banner__app-store"></a>
           <a href="#/" class="banner__google-play"></a>
         </div>
