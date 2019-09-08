@@ -70,7 +70,8 @@
 // end Banner
 
   .main-section-steps {
-    min-width: 1350px;
+    width: 100%;
+    // max-width: 1350px;
     min-height: 398px;
     padding: 72px 209px 58px 210px;
   }
@@ -459,12 +460,17 @@
 }
 
 .main-picture__title {
+  display: block;
   // font-weight: 800;
   flex: 0 1 auto;
   font-size: 10.4vw;
   line-height: 12.5vw;
   color: $background-color-main;
   margin: 7px 0 0 36px;
+}
+
+.main-picture__title_desktop {
+  display: none;
 }
 
 .main-picture__text {

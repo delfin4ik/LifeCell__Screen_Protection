@@ -45,7 +45,7 @@ HTML {
   width: 100%;
   height: 58px;
   background-color: $background-color-header-top;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .header-container {
@@ -60,7 +60,7 @@ HTML {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .nav-site {
@@ -120,8 +120,8 @@ HTML {
   // min-width: 75px;
   justify-content: space-between;
   align-items: center;
-  margin-left: 4px;
-  margin-right: 10px;
+  // margin-left: 4px;
+  // margin-right: 10px;
   cursor: pointer;
 }
 
@@ -165,7 +165,10 @@ HTML {
   background-color: $background-color-header-top;
   min-width: 71px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 999;
+  // z-index: 999;
+  width: 100%;
+  top: 100%;
+  z-index: 10;
 }
 
 .dropdown-content a {
@@ -178,7 +181,7 @@ HTML {
 .dropdown-content a:hover {background-color: rgba(00,17,28,0.2)}
 
 .dropdown:hover .dropdown-content {
-  display: flex;
+  display: block;
 }
 
 .language-choice_visible{
@@ -297,7 +300,8 @@ HTML {
   display:flex;
   flex-flow: row nowrap;
   flex: 0 1 auto;
-  height: 470px;
+  width: 100%;
+  height: 34.8vw;
   background:  url(../img/picture_bg_man.svg) no-repeat right bottom;
   background-size: contain;
   justify-content: flex-end;
@@ -326,12 +330,23 @@ HTML {
   // margin-left: 160px;
 }
 
+.main-picture__title_desktop {
+  font-weight: 800;
+  // font-size: 30px;
+  // line-height: 36px;
+  font-size: 2.2vw;
+  line-height: 2.7vw;
+  color: $background-color-main;
+  margin-top: 6px;
+}
+
 .main-picture__title {
   font-weight: 800;
   font-size: 3.7vw;
   line-height: 4.4vw;
   color: $background-color-main;
   margin-top: 6px;
+  display: none;
 }
 
 .main-picture__text {
@@ -524,11 +539,12 @@ HTML {
   display: flex;
   justify-content: center;
   align-items: center;
-	flex: 1 1 100%;
+  flex: 1 1 100%;
+  padding: 0 16px;
 }
 
 .packages-alternative_item {
-  flex: 0 0 140px;
+  flex: 0 1 140px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -640,7 +656,7 @@ HTML {
 .packages__card_img3 {
   flex: 0 0 325px;
   height: 331px;
-  background: url(../img/packages__card_img3_bg.svg) no-repeat center, url(../img/packages__card_img3.svg) no-repeat center;
+  background: url(../img/packages__card_img3_bg.svg) no-repeat center, url(../img/packages__card_img3.jpg) no-repeat center;
   background-size: contain;
   display: flex;
 }
@@ -856,6 +872,7 @@ HTML {
 
 .container-steps {
   display: flex;
+  max-width: 1350px;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
