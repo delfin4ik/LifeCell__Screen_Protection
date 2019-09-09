@@ -335,6 +335,7 @@ HTML {
   justify-content: center; }
 
 .main-picture__title_desktop {
+  font-family: Lato, Arial, sans-serif;
   font-weight: 800;
   font-size: 2.2vw;
   line-height: 2.7vw;
@@ -1189,7 +1190,7 @@ HTML {
     margin: 109px 420px 0 7px; }
   .picture-text-wrapper {
     flex-flow: 0 0 370px; }
-  .main-picture__title {
+  .main-picture__title_desktop {
     font-size: 50px;
     line-height: 60px; }
   .main-picture__text {
