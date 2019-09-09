@@ -1183,6 +1183,8 @@ HTML {
     font-size: 18px;
     line-height: 22px; }
   /* Picture DesktopXl */
+  .picture-container {
+    height: 471px; }
   .main-picture__bg_center {
     margin: 109px 420px 0 7px; }
   .picture-text-wrapper {
