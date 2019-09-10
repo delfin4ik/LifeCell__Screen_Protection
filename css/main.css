@@ -85,6 +85,7 @@
 body {
   background: #FFFFFF;
   height: 100%;
+  min-width: 360px;
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif; }
@@ -1249,7 +1250,7 @@ HTML {
     font-size: 16px;
     line-height: 19px; } }
 
-@media screen and (min-width: 769) and (max-width: 1350px) {
+@media screen and (min-width: 1350) and (max-width: 1350px) {
   .menu-btn {
     display: none; }
   .banner-title {
@@ -1403,7 +1404,7 @@ HTML {
     color: #FFFFFF; }
   /* -------end footer desktop--------- */ }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1349px) {
   /*  Menu Tab */
   .menu-btn {
     display: block; }
@@ -1412,14 +1413,14 @@ HTML {
   .lang-desk-none {
     display: inline-flex; }
   .container {
-    max-width: 768px; }
+    max-width: 1349px; }
   .header-top_inner {
-    flex: 0 1 768px;
+    flex: 1 1 768px;
     display: flex;
     justify-content: space-between;
     align-items: center; }
   .menu-btn {
-    margin: 20px 0 10px 30px; }
+    margin: 10px 0 10px 30px; }
   .menu-btn {
     z-index: 3;
     cursor: pointer;
@@ -1492,10 +1493,10 @@ HTML {
   .nav-item:nth-child(4) {
     transition-delay: 0.4s; }
   .nav-page__item {
-    font-size: 2.1vw;
-    line-height: 2.5vw;
-    /* font-size: 16px;
-    line-height: 19px; */ }
+    /* font-size: 2.1vw;
+    line-height: 2.5vw; */
+    font-size: 16px;
+    line-height: 19px; }
   .logo {
     width: 98px;
     height: 31px;
@@ -1522,12 +1523,11 @@ HTML {
   .main-picture {
     width: 100%;
     max-height: 967px;
-    background: url(../img/picture_bg_tab.svg) no-repeat 100% 100%;
+    background: url(../img/picture_bg_tab.svg) no-repeat;
     background-size: cover;
-    overflow-x: hidden;
     display: flex; }
   .picture-container {
-    width: 768px;
+    width: 1349px;
     height: 967px;
     display: flex;
     flex-flow: column nowrap;
@@ -1544,15 +1544,15 @@ HTML {
   .main-picture__title {
     display: block;
     flex: 0 1 auto;
-    font-size: 10.4vw;
-    line-height: 12.5vw;
+    font-size: 80px;
+    line-height: 96px;
     color: #FFFFFF;
     margin: 7px 0 0 36px; }
   .main-picture__title_desktop {
     display: none; }
   .main-picture__text {
-    font-size: 6vw;
-    line-height: 7.2vw;
+    font-size: 46px;
+    line-height: 55px;
     color: #FFFFFF;
     margin: 12px 0 0 45px; }
   .main-picture__bg_center {
@@ -1579,11 +1579,11 @@ HTML {
   .advantages__card-item {
     flex: 1 0 243px; }
   .advantages__title {
-    font-size: 2.6vw;
-    line-height: 3.1vw; }
+    font-size: 20px;
+    line-height: 24px; }
   .card-item_text {
-    font-size: 2.1vw;
-    line-height: 2.9vw; }
+    font-size: 16px;
+    line-height: 22px; }
   .advantages_tooltiptext_mob {
     display: flex;
     flex: 1 1 100%;
@@ -1592,13 +1592,13 @@ HTML {
     font-family: Lato, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.8vw;
-    line-height: 2.6vw; }
+    font-size: 14px;
+    line-height: 20px; }
   .red-star_mob {
     display: inline;
     color: red;
     margin-right: 14px;
-    font-size: 2.8vw;
+    font-size: 22px;
     line-height: 1.5; }
   /*  end Advantages Tab */
   /*  Packages Tab */
@@ -1606,13 +1606,12 @@ HTML {
     max-height: 641px;
     overflow: hidden; }
   .packages-container {
-    max-width: 768px;
+    max-width: 1349px;
     overflow: hidden;
     padding: 62px 0 86px 0; }
   .packages-alternative_item {
     margin: 46px 0 24px 0; }
   .packages__card_wraper {
-    justify-content: flex-start;
     overflow-x: auto;
     padding: 0;
     max-width: unset;
@@ -1659,7 +1658,7 @@ HTML {
   .packages__card_img3 {
     flex: 0 0 288px;
     height: 220.46px;
-    background: url(../img/packages__card_img3_bg.svg) no-repeat center, url(../img/packages__card_img3.svg) no-repeat center;
+    background: url(../img/packages__card_img3_bg.svg) no-repeat center, url(../img/packages__card_img3.jpg) no-repeat center;
     background-size: cover;
     display: flex; }
   .wrap-packages__card_title {
@@ -1692,10 +1691,9 @@ HTML {
   .banner__background-img {
     display: none; }
   .container-banner {
-    max-width: 768px;
+    max-width: 1349px;
     justify-content: flex-start;
-    background: url(../img/app-banner-bg_tab.svg) no-repeat right bottom;
-    background-size: 44.9vw 45.8vw; }
+    background: url(../img/app-banner-bg_tab.svg) no-repeat right bottom; }
   .banner_aktivation_inner {
     flex: 0 1 420px;
     padding-left: 16px;
@@ -1703,46 +1701,45 @@ HTML {
   .banner-title {
     flex: 1 1 410px;
     min-height: 13.3vw;
-    font-size: 3.6vw;
-    line-height: 4.4vw;
+    font-size: 28px;
+    line-height: 34px;
     margin-top: 70px;
     padding-bottom: 50px; }
   .banner__app-store {
     max-height: 7.7vw;
-    background-size: 22.9vw 7.7vw;
-    /* background-size: 176px 59px; */
+    /* background-size: 22.9vw 7.7vw; */
+    background-size: 176px 59px;
     background-position: center; }
   .banner__google-play {
     background-position: center left;
-    background-size: 26.6vw 7.7vw;
     height: 7.7vw;
-    /* background-size: 204px 59px; */ }
+    /* background-size: 26.6vw 7.7vw; */
+    background-size: 204px 59px; }
   /*  end Banner Tab */
   /* -------Steps Tablet--------- */
   .main-section-steps {
-    max-width: 768px;
+    width: 100%;
     min-height: 370px;
     padding: 62px 0 58px 30px; }
   .steps__title {
-    font-size: 2.6vw;
-    line-height: 3.1vw; }
+    font-size: 20px;
+    line-height: 24px; }
   .steps__card-wrap {
     /* margin-left: 30px; */
     margin-top: 24px; }
   .steps-card-item_number {
-    font-size: 2.3vw;
-    line-height: 2.9vw; }
+    font-size: 18px;
+    line-height: 22px; }
   .steps-card-item_text {
-    font-size: 2.1vw;
-    line-height: 2.5vw; }
+    font-size: 16px;
+    line-height: 19px; }
   /* -------end steps Tablet--------- */
   /* Questions Tab */
   .main-section-questions {
     min-height: 157px;
-    flex-flow: row nowrap;
-    overflow: hidden; }
+    flex-flow: row nowrap; }
   .questions-container {
-    max-width: 768px;
+    max-width: 1349px;
     margin-top: 48px; }
   .questions-btn-rectangle {
     flex: 0 0 320px;
@@ -1759,10 +1756,10 @@ HTML {
   .questions-title-inner:nth-last-of-type(1) {
     margin-bottom: 104px; }
   .question {
-    font-size: 2.1vw;
-    line-height: 2.5vw;
-    /* font-size: 16px;
-  line-height: 19px; */ }
+    /* font-size: 2.1vw;
+  line-height: 2.5vw; */
+    font-size: 16px;
+    line-height: 19px; }
   .answers {
     min-height: 132px;
     max-width: 608px;
@@ -1772,11 +1769,10 @@ HTML {
   .footer {
     display: grid;
     min-height: 378px;
-    max-width: 768px;
     grid-template-columns: 1fr;
     grid-template-rows: 30.16%	47.09%	22.75%; }
   .container {
-    max-width: 768px; }
+    max-width: 1349px; }
   .footer-contacts_wrap {
     display: none; }
   .socials-text {
@@ -1801,8 +1797,8 @@ HTML {
     font-family: Lato, Arial, sans-serif;
     font-style: normal;
     /* font-weight: bold; */
-    font-size: 2.3vw;
-    line-height: 2.9vw;
+    font-size: 18px;
+    line-height: 22px;
     color: #FFFFFF; }
   .footer-nav_item1 {
     grid-column: 2 / 3;
@@ -1836,16 +1832,16 @@ HTML {
     font-family: Lato, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 2.1vw;
-    line-height: 2.5vw;
+    font-size: 16px;
+    line-height: 19px;
     color: #FFFFFF; }
   /* -------end footer Tablet--------- */ }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
   .container {
-    max-width: 360px; }
+    max-width: 767px; }
   .header-top_inner {
-    flex: 0 1 360px;
+    flex: 1 1 360px;
     display: flex;
     justify-content: space-between;
     align-items: center; }
@@ -1864,13 +1860,11 @@ HTML {
     transform: translate3d(-100%, 0, 0);
     font-style: normal;
     font-weight: 900;
-    font-size: 4.4vw;
-    line-height: 5.3vw; }
+    font-size: 16px;
+    line-height: 19px; }
   .menu .nav-link {
-    font-size: 4.4vw;
-    line-height: 5.3vw;
-    /* font-size: 16px;
-    line-height: 19px; */ }
+    font-size: 16px;
+    line-height: 19px; }
   .logo {
     width: 82px;
     height: 26px;
@@ -1907,11 +1901,11 @@ HTML {
   .main-picture {
     width: 100%;
     height: 580px;
-    background: url(../img/picture_bg_tab.svg) no-repeat 100% 100%;
+    background: url(../img/picture_bg_tab.svg) no-repeat;
     background-size: cover;
     overflow: hidden; }
   .picture-container {
-    width: 360px;
+    width: 767px;
     height: 580px;
     display: flex;
     flex-flow: column nowrap;
@@ -1926,36 +1920,34 @@ HTML {
     justify-content: flex-start;
     margin: 0px 13px 0 0px; }
   .main-picture__title {
-    font-size: 11.1vw;
-    line-height: 13.3vw;
-    margin: 25.2vw 0 0 15px; }
+    margin: 27px 0 0 15px;
+    font-size: 40px;
+    line-height: 48px; }
   .main-picture__text {
-    font-size: 6.4vw;
-    line-height: 7.8vw;
+    font-size: 23px;
+    line-height: 28px;
     color: #FFFFFF;
     margin: 6px 0px 0 16px; }
   .main-picture__bg_center {
-    max-width: 63.1vw;
-    max-height: 82.8vw;
-    margin: 9vw 0 0 0; }
+    margin: 27px 0 0 0; }
   /*  Advantages mob */
   .container-advantages {
     padding: 72px 0 39px 0; }
   .advantages__title {
-    font-size: 5.0vw;
-    line-height: 6.1vw; }
+    font-size: 18px;
+    line-height: 22px; }
   .card-item_text {
-    font-size: 4.4vw;
-    line-height: 6.1vw; }
+    font-size: 16px;
+    line-height: 22px; }
   .advantages_tooltiptext_mob {
     padding: 37px 30px 0 16px;
-    font-size: 3.9vw;
-    line-height: 5.6vw; }
+    font-size: 14px;
+    line-height: 20px; }
   .red-star_mob {
     display: inline;
     color: red;
     margin-right: 14px;
-    font-size: 3.9vw;
+    font-size: 18px;
     line-height: 1.5; }
   /*  end Avantages mob */
   /*  Packages mob */
@@ -1963,22 +1955,22 @@ HTML {
     max-height: 605px;
     overflow: hidden; }
   .packages-container {
-    max-width: 360px;
+    max-width: 767px;
     overflow: hidden;
     justify-content: flex-start;
     padding: 54px 0; }
   .packages-header {
-    font-size: 5vw;
-    line-height: 6.1vw;
-    /* font-size: 18px;
-  line-height: 22px; */ }
+    /* font-size: 5vw;
+  line-height: 6.1vw; */
+    font-size: 18px;
+    line-height: 22px; }
   .packages-alternative_item {
     flex: 0 1 110px;
     height: 43.77px;
-    font-size: 5vw;
-    line-height: 6.1vw;
-    /* font-size: 18px;
-  line-height: 22px; */
+    /* font-size: 5vw;
+  line-height: 6.1vw; */
+    font-size: 18px;
+    line-height: 22px;
     margin: 34px 0 41.84px 0; }
   .packages__card_wraper {
     justify-content: flex-start;
@@ -2051,18 +2043,18 @@ HTML {
     min-height: 384px;
     overflow: hidden; }
   .container-banner {
-    max-width: 360px;
+    max-width: 767px;
     background: url(../img/app-banner-bg_mob.svg) no-repeat right bottom;
-    background-size: 68.3vw 69.7vw;
+    background-size: 246px 251px;
     overflow: hidden; }
   .banner-title {
-    font-size: 5.6vw;
-    line-height: 7.2vw;
+    font-size: 20px;
+    line-height: 26px;
     flex: 1 1 293px;
-    min-height: 21.7vw;
-    margin-top: 15.6vw;
-    /* min-height: 78px;
-  margin-top: 56px; */
+    /* min-height: 21.7vw;
+  margin-top: 15.6vw; */
+    min-height: 78px;
+    margin-top: 56px;
     padding-bottom: 0;
     padding-right: 6.9vw; }
   .banner__app-store {
@@ -2087,30 +2079,30 @@ HTML {
   .main-section-steps {
     padding: 50px 0 58px 0; }
   .steps__title {
-    font-size: 5vw;
-    line-height: 6.1vw;
+    font-size: 18px;
+    line-height: 22px;
     margin-left: 16px;
     margin-right: 16px; }
   .steps__card-wrap {
     margin-top: 54px;
-    width: 360px; }
+    min-width: 360px; }
   .steps__card-wrap:before, .steps__card-wrap:after {
     content: '';
     flex: 0 0 16px;
     height: 100%; }
   .steps-card-item_number {
-    font-size: 5vw;
-    line-height: 6.1vw; }
+    font-size: 18px;
+    line-height: 22px; }
   .steps-card-item_text {
-    font-size: 4.4vw;
-    line-height: 5.3vw; }
+    font-size: 16px;
+    line-height: 19px; }
   /* -------end steps mobile--------- */
   /* Questions mob*/
   .main-section-questions {
     min-height: 211px;
     overflow: hidden; }
   .questions-container {
-    min-width: 360px; }
+    width: 767px; }
   .questions-container {
     margin-top: 56px; }
   .questions-btn-rectangle {
@@ -2122,14 +2114,14 @@ HTML {
   .answers-wrap {
     flex: 0 1 328px; }
   .questions-title-inner {
-    min-width: 91.1vw; }
+    width: 100%; }
   .questions-title-inner:nth-last-of-type(1) {
     margin-bottom: 94px; }
   .question {
-    font-size: 4.4vw;
-    line-height: 5.3vw;
-    /* font-size: 16px;
-  line-height: 19px; */ }
+    /* font-size: 4.4vw;
+  line-height: 5.3vw; */
+    font-size: 16px;
+    line-height: 19px; }
   .answers {
     text-align: left;
     min-height: 200px;
@@ -2158,7 +2150,7 @@ HTML {
   .footer-nav {
     background: #143354; }
   .container-footer-nav {
-    max-width: 360px;
+    max-width: 767px;
     grid-row: 2 / 3;
     display: flex;
     height: 270px;
@@ -2169,15 +2161,15 @@ HTML {
     font-family: Lato, Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 5vw;
-    line-height: 6.1vw;
+    font-size: 18px;
+    line-height: 22px;
     text-decoration: none;
     color: #FFFFFF; }
   .footer-copyright {
     background: #143354;
     border-top: 1px solid #FFFFFF; }
   .container-footer-copyright {
-    max-width: 360px;
+    max-width: 767px;
     grid-row: 3 / 4;
     display: flex;
     height: 86px;
@@ -2188,7 +2180,7 @@ HTML {
     font-family: Lato, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 4.4vw;
-    line-height: 5.3vw;
+    font-size: 16px;
+    line-height: 19px;
     color: #FFFFFF; }
   /* -------end footer mob--------- */ }
