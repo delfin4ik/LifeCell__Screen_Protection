@@ -17,7 +17,7 @@
   }
 
   /* Picture DesktopXl */
-  .picture-container {
+  /* .picture-container {
     height: 471px;
   }
 
@@ -38,7 +38,7 @@
     font-size: 22px;
     line-height: 26px;
     margin-top: 12px;
-  }
+  } */
   /* end Picture Desktop */
 
   /*  Avantages Desktop */
@@ -420,6 +420,16 @@
     margin-right: 30px;
   }
 
+  .dropdown-content {
+    left: 100%;
+    top: -6px;
+    z-index: 10;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: flex;
+  }
+
   .nav-site, 
   .language-switch_desktop, 
   .nav-icons__item_search,
@@ -447,7 +457,8 @@
   align-items: flex-start;
   background: url(../img/picture_bg_man_tab.svg) no-repeat center;
   background-size: cover;
-  // overflow-x: hidden;
+  padding: 0;
+  position: static;
 }
 
 .picture-text-wrapper {
@@ -480,6 +491,7 @@
 }
 
 .main-picture__text {
+  display: block;
   // font-weight: 800;
   font-size: 46px;
   line-height: 55px;
@@ -487,6 +499,10 @@
   // line-height: 7.2vw;
   color: $background-color-main;
   margin: 12px 0 0 45px;
+}
+
+.main-picture__text_desktop {
+  display: none;
 }
 
 .main-picture__bg_center {
@@ -498,6 +514,7 @@
   // max-height: 589px;
   // margin-left: 20px;
   // margin-top: 76px;
+  position: static;
 }
 
   /*  Advantages Tab */
