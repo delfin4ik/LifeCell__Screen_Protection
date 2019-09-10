@@ -1958,7 +1958,8 @@ HTML {
     margin: 27px 0 0 0; }
   /*  Advantages mob */
   .container-advantages {
-    padding: 72px 0 39px 0; }
+    padding: 72px 0 39px 0;
+    width: 100%; }
   .advantages__title {
     font-size: 18px;
     line-height: 22px; }
@@ -2046,7 +2047,7 @@ HTML {
   .packages__card_img3 {
     flex: 0 0 288px;
     height: 220.46px;
-    background: url(../img/packages__card_img3_bg.svg) no-repeat center, url(../img/packages__card_img3.svg) no-repeat center;
+    background: url(../img/packages__card_img3_bg.svg) no-repeat center, url(../img/packages__card_img3.jpg) no-repeat center;
     background-size: cover;
     display: flex; }
   .wrap-packages__card_title {
