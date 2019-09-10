@@ -33,7 +33,7 @@ $container-width-mob: 360px;
 
 // Media Query Mixins
 @mixin mediaSm {
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 375px) {
     @content;
   }
 }
