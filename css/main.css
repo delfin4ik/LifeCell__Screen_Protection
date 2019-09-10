@@ -1841,7 +1841,7 @@ HTML {
     color: #FFFFFF; }
   /* -------end footer Tablet--------- */ }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 375px) {
   .container {
     max-width: 360px; }
   .header-top_inner {
