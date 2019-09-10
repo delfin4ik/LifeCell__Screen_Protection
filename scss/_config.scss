@@ -22,8 +22,8 @@ $background-color-icons: #F5D300;
 $background-color-current: #F9D648;
 
 $container-width-desktop: 1350px;
-$container-width-tab: 768px;
-$container-width-mob: 360px;
+$container-width-tab: 1349px;
+$container-width-mob: 767px;
 
 
 @mixin easeOut {
@@ -33,19 +33,19 @@ $container-width-mob: 360px;
 
 // Media Query Mixins
 @mixin mediaSm {
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 767px) {
     @content;
   }
 }
 
 @mixin mediaMd {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1349px) {
     @content;
   }
 }
 
 @mixin mediaLg {
-  @media screen and (min-width: 769) and (max-width: 1350px) {
+  @media screen and (min-width: 1350) and (max-width: 1350px) {
     @content;
   }
 }

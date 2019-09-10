@@ -373,7 +373,7 @@
   }
 
   .header-top_inner {
-    flex: 0 1 768px;
+    flex: 1 1 768px;
     // margin-right: 1px;
     display: flex;
     justify-content: space-between;
@@ -381,16 +381,16 @@
   }
 
   .menu-btn {
-    margin: 20px 0 10px 30px;
+    margin: 10px 0 10px 30px;
   }
 
   @import 'menu';
 
   .nav-page__item {
-    font-size: 2.1vw;
-    line-height: 2.5vw;
-    /* font-size: 16px;
-    line-height: 19px; */
+    /* font-size: 2.1vw;
+    line-height: 2.5vw; */
+    font-size: 16px;
+    line-height: 19px;
   }
 
   .logo {
@@ -432,9 +432,9 @@
 .main-picture {
   width: 100%;
   max-height: 967px;
-  background: url(../img/picture_bg_tab.svg) no-repeat 100% 100%;
+  background: url(../img/picture_bg_tab.svg) no-repeat;
   background-size: cover;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   display: flex;
 }
 
@@ -467,8 +467,10 @@
   display: block;
   // font-weight: 800;
   flex: 0 1 auto;
-  font-size: 10.4vw;
-  line-height: 12.5vw;
+  font-size: 80px;
+  line-height: 96px;
+  // font-size: 10.4vw;
+  // line-height: 12.5vw;
   color: $background-color-main;
   margin: 7px 0 0 36px;
 }
@@ -479,8 +481,10 @@
 
 .main-picture__text {
   // font-weight: 800;
-  font-size: 6vw;
-  line-height: 7.2vw;
+  font-size: 46px;
+  line-height: 55px;
+  // font-size: 6vw;
+  // line-height: 7.2vw;
   color: $background-color-main;
   margin: 12px 0 0 45px;
 }
@@ -522,13 +526,17 @@
   }
 
   .advantages__title {
-    font-size: 2.6vw;
-    line-height: 3.1vw;
+    font-size: 20px;
+    line-height: 24px;
+    // font-size: 2.6vw;
+    // line-height: 3.1vw;
   }
 
   .card-item_text {
-    font-size: 2.1vw;
-    line-height: 2.9vw;
+    font-size: 16px;
+    line-height: 22px;
+    // font-size: 2.1vw;
+    // line-height: 2.9vw;
   }
 
   .advantages_tooltiptext_mob {
@@ -539,15 +547,17 @@
     font-family: $font-family-main;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.8vw;
-    line-height: 2.6vw;
+    font-size: 14px;
+    line-height: 20px;
+    // font-size: 1.8vw;
+    // line-height: 2.6vw;
   }
 
   .red-star_mob {
     display: inline;
     color: red;
     margin-right: 14px;
-    font-size: 2.8vw;
+    font-size: 22px;
     line-height: 1.5;
   }
 /*  end Advantages Tab */
@@ -610,7 +620,7 @@
 // }
 
 .packages__card_wraper {
-  justify-content: flex-start;
+  // justify-content: flex-start;
   overflow-x: auto;
   padding: 0;
   max-width: unset;
@@ -696,7 +706,7 @@
 .packages__card_img3 {
   flex: 0 0 288px;
   height: 220.46px;
-  background: url(../img/packages__card_img3_bg.svg) no-repeat center, url(../img/packages__card_img3.svg) no-repeat center;
+  background: url(../img/packages__card_img3_bg.svg) no-repeat center, url(../img/packages__card_img3.jpg) no-repeat center;
   background-size: cover;
   display: flex;
 }
@@ -784,7 +794,7 @@
   max-width: $container-width-tab;
   justify-content: flex-start;
   background: url(../img/app-banner-bg_tab.svg) no-repeat right bottom;
-  background-size: 44.9vw 45.8vw;
+  // background-size: 44.9vw 45.8vw;
 }
 
 .banner_aktivation_inner {
@@ -797,8 +807,10 @@
   flex: 1 1 410px;
   min-height: 13.3vw;
   // min-height: 102px;
-  font-size: 3.6vw;
-  line-height: 4.4vw;
+  font-size: 28px;
+  line-height: 34px;
+  // font-size: 3.6vw;
+  // line-height: 4.4vw;
   margin-top: 70px;
   padding-bottom: 50px;
 }
@@ -806,8 +818,8 @@
 .banner__app-store {
   // flex: 1 1 156px;
   max-height: 7.7vw;
-  background-size: 22.9vw 7.7vw;
-  /* background-size: 176px 59px; */
+  /* background-size: 22.9vw 7.7vw; */
+  background-size: 176px 59px;
   background-position: center;
   // margin-right: 44vw;
   // margin-left: 0px;
@@ -816,9 +828,9 @@
 
 .banner__google-play {
   background-position: center left;
-  background-size: 26.6vw 7.7vw;
   height: 7.7vw;
-  /* background-size: 204px 59px; */
+  /* background-size: 26.6vw 7.7vw; */
+  background-size: 204px 59px;
   // margin-left: 5px;
   // margin-top: 15px;
   // margin-right: 10.8vw;
@@ -833,14 +845,16 @@
 
 /* -------Steps Tablet--------- */
 .main-section-steps {
-  max-width: 768px;
+  width: 100%;
   min-height: 370px;
   padding: 62px 0 58px 30px;
 }
 
 .steps__title {
-  font-size: 2.6vw;
-  line-height: 3.1vw;
+  font-size: 20px;
+  line-height: 24px;
+  // font-size: 2.6vw;
+  // line-height: 3.1vw;
 }
 
 .steps__card-wrap {
@@ -849,13 +863,17 @@
 }
 
 .steps-card-item_number {
-  font-size: 2.3vw;
-  line-height: 2.9vw;
+  font-size: 18px;
+  line-height: 22px;
+  // font-size: 2.3vw;
+  // line-height: 2.9vw;
 }
 
 .steps-card-item_text {
-  font-size: 2.1vw;
-  line-height: 2.5vw;
+  font-size: 16px;
+  line-height: 19px;
+  // font-size: 2.1vw;
+  // line-height: 2.5vw;
 }
 /* -------end steps Tablet--------- */
 
@@ -867,7 +885,7 @@
   // background-color: $background-color-main;
   // display: flex;
   flex-flow: row nowrap;
-  overflow: hidden;
+  // overflow: hidden;
   // justify-content: center;
   // align-content: flex-start;
 }
@@ -917,10 +935,10 @@
 .question {
   // font-style: normal;
   // font-weight: 500;
-  font-size: 2.1vw;
-  line-height: 2.5vw;
-  /* font-size: 16px;
-  line-height: 19px; */
+  /* font-size: 2.1vw;
+  line-height: 2.5vw; */
+  font-size: 16px;
+  line-height: 19px;
   // text-transform: uppercase;
   // color: $text-color-main;
   // margin: 26px 0;
@@ -950,7 +968,7 @@
 .footer {
   display: grid;
   min-height: 378px;
-  max-width: 768px;
+  // max-width: 768px;
   grid-template-columns: 1fr;
   grid-template-rows: 30.16%	47.09%	22.75%;
 }
@@ -1004,8 +1022,10 @@
   font-family: $font-family-main;
   font-style: normal;
   /* font-weight: bold; */
-  font-size: 2.3vw;
-  line-height: 2.9vw;
+  font-size: 18px;
+  line-height: 22px;
+  // font-size: 2.3vw;
+  // line-height: 2.9vw;
   color: $text-color-white;
 }
 
@@ -1058,8 +1078,10 @@
   font-family: $font-family-main;
   font-style: normal;
   font-weight: normal;
-  font-size: 2.1vw;
-  line-height: 2.5vw;
+  font-size: 16px;
+  line-height: 19px;
+  // font-size: 2.1vw;
+  // line-height: 2.5vw;
   color: $text-color-white;
 }
 /* -------end footer Tablet--------- */
@@ -1074,7 +1096,7 @@
   }
 
   .header-top_inner {
-    flex: 0 1 360px;
+    flex: 1 1 360px;
     // margin-right: 1px;
     display: flex;
     justify-content: space-between;
@@ -1104,15 +1126,17 @@ ul.menu-nav {
     transform: translate3d(-100%, 0, 0);
     font-style: normal;
     font-weight: 900;
-    font-size: 4.4vw;
-    line-height: 5.3vw;
+    font-size: 16px;
+    line-height: 19px;
+    // font-size: 4.4vw;
+    // line-height: 5.3vw;
   }
 
   .menu .nav-link {
-    font-size: 4.4vw;
-    line-height: 5.3vw;
-    /* font-size: 16px;
-    line-height: 19px; */
+    // font-size: 4.4vw;
+    // line-height: 5.3vw;
+    font-size: 16px;
+    line-height: 19px;
   }
 
   .logo {
@@ -1166,7 +1190,7 @@ ul.menu-nav {
 .main-picture {
   width: 100%;
   height: 580px;
-  background: url(../img/picture_bg_tab.svg) no-repeat 100% 100%;
+  background: url(../img/picture_bg_tab.svg) no-repeat;
   background-size: cover;
   overflow: hidden;
   // display: flex;
@@ -1198,28 +1222,30 @@ ul.menu-nav {
 .main-picture__title {
   // font-weight: 800;
   // flex: 0 1 auto;
-  font-size: 11.1vw;
-  line-height: 13.3vw;
-  margin: 25.2vw 0 0 15px;
-  // font-size: 40px;
-  // line-height: 48px;
+  // font-size: 11.1vw;
+  // line-height: 13.3vw;
+  margin: 27px 0 0 15px;
+  font-size: 40px;
+  line-height: 48px;
   // margin: 80px 0 0 15px;
 }
 
 
 .main-picture__text {
-  font-size: 6.4vw;
-  line-height: 7.8vw;
+  font-size: 23px;
+  line-height: 28px;
+  // font-size: 6.4vw;
+  // line-height: 7.8vw;
   color: $background-color-main;
   margin: 6px 0px 0 16px;
 }
 
 .main-picture__bg_center {
-  max-width: 63.1vw;
-  max-height: 82.8vw;
-  margin: 9vw 0 0 0;
-  // max-width: 227px;
-  // max-height: 298px;
+  // max-width: 63.1vw;
+  // max-height: 82.8vw;
+  margin: 27px 0 0 0;
+  // width: 227px;
+  // height: 298px;
   // margin: 0;
 }
 
@@ -1231,26 +1257,33 @@ ul.menu-nav {
   }
 
   .advantages__title {
-    font-size: 5.0vw;
-    line-height: 6.1vw;
+    font-size: 18px;
+    line-height: 22px;
+    // font-size: 5.0vw;
+    // line-height: 6.1vw;
   }
 
   .card-item_text {
-    font-size: 4.4vw;
-    line-height: 6.1vw;
+    font-size: 16px;
+    line-height: 22px;
+    // font-size: 4.4vw;
+    // line-height: 6.1vw;
   }
 
   .advantages_tooltiptext_mob {
     padding: 37px 30px 0 16px;
-    font-size: 3.9vw;
-    line-height: 5.6vw;
+    font-size: 14px;
+    line-height: 20px;
+    // font-size: 3.9vw;
+    // line-height: 5.6vw;
   }
 
   .red-star_mob {
     display: inline;
     color: red;
     margin-right: 14px;
-    font-size: 3.9vw;
+    font-size: 18px;
+    // font-size: 3.9vw;
     line-height: 1.5;
   }
 /*  end Avantages mob */
@@ -1274,10 +1307,10 @@ ul.menu-nav {
   // text-align: center;
   // font-style: normal;
   // font-weight: 900;
-  font-size: 5vw;
-  line-height: 6.1vw;
-  /* font-size: 18px;
-  line-height: 22px; */
+  /* font-size: 5vw;
+  line-height: 6.1vw; */
+  font-size: 18px;
+  line-height: 22px;
   // text-transform: uppercase;
 }
 
@@ -1291,10 +1324,10 @@ ul.menu-nav {
   // border: 1px solid #AEAEAE;
   // font-style: normal;
   // font-weight: bold;
-  font-size: 5vw;
-  line-height: 6.1vw;
-  /* font-size: 18px;
-  line-height: 22px; */
+  /* font-size: 5vw;
+  line-height: 6.1vw; */
+  font-size: 18px;
+  line-height: 22px;
   // color: $text-color-heading;
   margin: 34px 0 41.84px 0;
 }
@@ -1416,21 +1449,24 @@ ul.menu-nav {
   max-width: $container-width-mob;
   // justify-content: flex-start;
   background: url(../img/app-banner-bg_mob.svg) no-repeat right bottom;
-  background-size: 68.3vw 69.7vw;
-  // background-size: 246px 251px;
+  // background-size: 68.3vw 69.7vw;
+  background-size: 246px 251px;
   overflow: hidden;
 }
 
 .banner-title{
-  font-size: 5.6vw;
-  line-height: 7.2vw;
+  font-size: 20px;
+  line-height: 26px;
+  // font-size: 5.6vw;
+  // line-height: 7.2vw;
   flex: 1 1 293px;
-  min-height: 21.7vw;
-  margin-top: 15.6vw;
-  /* min-height: 78px;
-  margin-top: 56px; */
+  /* min-height: 21.7vw;
+  margin-top: 15.6vw; */
+  min-height: 78px;
+  margin-top: 56px;
   padding-bottom: 0;
   padding-right: 6.9vw;
+  // padding-right: 6.9vw;
 }
 
 .banner__app-store {
@@ -1468,15 +1504,17 @@ ul.menu-nav {
 }
 
 .steps__title {
-  font-size: 5vw;
-  line-height: 6.1vw;
+  font-size: 18px;
+  line-height: 22px;
+  // font-size: 5vw;
+  // line-height: 6.1vw;
   margin-left: 16px;
   margin-right: 16px;
 }
 
 .steps__card-wrap {
   margin-top: 54px;
-  width: 360px;
+  min-width: 360px;
 }
 
 .steps__card-wrap:before, .steps__card-wrap:after {
@@ -1486,13 +1524,17 @@ ul.menu-nav {
 }
 
 .steps-card-item_number {
-  font-size: 5vw;
-  line-height: 6.1vw;
+  font-size: 18px;
+  line-height: 22px;
+  // font-size: 5vw;
+  // line-height: 6.1vw;
 }
 
 .steps-card-item_text {
-  font-size: 4.4vw;
-  line-height: 5.3vw;
+  font-size: 16px;
+  line-height: 19px;
+  // font-size: 4.4vw;
+  // line-height: 5.3vw;
 }
 /* -------end steps mobile--------- */
 
@@ -1505,7 +1547,7 @@ ul.menu-nav {
 }
 
 .questions-container {
-  min-width: $container-width-mob;
+  width: $container-width-mob;
 }
 
 .questions-container {
@@ -1535,7 +1577,7 @@ ul.menu-nav {
 }
 
 .questions-title-inner {
-  min-width: 91.1vw;
+  width: 100%;
   // min-height: 72px;
   // border-top: 1px solid rgba(196, 196, 196, 0.72);
   // border-bottom: 1px solid rgba(196, 196, 196, 0.72);
@@ -1552,10 +1594,10 @@ ul.menu-nav {
 .question {
   // font-style: normal;
   // font-weight: 500;
-  font-size: 4.4vw;
-  line-height: 5.3vw;
-  /* font-size: 16px;
-  line-height: 19px; */
+  /* font-size: 4.4vw;
+  line-height: 5.3vw; */
+  font-size: 16px;
+  line-height: 19px;
   // text-transform: uppercase;
   // color: $text-color-main;
   // margin: 26px 0;
@@ -1636,8 +1678,10 @@ ul.menu-nav {
   font-family: $font-family-main;
   font-style: normal;
   font-weight: bold;
-  font-size: 5vw;
-  line-height: 6.1vw;
+  font-size: 18px;
+  line-height: 22px;
+  // font-size: 5vw;
+  // line-height: 6.1vw;
   text-decoration: none;
   color: $text-color-white;
 }
@@ -1661,8 +1705,10 @@ ul.menu-nav {
   font-family: $font-family-main;
   font-style: normal;
   font-weight: normal;
-  font-size: 4.4vw;
-  line-height: 5.3vw;
+  font-size: 16px;
+  line-height: 19px;
+  // font-size: 4.4vw;
+  // line-height: 5.3vw;
   color: $text-color-white;
   
 }
