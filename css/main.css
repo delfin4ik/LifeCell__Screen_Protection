@@ -821,7 +821,8 @@ HTML {
   width: 100%;
   padding: 0 16px;
   margin-top: 45px;
-  overflow: hidden; }
+  overflow: hidden;
+  overflow-x: auto; }
 
 .steps__card-wrap {
   width: 931px;
