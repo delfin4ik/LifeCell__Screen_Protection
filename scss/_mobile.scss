@@ -73,17 +73,17 @@
 }
 // end Banner
 
-  .main-section-steps {
-    width: 100%;
-    // max-width: 1350px;
-    min-height: 398px;
-    padding: 72px 209px 58px 210px;
-  }
+  // .main-section-steps {
+  //   width: 100%;
+  //   // max-width: 1350px;
+  //   // min-height: 398px;
+  //   // padding: 72px 209px 58px 210px;
+  // }
 
-  .steps__card-wrap {
-    justify-content: space-around;
-    align-self: center;
-  }
+  // .steps__card-wrap {
+  //   justify-content: space-around;
+  //   align-self: center;
+  // }
   
   // footer
   .footer-notification {
@@ -143,31 +143,38 @@
 
 /* -------steps Tablet--------- */
 .main-section-steps {
-  max-width: 1350px;
-  min-height: 398px;
-  padding: 5vw 0 4vw 0;
+  // max-width: 1350px;
+  min-height: 370px;
+  // padding: 5vw 0 4vw 0;
+  // overflow: hidden;
 }
 
 .steps__title {
-  font-size: 1.5vw;
-  line-height: 1.8vw;
+  font-size: 20px;
+  line-height: 24px;
+  // font-size: 1.5vw;
+  // line-height: 1.8vw;
 }
 
-.steps__card-wrap {
+// .steps__card-wrap {
   
-  position: relative;
-  min-width: 931px;
-  margin-top: 46px;
-}
+//   // position: relative;
+//   min-width: 931px;
+//   margin-top: 46px;
+// }
 
 .steps-card-item_number {
-  font-size: 1.3vw;
-  line-height: 1.6vw;
+  font-size: 18px;
+  line-height: 22px;
+  // font-size: 1.3vw;
+  // line-height: 1.6vw;
 }
 
 .steps-card-item_text {
-  font-size: 1.2vw;
-  line-height: 1.4vw;
+  font-size: 16px;
+  line-height: 19px;
+  // font-size: 1.2vw;
+  // line-height: 1.4vw;
 }
 /* -------end steps Tablet--------- */
 
@@ -862,21 +869,26 @@
 
 /* -------Steps Tablet--------- */
 .main-section-steps {
-  width: 100%;
+  // width: 100%;
   min-height: 370px;
-  padding: 62px 0 58px 30px;
+  padding: 62px 0 58px 0;
 }
 
 .steps__title {
+  min-height: 24px;
   font-size: 20px;
   line-height: 24px;
   // font-size: 2.6vw;
   // line-height: 3.1vw;
 }
 
-.steps__card-wrap {
+.steps__card-wraper {
   /* margin-left: 30px; */
-  margin-top: 24px;
+  margin-top: 46px;
+}
+
+.steps__card-wrap {
+  width: 850px;
 }
 
 .steps-card-item_number {
@@ -1526,20 +1538,25 @@ ul.menu-nav {
   line-height: 22px;
   // font-size: 5vw;
   // line-height: 6.1vw;
-  margin-left: 16px;
-  margin-right: 16px;
+  display: block;
+  margin: 0 auto;
+  width: 280px;
 }
 
-.steps__card-wrap {
+.steps__card-wraper {
   margin-top: 54px;
   min-width: 360px;
 }
 
-.steps__card-wrap:before, .steps__card-wrap:after {
-  content: '';
-  flex: 0 0 16px;
-  height: 100%;
+.steps__card-wrap {
+  width: 838px;
 }
+
+// .steps__card-wrap:before, .steps__card-wrap:after {
+//   content: '';
+//   flex: 0 0 16px;
+//   height: 100%;
+// }
 
 .steps-card-item_number {
   font-size: 18px;
