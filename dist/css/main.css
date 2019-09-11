@@ -987,7 +987,7 @@ HTML {
 .answers {
   display: none;
   text-align: left;
-  min-height: 132px;
+  min-height: fit-content;
   max-width: 798px;
   font-style: normal;
   font-weight: normal;
@@ -1787,7 +1787,7 @@ HTML {
     font-size: 16px;
     line-height: 19px; }
   .answers {
-    min-height: 132px;
+    min-height: fit-content;
     max-width: 608px;
     margin: 6px 130px 25px 0; }
   /* end Question Tab */
@@ -2151,7 +2151,7 @@ HTML {
     line-height: 19px; }
   .answers {
     text-align: left;
-    min-height: 200px;
+    min-height: fit-content;
     max-width: 316px;
     /* min-height: 200px;
   max-width: 316px; */

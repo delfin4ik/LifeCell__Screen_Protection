@@ -1093,7 +1093,7 @@ HTML {
 .answers {
   display: none;
   text-align: left;
-  min-height: 132px;
+  min-height: fit-content;
   max-width: 798px;
   // white-space: pre-wrap;
   font-style: normal;
