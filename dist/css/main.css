@@ -1254,7 +1254,7 @@ HTML {
     font-size: 16px;
     line-height: 19px; } }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1350) and (max-width: 1350px) {
   .menu-btn {
     display: none; }
   .banner-title {
@@ -1402,7 +1402,7 @@ HTML {
     color: #FFFFFF; }
   /* -------end footer desktop--------- */ }
 
-@media screen and (max-width: 1198px) {
+@media screen and (max-width: 1349px) {
   /*  Menu Tab */
   .menu-btn {
     display: block; }
