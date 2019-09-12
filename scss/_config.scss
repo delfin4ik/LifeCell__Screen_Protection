@@ -22,7 +22,7 @@ $background-color-icons: #F5D300;
 $background-color-current: #F9D648;
 
 $container-width-desktop: 1350px;
-$container-width-tab: 1349px;
+$container-width-tab: 1199px;
 $container-width-mob: 767px;
 
 
@@ -39,13 +39,13 @@ $container-width-mob: 767px;
 }
 
 @mixin mediaMd {
-  @media screen and (max-width: 1349px) {
+  @media screen and (max-width: 1199px) {
     @content;
   }
 }
 
 @mixin mediaLg {
-  @media screen and (min-width: 1350px) and (max-width: 1350px) {
+  @media screen and (min-width: 1200px) and (max-width: 1350px) {
     @content;
   }
 }

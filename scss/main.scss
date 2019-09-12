@@ -1123,8 +1123,7 @@ HTML {
   grid-template-rows: 40.46%	10.69%	35.72%	13.13%;
 }
 
-.footer-contacts_wrap {
-  
+.footer-contacts_wrap { 
   background: $background-color-second;
 }
 
@@ -1142,6 +1141,8 @@ HTML {
   font-family: $font-family-main;
   font-style: normal;
   font-weight: normal;
+  // font-size: 16px;
+  // line-height: 18px;
   font-size: 1.2vw;
   line-height: 1.3vw;
   color: $text-color-main;
@@ -1151,6 +1152,7 @@ HTML {
 
 .footer-contacts_inner {
   display: grid;
+  // width: 14.74%;
   width: 199px;
   height: 128px;
   grid-template-rows: 14.84%	9.38%	10.94%	14.06%	14.84%	4.69%	31.25%;
@@ -1173,6 +1175,8 @@ HTML {
   font-family: $font-family-main;
   font-style: normal;
   font-weight: bold;
+  // font-size: 16px;
+  // line-height: 19px;
   font-size: 1.2vw;
   line-height: 1.4vw;
   color: $text-color-main;
