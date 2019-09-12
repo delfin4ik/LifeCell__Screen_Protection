@@ -645,7 +645,7 @@
 // }
 
 .packages__card_wraper {
-  justify-content: flex-start;
+  justify-content: center;
   // overflow-x: auto;
   padding: 0;
   width: 100%;
@@ -657,6 +657,8 @@
   min-height: 415px;
   // margin-left: 16px;
 }
+
+
 
 // .packages__card_wraper::before .packages__card_wraper::after {
 //   content: '';
@@ -1117,6 +1119,12 @@
 }
 /* -------end footer Tablet--------- */
   
+}
+
+@media screen and (max-width: 940px) {
+  .packages__card_wraper {
+    justify-content: flex-start;
+  }
 }
  
 // Smartphones
