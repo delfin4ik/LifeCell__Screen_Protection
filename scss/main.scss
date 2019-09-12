@@ -536,7 +536,7 @@ HTML {
   justify-content: center;
   align-content: space-between;
   flex-wrap: wrap;
-  padding: 72px 0 72px 0;
+  padding: 72px 16px;
 }
 
 .packages-header {
@@ -554,7 +554,7 @@ HTML {
   justify-content: center;
   align-items: center;
   flex: 1 1 100%;
-  padding: 0 16px;
+  // padding: 0 16px;
 }
 
 .packages-alternative_item {
@@ -590,6 +590,7 @@ HTML {
 }
 
 .packages__card_wraper {
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -598,7 +599,7 @@ HTML {
   padding: 0;
   max-width: unset;
   min-height: 590px;
-  margin-left: 16px;
+  // margin-left: 16px;
   margin-top: -30px;
 }
 

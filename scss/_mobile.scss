@@ -595,9 +595,10 @@
 }
 
 .packages-container {
+  width: 100%;
   max-width: $container-width-tab;
-  overflow: hidden;
-  padding: 62px 0 86px 0;
+  // overflow: hidden;
+  padding: 62px 16px 86px 16px;
 }
 
 // .packages-header {
@@ -644,30 +645,31 @@
 // }
 
 .packages__card_wraper {
-  // justify-content: flex-start;
-  overflow-x: auto;
+  justify-content: flex-start;
+  // overflow-x: auto;
   padding: 0;
-  max-width: unset;
+  width: 100%;
   // display: flex;
   // justify-content: center;
   // align-items: center;
   // flex: 1 1 100%;
   // max-width: 964px;
   min-height: 415px;
-  margin-left: 16px;
+  // margin-left: 16px;
 }
 
-.packages__card_wraper::before .packages__card_wraper::after {
-  content: '';
-  flex: 0 0 30px;
-  height: 100%;
-}
+// .packages__card_wraper::before .packages__card_wraper::after {
+//   content: '';
+//   flex: 0 0 30px;
+//   height: 100%;
+// }
 
 .packages__card_wrap {
   // display: flex;
   // justify-content: center;
   // align-content: flex-start;
   // flex-wrap: wrap;
+  width: 930px;
   flex: 0 0 288px;
   height: 355px;
   box-shadow: 0px 4px 30px rgba(196, 196, 196, 0.4);
@@ -1329,7 +1331,7 @@ ul.menu-nav {
   max-width: $container-width-mob;
   overflow: hidden;
   justify-content: flex-start;
-  padding: 54px 0;
+  padding: 54px 16px;
 }
 
 .packages-header {
