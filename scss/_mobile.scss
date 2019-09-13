@@ -1126,6 +1126,45 @@
     justify-content: flex-start;
   }
 }
+
+@media screen and (max-width: 1340px) {
+  .packages__circle_tooltiptext1 .packages-tooltiptext1 {
+    visibility: hidden;
+    width: 143px;
+    background-color: $background-color-main;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+    color: $text-color-main;
+    border-radius: 1px;
+    box-shadow: 0px 4px 16px #E5E5E5;
+    text-align: start;
+    padding: 15px 22px;
+    position: absolute;
+    z-index: 1;
+    top: 120px;
+    left: 60px;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  .packages__circle_tooltiptext1 .packages-tooltiptext1::after {
+    content: "";
+    position: absolute;
+    top: -26px;
+    margin-top: 0;
+    bottom: 100%;
+    left: 15%;
+    margin-left: -5px;
+    border-width: 13px;
+    border-style: solid;
+    border-color: transparent transparent $background-color-main transparent;
+  }
+}
+
+
  
 // Smartphones
 @include mediaSm {
