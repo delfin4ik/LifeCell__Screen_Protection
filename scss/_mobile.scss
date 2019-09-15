@@ -428,13 +428,13 @@
   }
 
   .dropdown-content {
-    left: 100%;
-    top: -6px;
+    // left: 100%;
+    top: 100%;
     z-index: 10;
   }
 
   .dropdown:hover .dropdown-content {
-    display: flex;
+    display: block;
   }
 
   .nav-site, 
@@ -1627,7 +1627,7 @@ ul.menu-nav {
 .main-section-questions {
   // width: 100%;
   min-height: 211px;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .questions-container {

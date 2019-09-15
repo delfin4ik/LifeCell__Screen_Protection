@@ -367,8 +367,7 @@ HTML {
 .main-section-advantages {
   display: flex;
   height: 380px;
-  background-color: #F6F6F6;
-  overflow: hidden; }
+  background-color: #F6F6F6; }
 
 .container-advantages {
   max-width: 1350px;
@@ -1441,8 +1440,7 @@ HTML {
       flex: 0 1 444px;
       align-items: flex-start;
       justify-content: space-evenly;
-      height: 211px;
-      overflow: hidden; }
+      height: 211px; }
     .menu-nav {
       margin: 0;
       padding-left: 25px;
@@ -1504,11 +1502,10 @@ HTML {
     align-items: center;
     margin-right: 30px; }
   .dropdown-content {
-    left: 100%;
-    top: -6px;
+    top: 100%;
     z-index: 10; }
   .dropdown:hover .dropdown-content {
-    display: flex; }
+    display: block; }
   .nav-site,
   .language-switch_desktop,
   .nav-icons__item_search,
@@ -2133,8 +2130,7 @@ HTML {
   /* -------end steps mobile--------- */
   /* Questions mob*/
   .main-section-questions {
-    min-height: 211px;
-    overflow: hidden; }
+    min-height: 211px; }
   .questions-container {
     width: 767px; }
   .questions-container {
