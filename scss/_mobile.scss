@@ -1363,13 +1363,14 @@ ul.menu-nav {
     margin-right: 14px;
     font-size: 18px;
     // font-size: 3.9vw;
-    line-height: 1.5;
+    // line-height: 1.5;
+    padding-top: 5px;
   }
 /*  end Avantages mob */
 
 /*  Packages mob */
 .main-section-packages {
-  max-height: 605px;
+  max-height: 646px;
   overflow: hidden;
   // background-color: $background-color-main;
 }
@@ -1378,7 +1379,7 @@ ul.menu-nav {
   max-width: $container-width-mob;
   overflow: hidden;
   justify-content: flex-start;
-  padding: 54px 16px;
+  padding: 54px 16px 24px 16px;
 }
 
 .packages-header {
@@ -1515,6 +1516,11 @@ ul.menu-nav {
 .packages_none {
   display: none;
 }
+
+.packages_tooltiptext_mob {
+  display: flex;
+}
+
 /* end Packadge mob */
 
 
