@@ -747,6 +747,9 @@ HTML {
 .packages_none {
   display: none; }
 
+.packages_tooltiptext_mob {
+  display: none; }
+
 .main-picture-banner {
   background: url(../img/icons/banner_bg.svg) no-repeat center fixed;
   background-size: cover; }
@@ -1980,17 +1983,17 @@ HTML {
     color: red;
     margin-right: 14px;
     font-size: 18px;
-    line-height: 1.5; }
+    padding-top: 5px; }
   /*  end Avantages mob */
   /*  Packages mob */
   .main-section-packages {
-    max-height: 605px;
+    max-height: 646px;
     overflow: hidden; }
   .packages-container {
     max-width: 767px;
     overflow: hidden;
     justify-content: flex-start;
-    padding: 54px 16px; }
+    padding: 54px 16px 24px 16px; }
   .packages-header {
     /* font-size: 5vw;
   line-height: 6.1vw; */
@@ -2069,6 +2072,8 @@ HTML {
     margin-top: 18px; }
   .packages_none {
     display: none; }
+  .packages_tooltiptext_mob {
+    display: flex; }
   /* end Packadge mob */
   /*  Banner mob */
   .main-picture-banner {
