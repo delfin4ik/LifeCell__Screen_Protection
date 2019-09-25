@@ -1767,9 +1767,9 @@ HTML {
   /* -------footer Tablet--------- */
   .footer {
     display: grid;
-    min-height: 378px;
+    min-height: 334px;
     grid-template-columns: 1fr;
-    grid-template-rows: 30.16%	47.09%	22.75%; }
+    grid-template-rows: 20.96%	53.29%	25.75%; }
   .footer-contacts_wrap {
     display: none; }
   .socials-text {
@@ -1891,7 +1891,6 @@ HTML {
       transform: translate3d(0, 0, 0); }
   .menu-nav {
     height: 211px;
-    transform: translate3d(-100%, 0, 0);
     font-style: normal;
     font-weight: 900;
     font-size: 16px;
@@ -2168,9 +2167,9 @@ HTML {
   /* -------footer mob--------- */
   .footer {
     display: grid;
-    min-height: 470px;
+    min-height: 426px;
     grid-template-columns: 1fr;
-    grid-template-rows: 24.26%	57.45%	18.12%; }
+    grid-template-rows: 16.43%	63.38%	20.19%; }
   .footer-contacts_wrap {
     display: none; }
   .socials-text {
@@ -2190,7 +2189,7 @@ HTML {
     display: flex;
     height: 270px;
     flex-direction: column;
-    padding-left: 41px;
+    padding: 32px 0 26px 41px;
     justify-content: space-around; }
   .footer-nav a {
     font-family: Lato, Arial, sans-serif;
