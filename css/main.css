@@ -357,6 +357,7 @@ HTML {
   display: none; }
 
 .main-picture__text_desktop {
+  display: none;
   font-weight: 800;
   font-size: 20px;
   line-height: 24px;
@@ -544,10 +545,8 @@ HTML {
   background: #F5D300; }
 
 .btn-month {
-  border-left: 1px solid #AEAEAE;
-  border-left-style: ridge;
-  border-right: 1px solid #AEAEAE;
-  border-right-style: ridge; }
+  border-left: none;
+  border-right: none; }
 
 .packages__card_wraper {
   overflow: hidden;
