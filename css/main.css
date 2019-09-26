@@ -1449,7 +1449,7 @@ HTML {
       padding-left: 25px;
       background: #143354;
       list-style: none;
-      transform: translate3d(0, -100%, 0);
+      transform: translate3d(-200%, -100%, 0);
       transition: all 0.5s ease-out; }
       .menu-nav.show {
         transform: translate3d(0, 0, 0); }
@@ -1885,12 +1885,12 @@ HTML {
     margin: 14px 21px; }
   ul.menu-nav {
     float: none;
-    max-width: 322px;
     min-height: 0; }
     ul.menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-nav {
     height: 211px;
+    transform: translate3d(-200%, -100%, 0);
     font-style: normal;
     font-weight: 900;
     font-size: 16px;
