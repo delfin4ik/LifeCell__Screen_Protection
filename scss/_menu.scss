@@ -70,7 +70,7 @@
     padding-left: 25px;
     background: $background-color-header-top;
     list-style: none;
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(-200%, -100%, 0);
     @include easeOut;
 
     &.show {
