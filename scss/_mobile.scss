@@ -1191,7 +1191,7 @@
 
 ul.menu-nav {
   float: none;
-  // max-width: 322px;
+  min-width: 322px;
   min-height: 0;
 
   &.show {

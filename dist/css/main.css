@@ -1885,6 +1885,7 @@ HTML {
     margin: 14px 21px; }
   ul.menu-nav {
     float: none;
+    min-width: 322px;
     min-height: 0; }
     ul.menu-nav.show {
       transform: translate3d(0, 0, 0); }
